@@ -1,0 +1,131 @@
+.container{
+    width: 100vw;
+    height: auto;
+    margin: 0 0 100px 0;
+    padding: 0;
+}
+
+.container img{
+    width: 100vw;
+}
+
+.container .card-login{
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 50px;
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    right: 8%;
+    top: 30%;
+}
+
+.buttons-log .btn{
+    font-size: 20px;
+    border: 0;
+    border-radius: 50px;
+    height: 52px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.buttons-log .btn:nth-child(1){
+    color: black;
+    background-color: white;
+}
+.buttons-log .btn:nth-child(2){
+    background-color: #2F2F2F;
+}
+
+.buttons-log .btn img{
+    width: 16px;
+    margin: 0;
+}
+
+.buttons-log .btn img, .buttons-log .btn i{
+    margin-right: 10px;
+}
+
+.buttons-log {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.separador{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #E9E9E9;
+}
+
+.separador > div{
+    width: 40%;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 3px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.formulario .form-control{
+    border-radius: 50px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-left: 50px;
+}
+
+.formulario i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C8C8C8;
+    height: 48px;
+    width: 50px;
+    position: absolute;
+}
+
+.formulario .buttons-login .btn{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background-color: #D3AF37;
+}
+
+.formulario .buttons-login .btn:nth-child(3){
+    background-color: #2F2F2F;
+    height: 42px;
+}
+
+.formulario .buttons-login p{
+    color: black;
+}
+
+.formulario .buttons-login p a{
+    color: #D3AF37;
+}
+
+@media screen and (max-width: 829px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .container img{
+        display: none;
+    }
+
+    .container .card-login{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
