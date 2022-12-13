@@ -7,7 +7,7 @@ import google from '../assets/google.png'
 const Login = () => {
   return (
     <>
-      <div className='container'>
+      <div className='contenedor'>
       <div className='card-login'>
           <div className='buttons-log'>
             <button className='btn btn-primary' type='button'><img src={google} /> Continue with google</button>

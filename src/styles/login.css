@@ -1,15 +1,15 @@
-.container{
+.contenedor{
     width: 100vw;
     height: auto;
     margin: 0 0 100px 0;
     padding: 0;
 }
 
-.container img{
+.contenedor img{
     width: 100vw;
 }
 
-.container .card-login{
+.contenedor .card-login{
     position: absolute;
     background-color: #FFFFFF;
     padding: 50px;
@@ -112,20 +112,31 @@
     color: #D3AF37;
 }
 
-@media screen and (max-width: 829px) {
-    .container{
+@media screen and (max-width: 1201px) {
+    .contenedor{
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0;
     }
-    .container img{
+    .contenedor img:nth-child(2){
         display: none;
     }
 
-    .container .card-login{
+    .contenedor .card-login{
         position: relative;
         top: 0;
         right: 0;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .buttons-log .btn{
+        font-size: 14px;
+    }
+
+    .formulario .form-control::placeholder{
+        font-size: 14px;
     }
 }
