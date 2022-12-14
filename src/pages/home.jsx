@@ -54,7 +54,7 @@ export default class home extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
                 ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.{" "}
+                maecenas accumsan lacus vel facilisis.
               </p>
             </div>
           </section>
@@ -116,6 +116,7 @@ export default class home extends Component {
                 <div>
                   <h3>Teach today</h3>
                   <p>
+                    <br />
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -136,6 +137,7 @@ export default class home extends Component {
                 <div>
                   <h3>Explore new learning</h3>
                   <p>
+                    <br />
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation

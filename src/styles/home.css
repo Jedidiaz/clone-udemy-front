@@ -123,3 +123,92 @@
     width: 100%;
 }   
 
+
+@media screen and (min-width: 1024px) {
+    .contenedor-home section{
+        padding: 10px 30px;
+    }
+
+    .buttons-section-home-pesent{
+        position: absolute;
+        width: 30%;
+        gap: 20px;
+    }
+
+    .buttons-section-home-pesent .btn{
+        font-size: 20px;
+        margin-top: 120%;
+    }
+
+    .section-home-two{
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .image-home{
+        width: 50%;
+    }
+
+    .description-home-two{
+        width: 50%;
+    }
+
+    .description-home-two h1{
+        font-size: 50px;
+    }
+
+    .description-home-two h5 {
+        font-size: 30px;
+    }
+
+    .description-home-two p{
+        max-height: none !important;
+        overflow: auto !important;
+        font-size: 20px;
+    }
+
+    .content-section-four {
+        gap: 50px;
+        width: 100%;
+    }
+
+    .content-wave-home img {
+        width: 50%;
+    }
+
+    .content-wave-home{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        padding: 10px 30px;
+    }
+
+    .content-wave-home div{
+        width: 50%;
+    }
+
+    .content-wave-home div p{
+        overflow: auto;
+        max-height: none;
+        max-width: none;
+    }
+
+    .section-home-four .content-wave-home:nth-child(1) {
+        text-align: end;
+    }
+
+    .content-wave-home div .btn{
+        margin-top: 10%;
+        font-size: 20px;
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    .contenedor-home div h3{
+        font-size: 50px;
+    }
+
+}
+
