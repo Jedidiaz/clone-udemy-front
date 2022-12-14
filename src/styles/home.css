@@ -1,0 +1,125 @@
+.contenedor-home{
+    width: 100vw;
+}
+
+.contenedor-home > section{
+    padding: 10px;
+}
+
+.home-section-1-pesent img{
+    width: 100% !important;
+    position: relative;
+}
+
+.buttons-section-home-pesent{
+    position: sticky;
+    display: flex;
+    gap: 5px;
+    padding: 2%;
+    top: 39%;
+}
+
+.buttons-section-home-pesent .btn{
+    width: 100%;
+    font-size: 14px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.buttons-section-home-pesent .btn:nth-child(1){
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.buttons-section-home-pesent .btn:nth-child(2){
+    color: white;
+    background-color: #D3AF37;
+}
+
+.section-home-two{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-home img{
+    width: 100%;
+}
+
+.description-home-two{
+    text-align: end;
+}
+
+.description-home-two h1{
+    font-weight: 700;
+}
+
+.description-home-two h5{
+    font-weight: 500;
+}
+
+/* Section 3 aqui */
+
+/* Section 4 */
+.content-section-four{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F1F1F1;
+    padding: 0 10px;
+}
+
+.section-home-four svg{
+    width: 100%;
+}
+
+.content-wave-home img{
+    width: 100%;
+}
+
+.contenedor-home div p{
+    color: black;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.content-wave-home .btn{
+    background-color: #D3AF37;
+    border: 0;
+    border-radius: 50px;
+    width: 120px;
+}
+
+/* section5 */
+.content-section-five {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-section-five h1{
+    font-weight: 700;
+}
+
+.buttons-section-five {
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.buttons-section-five .btn {
+    width: 160px;
+    height: 200px;
+    padding: 25px;
+    background-color: transparent;
+    color: #9E9E9E;
+    border: 1px solid #9E9E9E;
+    border-radius: 20px 
+}
+
+.buttons-section-five .btn img{
+    width: 100%;
+}   
+

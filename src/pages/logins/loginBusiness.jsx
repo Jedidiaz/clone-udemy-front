@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
+import '../../styles/login.css'
 import { Link } from 'react-router-dom'
-import '../styles/register.css'
-import backGround from '../assets/Union.png'
-import google from '../assets/google.png'
+import backGround from '../../assets/loginB.png'
+import google from '../../assets/google.png'
 
 
-export default class register extends Component {
-  render() {
-    return (
-      <>
+const LoginBusiness = () => {
+  return (
+    <>
       <div className='contenedor'>
       <div className='card-login'>
           <div className='buttons-log'>
@@ -31,15 +30,16 @@ export default class register extends Component {
               <input type="password" className='form-control form-control-lg' placeholder='password'/>
             </div>
             <div className="buttons-login">
-              <button type='button' className='btn btn-primary'>Create my account</button>
-              <p>looking for education of your employees?</p>
-              <button type='button' className='btn btn-primary'>sing up as an organization</button>
+              <button type='button' className='btn btn-primary'>Login</button>
+              <p >Forgot your  <Link to={'/register'} className='forgot-lb'>password</Link>?</p>
             </div>
           </div>
         </div>
         <img src={backGround} alt="i" />  
       </div>
     </>
-    )
-  }
+  )
 }
+
+
+export default LoginBusiness
