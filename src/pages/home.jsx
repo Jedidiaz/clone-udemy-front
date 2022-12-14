@@ -201,7 +201,7 @@ export default class home extends Component {
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor in cididunt ut labore et dolore magna aliqua.
-                Quis ipsum suspendisse ultrices gravida.{" "}
+                Quis ipsum suspendisse ultrices gravida.
               </p>
             </div>
           </section>

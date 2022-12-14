@@ -122,6 +122,30 @@
 .buttons-section-five .btn img{
     width: 100%;
 }   
+/* Section 6 */
+.content-section-six {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-section-six h1 {
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.content-section-six div {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #F6F6F6;
+    border-radius: 20px;
+    box-shadow: 0px 3px 18px 0px rgba(0,0,0,0.75);
+}
+
+.content-section-six div p{
+    margin: 0;
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -209,6 +233,33 @@
     .contenedor-home div h3{
         font-size: 50px;
     }
+
+
+
+    .buttons-section-five {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 100px;
+    }
+
+    .content-section-five h1 {
+        font-size: 50px;
+        margin-bottom: 80px;
+    }
+
+    .content-section-six div{
+        width: 60%;
+        padding: 100px 60px ;
+        margin-top: 40px;
+    }
+
+    .content-section-six div p{
+        font-size: 25px;
+        color: #707070;
+    }
+
 
 }
 
