@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4e4a8cc.css",
-    "main.js": "/static/js/main.27deecd4.js",
-    "static/media/Union.png": "/static/media/Union.fd47a09e3b5266b13b2b.png",
+    "main.css": "/static/css/main.d0e6d5fb.css",
+    "main.js": "/static/js/main.fc1ae085.js",
+    "static/media/Homes1.png": "/static/media/Homes1.e010b93e31b90a3c2288.png",
+    "static/media/login1.png": "/static/media/login1.a12c26e7ba0e2f13e9e9.png",
+    "static/media/loginB.png": "/static/media/loginB.0656aec27e301e6da12e.png",
+    "static/media/Home4-2.png": "/static/media/Home4-2.c00fa9c91f655ccb6323.png",
+    "static/media/Home4-1.png": "/static/media/Home4-1.c57002f43541ec4b613e.png",
+    "static/media/Group 1HomeS2.png": "/static/media/Group 1HomeS2.a2fe39bfed69ce008fa3.png",
+    "static/media/login.png": "/static/media/login.2377462b1e13380dfdd1.png",
+    "static/media/Register.png": "/static/media/Register.56ddd57d24606f724cfa.png",
     "index.html": "/index.html",
-    "main.f4e4a8cc.css.map": "/static/css/main.f4e4a8cc.css.map",
-    "main.27deecd4.js.map": "/static/js/main.27deecd4.js.map"
+    "main.d0e6d5fb.css.map": "/static/css/main.d0e6d5fb.css.map",
+    "main.fc1ae085.js.map": "/static/js/main.fc1ae085.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4e4a8cc.css",
-    "static/js/main.27deecd4.js"
+    "static/css/main.d0e6d5fb.css",
+    "static/js/main.fc1ae085.js"
   ]
 }
