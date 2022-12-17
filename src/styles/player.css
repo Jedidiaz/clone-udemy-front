@@ -1,0 +1,81 @@
+.contenedor-player {
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.player-player{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-player .video-player, .player-player .video-player img{
+    width: 100%;
+}
+
+.player-player .video-player{
+    margin-bottom: 30px;
+}
+
+/* description */
+
+.player-player .description{
+    padding-left: 10px;
+    max-height: 700px;
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+/* stepper class */
+.follow-class-player{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .player-player{
+        width: 75%;
+    }
+
+    .follow-class-player{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 25%;
+    }
+
+    .follow-class-player .reports-player h2{
+        margin-bottom: 20px;
+    }
+
+    .follow-class-player .reports-player div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .follow-class-player .reports-player div .btn{
+        color: black;
+        background-color: #D9D9D9;
+        font-size: 14px;
+        border: none;
+    }
+
+    .clases-player{
+        display: flex;
+    }
+
+    .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed, .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+        color: #E5C148;
+    }
+
+    .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root{
+        border: 1px solid #E5C148;
+        border-radius: 50%;
+    }
+}
