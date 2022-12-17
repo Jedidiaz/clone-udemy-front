@@ -64,6 +64,8 @@
         background-color: #D9D9D9;
         font-size: 14px;
         border: none;
+        width: 100px;
+        text-align: center;
     }
 
     .clases-player{
@@ -77,5 +79,11 @@
     .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root{
         border: 1px solid #E5C148;
         border-radius: 50%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contenedor-player {
+        padding: 10px 5%;
     }
 }

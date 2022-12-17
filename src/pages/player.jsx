@@ -35,7 +35,6 @@ const Player = () => {
                     name="group3"
                     type="radio"
                     id="Description"
-                    checked
                   />
                   <Form.Check
                     label="Reviews"
@@ -106,7 +105,7 @@ const Player = () => {
             <h2>Course content</h2>
             <div>
               <button type="button" className="btn btn-primary">
-                <i className="bi bi-person-fill"></i> instrictor
+                <i className="bi bi-person-fill"></i> instructor
               </button>
               <button type="button" className="btn btn-primary">
                 <i className="bi bi-exclamation-circle"></i> Report a problem
