@@ -12,15 +12,14 @@
     align-items: center;
     justify-content: start;
     width: 50px;
-    height: 100%;
-    min-height: 700px;
+    height: auto;
     padding: 10px;
 }
 
 .logo-business {
     width: 100%;
-    height: 10%;
-    margin: 40px 0;
+    margin: 40px 0 60px 0;
+    position: sticky;
 }
 
 .logo-business img{
@@ -29,7 +28,6 @@
 
 .buttons-bar-business {
     width: 100%;
-    height: 90%;
 }
 
 .buttons-bar-business form div{
@@ -79,4 +77,229 @@
     font-size: 24px;
 }
 
+/* ocultar secciones */
 
+.dash-business, .report-business, .history-business, .shop-business, .faq-business, .image-faq-business{
+    display: none;
+}
+
+/* dash business an report */
+
+.dash-business, .report-business{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.buttons-business-dash{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.buttons-business-dash .btn{
+    color: #000;
+    background-color: #F3B601;
+    border: 0;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+/* history business */
+
+.history-business{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    width: 100%;
+    gap: 30px;
+    padding: 10px;
+}
+
+.history-business .filter{
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-business .filter h5{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.history-business .filter .date {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.history-business .last{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.history-business .last .btn, .history-business .btn{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 11.83px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 50px;
+}
+
+.history-business #clear {
+    background-color: #E5C148;
+    font-weight: 700;
+    width: 150px;
+}
+
+/* shop business */
+.shop-business{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.shop-business .header-shop{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.shop-business .header-shop .btn{
+    color: #000;
+    background-color: transparent;
+    border: 0;
+}
+
+.shop-business .header-shop span label{
+    position: absolute;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: #D6D6D6;
+}
+
+.shop-business .header-shop span input{
+    padding-left: 30px;
+    border-radius: 50px;
+    border-color: #D6D6D6;
+}
+
+.body-shop{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.shop-business .body-shop .Recomended-for-you-homeStudends, .need-help-homeStudends{
+    padding: 10px;
+}
+/* faq business */
+.faq-business{
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.faq-business .card-faq{
+    background-color: #F3B601;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.faq-business .card-faq h2{
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.faq-business .card-faq p{
+    color: #000;
+    font-weight: 500;
+}
+
+.faq-business .card-faq .btn{
+    background-color: #000;
+    border: 0;
+    border-radius: 50px;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #F3B601;
+    color: #000;
+    font-weight: 700;
+}
+
+.accordion-body{
+    background-color: #F3B601;
+    columns: #000;
+}
+
+.accordion-item{
+    border-radius: 50px;
+    box-shadow: 0px 4px 11.83px rgba(0, 0, 0, 0.18);
+}
+
+.accordion {
+    --bs-accordion-border-color: trasnparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+@media screen and (min-width: 475px) {
+    .history-business .filter{
+        width: 355px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .history-business{
+        flex-direction: row;
+    }
+
+    .body-shop .Most-popular-homeStudends .card-contenedor-homeStudends{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .image-faq-business{
+        display: block;
+        width: 335px;
+    }
+    
+    .image-faq-business img{
+        width: 100%;
+    }
+
+    .contenedor-faq{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 50px;
+        gap: 20px;
+    }
+
+    .questions-business{
+        width: 500px;
+    }
+}
