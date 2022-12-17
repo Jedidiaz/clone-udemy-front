@@ -1,11 +1,20 @@
 import React from "react";
-import { Form } from "react-bootstrap";
+import { Form, Table } from "react-bootstrap";
+import { Doughnut } from "react-chartjs-2";
 import "../../styles/businessProtal.css";
 
 import businessLogo from "../../assets/businessLogo.svg";
 import imageProfile from "../../assets/imageProfile.svg";
 
 const BusinessPortal = () => {
+  let tableDash = [];
+  for (let i = 0; i < 10; i++) {
+    tableDash.push({
+      name: "Luis Gomez",
+      rate: "15",
+      activity_rate: 2,
+    });
+  }
   return (
     <>
       <div className="contenedor-business">
@@ -57,6 +66,69 @@ const BusinessPortal = () => {
                 <i className="bi bi-bell"></i>
               </span>
               <img src={imageProfile} />
+            </div>
+          </div>
+          {/* dash Business */}
+          <div className="dash-business">
+            <div className="buttons-business-dash">
+              <button type="button" className="btn btn-primary">
+                Course <i className="bi bi-caret-down-fill"></i>
+              </button>
+              <button type="button" className="btn btn-primary">
+                CourseFilter by date <i className="bi bi-calendar-plus"></i>
+              </button>
+            </div>
+            <div className="table-info-business">
+              <Table striped>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Rate of progress</th>
+                    <th>activity rate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {tableDash.map((el) => (
+                    <tr>
+                      <td key={el.name}>{el.name}</td>
+                      <td key={el.rate}>{el.rate}%</td>
+                      <td key={el.activity_rate}>{el.activity_rate}hrs</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
+              <div className="chart-business"></div>
+            </div>
+          </div>
+          {/* Report business */}
+          <div className="report-business">
+            <div className="buttons-business-dash">
+              <button type="button" className="btn btn-primary">
+                Course <i className="bi bi-caret-down-fill"></i>
+              </button>
+              <button type="button" className="btn btn-primary">
+                CourseFilter by date <i className="bi bi-calendar-plus"></i>
+              </button>
+            </div>
+            <div className="table-info-business">
+              <Table striped>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Rate of progress</th>
+                    <th>activity rate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {tableDash.map((el) => (
+                    <tr>
+                      <td key={el.name}>{el.name}</td>
+                      <td key={el.rate}>{el.rate}%</td>
+                      <td key={el.activity_rate}>{el.activity_rate}hrs</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
             </div>
           </div>
         </div>
