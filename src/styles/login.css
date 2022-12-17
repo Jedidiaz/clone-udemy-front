@@ -20,7 +20,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     right: 8%;
     top: 30%;
-    z-index: 9999999999;
+    z-index: 100;
 }
 
 .buttons-log .btn{
@@ -116,26 +116,26 @@
     color: #D3AF37;
 }
 
-.carousel {
+.contenedor .carousel {
     position: absolute;
 }
 
-.carousel-indicators{
+.contenedor .carousel-indicators{
     justify-content: start;
     margin-left: 25%;
 }
 
-.carousel-indicators [data-bs-target]{
+.contenedor .carousel-indicators [data-bs-target]{
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
 
-.carousel-dark .carousel-indicators [data-bs-target]{
+.contenedor .carousel-dark .carousel-indicators [data-bs-target]{
     background-color: #D3AF37;
 }
 
-.carousel-control-next, .carousel-control-prev{
+.contenedor .carousel-control-next, .carousel-control-prev{
     display: none;
 }
 
@@ -167,6 +167,18 @@
         top: 0;
         right: 0;
         margin-bottom: 100px;
+    }
+
+    .contenedor img {
+        display: none;
+    }
+    
+    .contenedor .card-login{
+        padding: 50px 20px;
+    }
+
+    .contenedor{
+        padding: 5px;
     }
 }
 

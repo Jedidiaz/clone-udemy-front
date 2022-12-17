@@ -1,5 +1,8 @@
 .contenedor-home{
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .contenedor-home > section{
@@ -59,6 +62,89 @@
 }
 
 /* Section 3 aqui */
+.section-home-three h1{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.section-home-three ul li{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.section-home-three ul li a:hover{
+    color:  #D3AF37;
+}
+
+.section-home-three .card-contenedor-home{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card-contenedor-home .card-Home{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 11.83px rgba(0, 0, 0, 0.15);
+}
+
+.card-contenedor-home .card-Home .image-card-home{
+    width: 100%;
+}
+
+.card-Home h4{
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.profile-hoe-card{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 10px;
+    gap: 20px;
+}
+
+.profile-hoe-card img {
+    width: 80px;
+}
+
+.info-card-home{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.info-card-home p{
+    color: black;
+    font-weight: 500;
+}
+
+.footer-card-home {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer-card-home .btn{
+    background-color: black;
+    color: white;
+}
+
+.footer-card-home span{
+    color: #A7A7A7;
+}
+
 
 /* Section 4 */
 .content-section-four{
@@ -77,7 +163,7 @@
     width: 100%;
 }
 
-.contenedor-home div p{
+.content-wave-home div p{
     color: black;
     max-height: 200px;
     overflow: scroll;
@@ -135,7 +221,7 @@
     margin-top: 40px;
 }
 
-.content-section-six div {
+.subcontent-section-six div {
     padding: 20px;
     text-align: center;
     border: 2px solid #F6F6F6;
@@ -143,25 +229,98 @@
     box-shadow: 0px 3px 18px 0px rgba(0,0,0,0.75);
 }
 
-.content-section-six div p{
+.subcontent-section-six div p{
     margin: 0;
 }
 
+.subcontent-section-six img {
+    width: 20%;
+    display: none;
+}
+
+/* Section 7 */
+
+.card-section-sev-home {
+    background-color: #F3B601;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: white;
+    padding: 20px;
+}
+
+.card-section-sev-home h1 {
+    font-weight: 700;
+}
+
+.card-section-sev-home .btn{
+    margin: 10px 0;
+    color: black;
+    background-color: white;
+    border: 0;
+    border-radius: 50px;
+    width: 40%;
+}
+
+.crad-buttons-home-section-sev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.crad-buttons-home-section-sev .btn{
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.crad-buttons-home-section-sev .btn img {
+    width: 100%;
+    display: block;
+}
+
+.crad-buttons-home-section-sev .btn p:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    font-size: 30px;
+}
+
+.crad-buttons-home-section-sev .btn p:nth-child(1) img{
+    width: 32px;
+}
+
+.crad-buttons-home-section-sev .btn:nth-child(2) p{
+    color: black !important;
+}
 
 @media screen and (min-width: 1024px) {
     .contenedor-home section{
-        padding: 10px 30px;
+        padding: 0 100px;
     }
 
     .buttons-section-home-pesent{
-        position: absolute;
         width: 30%;
         gap: 20px;
     }
 
     .buttons-section-home-pesent .btn{
+        position: absolute;
+        top: -150%;
+        width: 186px;
         font-size: 20px;
-        margin-top: 120%;
+    }
+
+    .buttons-section-home-pesent .btn:nth-child(2){
+        margin-left: 200px;
     }
 
     .section-home-two{
@@ -249,17 +408,70 @@
         margin-bottom: 80px;
     }
 
-    .content-section-six div{
-        width: 60%;
-        padding: 100px 60px ;
-        margin-top: 40px;
+    .subcontent-section-six{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
-    .content-section-six div p{
+    .subcontent-section-six div{
+        width: 60%;
+        padding: 100px 60px ;
+        margin: 40px;
+    }
+
+    .subcontent-section-six div p{
         font-size: 25px;
         color: #707070;
     }
 
+    .subcontent-section-six img {
+        display: block;
+    }
 
+    .card-section-sev-home{
+        padding: 20px 20%;
+    }
+
+    .card-section-sev-home .btn {
+        width: 200px;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    .crad-buttons-home-section-sev{
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .crad-buttons-home-section-sev .btn{
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .card-section-sev-home h1{
+        font-size: 60px
+    }
+
+    .content-section-seven {
+        margin-bottom: 100px;
+    }
+
+    .section-home-three .card-contenedor-home {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-items: center;
+    }
+}
+@media screen and (min-width: 1441px) {
+    .contenedor-home section{
+        padding: 10px 17%;
+    }
+
+    
 }
 

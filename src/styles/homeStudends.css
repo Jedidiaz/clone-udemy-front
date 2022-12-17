@@ -1,0 +1,236 @@
+.contenedor-homeStudends{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Section 1 */
+
+.contenedor-homeStudends section{
+    padding: 10px;
+}
+
+.continue-watching h1{
+    font-weight: 500;
+}
+
+.continue-watching h1 span{
+    font-weight: 700;
+}
+
+.videos-homeStudends {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.videos-homeStudends .video-prev-homeStudends img{
+    width: 100%;
+}   
+
+
+.list-video-homeStudends {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    height: 230px;
+    overflow: scroll;
+}
+
+.card-video-homeStudends {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-video-homeStudends div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+}
+
+.card-video-homeStudends div img {
+    width: 150px;
+}
+
+.info-video-homeStudends {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-video-homeStudends h4{
+    font-size: 14px;
+}
+
+.info-video-homeStudends p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card-video-homeStudends .progress{
+    height: 5px;
+}
+
+.card-video-homeStudends .progress-bar {
+    background-color: #E5C148;
+}
+
+/* Section 2 */
+.Most-popular-homeStudends h1{
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.Most-popular-homeStudends h1 span{
+    font-weight: 700;
+}
+
+.card-contenedor-homeStudends{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-contenedor-homeStudends .card-Home{
+    width: 300px;
+    box-shadow: 0px 4px 11.83px rgba(0, 0, 0, 0.15);
+}
+
+.card-contenedor-homeStudends .card-Home .image-card-home{
+    width: 100%;
+}
+
+.card-contenedor-homeStudends .card-Home .info-card-home{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-contenedor-homeStudends .card-Home .info-card-home p{
+    margin: 0;
+}
+
+/* Section 3 */
+
+.Recomended-for-you-homeStudends h1{
+    font-weight: 500;
+}
+
+.Recomended-for-you-homeStudends h1 span{
+    font-weight: 700;
+}
+
+.Recomended-for-you-homeStudends .carousel{
+    display: block;
+    width: 100%;
+}
+
+.Recomended-for-you-homeStudends .carousel .Carousel.Item{
+    width: 100%;
+}
+
+.Recomended-for-you-homeStudends .carousel .carousel-indicators{
+    display: none;
+}
+
+.Recomended-for-you-homeStudends .carousel .carousel-control-next, .Recomended-for-you-homeStudends .carousel .carousel-control-prev{
+    display: flex;
+} 
+
+/* Section 4 */
+
+.need-help-homeStudends{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.need-help-homeStudends .help-homeStudends{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #F3B601;
+}
+
+.help-homeStudends h1{
+    color: white;
+    font-weight: 700;
+}
+
+.help-homeStudends p{
+    color: black;
+}
+
+.help-homeStudends .btn{
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .contenedor-homeStudends section{
+        padding: 10px 100px;
+    }
+    
+    .videos-homeStudends{
+        flex-direction: row;
+    }
+
+    .video-prev-homeStudends, .list-video-homeStudends {
+        width: 50%;
+    }
+
+    .Recomended-for-you-homeStudends{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .Recomended-for-you-homeStudends .carousel{
+        width: 30%;
+    }
+
+    .Recomended-for-you-homeStudends .carousel .carousel-control-next, .Recomended-for-you-homeStudends .carousel .carousel-control-prev{
+        position: absolute;
+    }
+
+    .Recomended-for-you-homeStudends .carousel .carousel-control-next{
+        right: -100%;
+    }
+    .Recomended-for-you-homeStudends .carousel .carousel-control-prev{
+        left: -100%;
+    }
+
+    .need-help-homeStudends .help-homeStudends{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .card-contenedor-homeStudends {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-items: center;
+    }
+    
+}
+
+@media screen and (min-width: 1441px) {
+    .contenedor-homeStudends section{
+        padding: 10px 17%;
+    }   
+}

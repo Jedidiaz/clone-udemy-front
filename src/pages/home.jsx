@@ -4,10 +4,18 @@ import home1 from "../assets/Homes1.png";
 import home2 from "../assets/Group 1HomeS2.png";
 import home41 from "../assets/Home4-1.png";
 import home42 from "../assets/Home4-2.png";
-import icon1 from '../assets/iconHome1.png'
-import icon2 from '../assets/iconHome2.png'
-import icon3 from '../assets/iconHome3.png'
-import icon4 from '../assets/iconHome4.png'
+import icon1 from "../assets/iconHome1.png";
+import icon2 from "../assets/iconHome2.png";
+import icon3 from "../assets/iconHome3.png";
+import icon4 from "../assets/iconHome4.png";
+import HomeSse from "../assets/HomeSse.svg";
+import HomeSse2 from "../assets/HomesSse2.svg";
+import comillas from "../assets/comillasHome.svg";
+import google from "../assets/google-play.png";
+
+import Imagetest1 from '../assets/Imagetest1.svg'
+import HomestProfile from '../assets/HometestProfile.svg'
+
 import { Link } from "react-router-dom";
 import "../styles/home.css";
 
@@ -16,13 +24,13 @@ export default class home extends Component {
     let cards = [];
     for (let i = 0; i < 6; i++) {
       cards.push({
-        image: `../assets/Imagetest${i + 1}.png`,
+        image: Imagetest1,
         title: "Machine Learning and Data Science with Python",
-        imageP: "../assets/HometestProfile.png",
+        imageP: HomestProfile,
         name: "Ana Maria Diaz",
         role: "Engineer",
         clases: 12,
-        flowers: 865562,
+        folowers: 865562,
         price: "60.99",
       });
     }
@@ -69,23 +77,24 @@ export default class home extends Component {
               </li>
             </ul>
             <div className="card-contenedor-home">
-              {this.cards?.map((el) => (
+              {cards?.map((el) => (
                 <article className="card-Home">
-                  <img src={el.image} />
-                  <h4>{el.title}</h4>
+                  <img src={el.image} className="image-card-home"/>
+                    <h4 key="{el.title}">{el.title}</h4>
                   <div className="profile-hoe-card">
                     <img src={el.imageP} alt="" />
                     <div>
-                      <h5>{el.name}</h5>
-                      <p>{el.role}</p>
+                      <h5 key="{el.name}">{el.name}</h5>
+                      <p key="{el.role}">{el.role}</p>
                     </div>
+                  </div>
                     <div className="info-card-home">
-                      <p>
-                        <i className="bi bi-folder2-open"></i> {el.clases}{" "}
+                      <p key="{el.clases}">
+                        <i className="bi bi-folder2-open"></i> {el.clases}
                         Clases
                       </p>
-                      <p>
-                        <i className="bi bi-person"></i> {el.flowers}
+                      <p key="{el.folowers}">
+                        <i className="bi bi-person"></i> {el.folowers}
                       </p>
                       <p>
                         <i className="bi bi-star"></i> 5.0
@@ -95,9 +104,8 @@ export default class home extends Component {
                       <button type="button" className="btn btn-ptimary">
                         Buy Now
                       </button>
-                      <span>${el.price}USD</span>
+                      <span key="{el.price}">${el.price}USD</span>
                     </div>
-                  </div>
                 </article>
               ))}
             </div>
@@ -185,27 +193,47 @@ export default class home extends Component {
                 <img src={icon1} /> Special Planes
               </button>
               <button type="button" className="btn btn-primary">
-              <img src={icon2} /> Conferences
+                <img src={icon2} /> Conferences
               </button>
               <button type="button" className="btn btn-primary">
-              <img src={icon3} /> Courses
+                <img src={icon3} /> Courses
               </button>
               <button type="button" className="btn btn-primary">
-              <img src={icon4} />  Remote Friendly
+                <img src={icon4} /> Remote Friendly
               </button>
             </div>
           </section>
           <section className="content-section-six">
             <h1>From Our Comunity</h1>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor in cididunt ut labore et dolore magna aliqua.
-                Quis ipsum suspendisse ultrices gravida.
-              </p>
+            <div className="subcontent-section-six">
+              <img src={HomeSse} alt="" />
+              <div style={{ backgroundImage: comillas }}>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor in cididunt ut labore et dolore magna
+                  aliqua. Quis ipsum suspendisse ultrices gravida.
+                </p>
+              </div>
+              <img src={HomeSse2} alt="" />
             </div>
           </section>
-          <section className="content-section-seven"></section>
+          <section className="content-section-seven">
+            <div className="card-section-sev-home">
+              <button type="button" className="btn btn-primary">
+                Sign Up
+              </button>
+              <h1>Let’s Get Started</h1>
+              <h2>Your Education</h2>
+              <div className="crad-buttons-home-section-sev">
+                <button type="button" className="btn btn-primary">
+                  Download Now! <p><img src={google} alt="" /> Google Play</p>
+                </button>
+                <button type="button" className="btn btn-primary">
+                  Download Now! <p><i className="bi bi-apple"></i> App Store</p>
+                </button>
+              </div>
+            </div>
+          </section>
         </div>
       </>
     );

@@ -1,0 +1,353 @@
+.contenedor-perfilStudent{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-perfilStudent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-portada-perfilStudent{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: calc(0% + 100px);
+}
+
+.image-portada-perfilStudent img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-portada-perfilStudent .btn{
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    background-color: black;
+    border: 0;
+    border-radius: 20px;
+}
+
+.image-profile-perfilStudent {
+    width: 30%;
+    z-index: 10;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.image-profile-perfilStudent img {
+    width: 100%;
+}
+
+.description-profile-perfilStudent{
+    text-align: center;
+}
+
+.info-student{
+    margin-bottom: 20px;
+}
+
+.description-profile-perfilStudent h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.description-profile-perfilStudent h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.description-perfilStudent form .form-switch .form-check-input:checked{
+    background-color: black;
+    border: none;
+}
+
+/* info videos */
+
+.info-classes-perfilStudent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.info-classes-perfilStudent .info1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-classes-perfilStudent .info1 .controllers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #F1F1F1;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-classes-perfilStudent .info1 .controllers div{
+    width: 30%;
+    text-align: center;
+}
+
+.info-classes-perfilStudent .info1 .controllers span{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.info-classes-perfilStudent .info1 .controllers h4{
+    font-size: 16px;
+}
+
+.continue-watching-perfilStudent, .continue-watching-perfilStudent img{
+    width: 100%;
+}
+
+.list-video-perfilStudet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-height: 300px;
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+
+.multiMenu-perfilStudent{
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.selectors form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.selectors{
+    margin-bottom: 50px;
+}
+
+.selectors form div input {
+    display: none;
+}
+
+.selectors form div input:checked + label{
+    color: #E5C148;
+}
+
+.selectors form div .form-check{
+    margin: 0;
+    padding: 0;
+}
+
+.payment-methods, .purchase-history, .u-credits{
+    display: none;
+}
+
+.payment-methods{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paypal, .stripe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.credidcard-data form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.credidcard-data form input{
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0px 4px 11.83px rgba(0, 0, 0, 0.15);
+}
+
+.credidcard-data form .btn{
+    border-radius: 50px;
+    color: black;
+    background-color: #E5C148;
+    border: 0;
+    font-weight: 700;
+}
+
+.credidcard-data form div label{
+    padding-left: 10px;
+}
+
+.credidcard-data form div:nth-child(1) i{
+    position: absolute;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.credidcard-data form div:nth-child(1) input{
+    padding-left: 28px;
+}
+
+.credidcard-data form div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* historial */
+
+.purchase-history{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.purchase-history .filter{
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    padding: 20px;
+    width: 355px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.purchase-history .filter h5{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.purchase-history .filter .date {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.purchase-history .last{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.purchase-history .last .btn, .purchase-history .btn{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 11.83px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 50px;
+}
+
+.purchase-history #clear {
+    background-color: #E5C148;
+    font-weight: 700;
+    width: 150px;
+}
+
+.history-info {
+    max-height: 240px;
+    width: 355px;
+    overflow: scroll;
+}
+
+/* Credits */
+
+.u-credits {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.u-credits a{
+    color: #232323;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.u-credits h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+    
+
+    .description-perfilStudent{
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .image-profile-perfilStudent{
+        width: 200px;
+        margin-top: 180px;
+        margin-left: 30px;
+    }
+
+    .description-profile-perfilStudent{
+        display: flex;
+        flex-direction: row;
+        margin-top: 270px;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 30px 0 0;
+    }
+
+    .info-classes-perfilStudent{
+        flex-direction: row;
+    }
+
+    .info1, .list-video-perfilStudet {
+        width: 50%;
+    }
+
+    .list-video-perfilStudet{
+        max-height: 474px;
+        padding: 20px;
+    }
+
+    .purchase-history{
+        flex-direction: row;
+    }
+
+    .purchase-history .filter,  .purchase-history .history-info{
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    .description-perfilStudent, .info-classes-perfilStudent, .multiMenu-perfilStudent{
+        width: 1024px;
+    }
+
+    .image-portada-perfilStudent{
+        width: 1024px;
+    }
+}
