@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Header from "./shared/header";
+import Footer from "./shared/footer";
 //import images
 import home1 from "../assets/Homes1.png";
 import home2 from "../assets/Group 1HomeS2.png";
@@ -37,6 +39,7 @@ export default class home extends Component {
     console.log(cards);
     return (
       <>
+      <Header />
         <div className="contenedor-home">
           <section className="section-home-one">
             <div className="home-section-1-pesent">
@@ -235,6 +238,7 @@ export default class home extends Component {
             </div>
           </section>
         </div>
+      <Footer />  
       </>
     );
   }

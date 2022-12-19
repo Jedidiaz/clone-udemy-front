@@ -1,4 +1,7 @@
 import React from "react";
+import Header from "../shared/header";
+import Footer from "../shared/footer";
+
 import backGround from "../../assets/Register.png";
 import google from "../../assets/google.png";
 import "../../styles/login.css"
@@ -6,6 +9,7 @@ const Register = () => {
 
   return (
     <>
+    <Header />
       <div className="contenedor">
         <div className="card-login">
           <div className="buttons-log">
@@ -54,6 +58,8 @@ const Register = () => {
         </div>
         <img src={backGround} alt="i" />
       </div>
+
+    <Footer />
     </>
   );
 };

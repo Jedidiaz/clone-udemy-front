@@ -1,0 +1,328 @@
+.contenedor-teacherPortal{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.bar-teacher{
+    background-color: #2F2F2F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    z-index: 100;
+}
+
+.bar-teacher .buttons-bar-business form div input + label{
+    color: white;
+}
+
+.bar-teacher .buttons-bar-business form div input:checked + label{
+    color: #F3B601;
+}
+
+
+
+/* header teacher */
+.views-teacher{
+    width: 100%;
+}
+
+.views-teacher .header-business div span:nth-child(1){
+    margin-right: 30px;
+    font-size: 16px;
+}
+
+/* views messages */
+.qya, .messages-teacher, .announcements{
+    display: none;
+}
+
+/* messages */
+.messagesPortalTeacher{
+    width: 100%;
+    height: 150vh;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.messagesPortalTeacher .options-teacher-messages form div input{
+    display: none;
+}
+
+.messagesPortalTeacher .options-teacher-messages form div input +label{
+    font-size: 18px;
+}
+
+.messagesPortalTeacher .options-teacher-messages form div input:checked + label{
+    font-weight: 700;
+}
+
+.divider{
+    display: none;
+}
+
+.Chat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+    padding: 20px;
+    border-radius: 20px;
+    height: 700px;
+}
+
+.contacts-chat span{
+    position: sticky;
+}
+
+.contacts-chat span label{
+    position: absolute;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    color: #1C1B1F80;
+}
+
+.contacts-chat span input{
+    border: 0;
+    border-radius: 50px;
+    background-color: #D9D9D9;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 6px 40px;
+}
+
+.content-cards-chat{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+    overflow: scroll;
+    padding: 0 10px;
+}
+
+.content-cards-chat .card-chat{
+    display: flex;
+    gap: 10px;
+}
+
+.content-cards-chat .card-chat:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.content-cards-chat .card-chat img{
+    width: 64px;
+}
+
+.content-cards-chat .card-chat p{
+    padding: 0;
+    margin: 0;
+}
+
+.description-card-chat div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-chat{
+    background-color: #F1F1F1;
+    flex-direction: column;
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    left: 100%;
+    transition: .5s;
+    top: calc(0% + 100px + 123px);
+    border-radius: 20px;
+    width:  calc(100% - 70px);
+    height: 700px;
+    max-width: 460.48px;
+}
+
+.header-chat{
+    display: flex;
+    padding: 10px;
+    justify-content: start;
+    gap: 10px;
+}
+
+.header-chat i{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.header-chat img{
+    width: 64px;
+}
+
+.body-chat{
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-cloud1{
+    background-color: #FFF1C8;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 90%;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+}
+
+.body-chat .message2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.message-cloud2{
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 90%;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+}
+
+.message-cloud2 p, .message-cloud1 p{
+    color: #000;
+}
+
+.footer-chat{
+    padding: 10px;
+}
+
+.footer-chat {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-chat input{
+    width: 100%;
+    border-radius: 50px;
+    padding-right: 60px;
+}
+
+.footer-chat  i, .footer-chat  img{
+    position: absolute;
+    right: 10%;
+    font-size: 20px;
+    width: 20px;
+}
+
+.footer-chat  i{
+    right: 20%;
+}
+
+/* Q&A */
+.qya{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-repro, .video-repro .image-img-teacher  img {
+    width: 100%;
+}
+
+.description-video-teacher{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    width: 100%;
+}
+
+.subDescription{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.subDescription img{
+    width: 64px;
+    margin-top: 20px;
+}
+
+.messages-video-teacher{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subDescription i, .messages-video-teacher p a{
+    color: #F3B601;
+}
+
+.subDescription span{
+    color: #000;
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .video-repro, .description-video-teacher{
+        width: 975.42px;
+    }
+
+    .subDescription{
+        flex-direction: row;
+        padding: 10px 40px;
+        gap: 20px;
+    }
+
+    .qya{
+        width: calc(100vw - 50px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* chat */
+
+    .view-chat{
+        position: relative;
+        top: 0;
+        left: 0%;
+        right: 0;
+        width: 50%;
+        max-width: none;
+    }
+
+    .contacts-chat{
+        width: 50%;
+    }
+
+    .Chat{
+        width: 950px;
+    }
+
+    .messages-teacher{
+        width: calc(100vw - 70px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

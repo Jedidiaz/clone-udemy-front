@@ -1,4 +1,7 @@
 import React from 'react'
+import Header from "../shared/header";
+import Footer from "../shared/footer";
+
 import '../../styles/login.css'
 import { Link } from 'react-router-dom'
 import backGround from '../../assets/loginB.png'
@@ -8,6 +11,7 @@ import google from '../../assets/google.png'
 const LoginBusiness = () => {
   return (
     <>
+    <Header />
       <div className='contenedor'>
       <div className='card-login'>
           <div className='buttons-log'>
@@ -37,6 +41,7 @@ const LoginBusiness = () => {
         </div>
         <img src={backGround} alt="i" />  
       </div>
+      <Footer />
     </>
   )
 }

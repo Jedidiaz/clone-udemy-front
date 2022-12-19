@@ -3,6 +3,9 @@ export {default as HomeStudents} from './homeStudents'
 export {default as PerfilStudent} from './perfilStudent'
 export {default as Player} from './player'
 
+//dashTeachers
+export { default as TeacherPortal} from './teacherPortal'
+
 //dashBusiness
 export {default as Business} from './dashBusiness/businessPortal'
 

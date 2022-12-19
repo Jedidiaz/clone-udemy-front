@@ -1,4 +1,7 @@
 import React from "react";
+import Header from "./shared/header";
+import Footer from "./shared/footer";
+
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Form from "react-bootstrap/Form";
 import Table from "react-bootstrap/Table";
@@ -35,6 +38,7 @@ const PerfilStudent = () => {
 
   return (
     <>
+    <Header />
       <div className="contenedor-perfilStudent">
         <div className="description-perfilStudent">
           <div className="image-portada-perfilStudent">
@@ -290,6 +294,8 @@ const PerfilStudent = () => {
           </div>
         </div>
       </div>
+
+     <Footer /> 
     </>
   );
 

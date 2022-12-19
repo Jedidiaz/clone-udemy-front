@@ -1,5 +1,8 @@
 import React from "react";
-import style from "../../styles/login.css";
+import Header from "../shared/header";
+import Footer from "../shared/footer";
+
+import "../../styles/login.css";
 import { Link } from "react-router-dom";
 import backGround from "../../assets/login.png";
 import login from "../../assets/login1.png";
@@ -10,6 +13,7 @@ const Login = () => {
   const carousel = [backGround, backGround, backGround];
   return (
     <>
+    <Header />
       <div className="contenedor">
         <div className="card-login">
           <div className="buttons-log">
@@ -71,6 +75,7 @@ const Login = () => {
         </Carousel>
         <img src={backGround}/>
       </div>
+    <Footer />  
     </>
   );
 };

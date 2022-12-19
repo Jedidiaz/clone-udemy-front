@@ -1,4 +1,7 @@
 import React from "react";
+import Header from "./shared/header";
+import Footer from "./shared/footer";
+
 import "../styles/homeStudends.css";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Carousel from "react-bootstrap/Carousel";
@@ -43,6 +46,7 @@ const HomeStudents = () => {
 
   return (
     <>
+    <Header />
       <div className="contenedor-homeStudends">
         <section className="continue-watching">
           <h1>
@@ -138,6 +142,7 @@ const HomeStudents = () => {
           </div>
         </section>
       </div>
+    <Footer />  
     </>
   );
 };
