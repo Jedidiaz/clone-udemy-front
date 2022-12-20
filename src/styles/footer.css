@@ -26,9 +26,12 @@ ul {
     padding: 0;
     margin: 0;
 }
+.Business-footer div  h3{
+    color: #ffffff;
+}
 
-p, footer div ul li a{
-    color:#A7A7A7;
+.Business-footer p, .Business-footer div ul li a{
+    color: #ffffff;
 }
 
 .regist .inputs{
@@ -61,6 +64,7 @@ p, footer div ul li a{
     border-radius: 30px;
     --bs-btn-active-bg: #4b4b4b;
 }
+
 
 @media screen and (min-width: 830px) {
     footer{

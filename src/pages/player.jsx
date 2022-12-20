@@ -1,5 +1,7 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
+import Header from '../pages/shared/headerPlayer'
+import Footer from '../pages/shared/footer'
 import "../styles/player.css";
 
 import Stepper from "@mui/material/Stepper";
@@ -21,6 +23,7 @@ const Player = () => {
   const [activeStep, setActiveStep] = React.useState(1);
   return (
     <>
+    <Header />
       <div className="contenedor-player">
         <div className="player-player">
           <div className="video-player">
@@ -132,6 +135,7 @@ const Player = () => {
           </div>
         </div>
       </div>
+    <Footer />  
     </>
   );
 };

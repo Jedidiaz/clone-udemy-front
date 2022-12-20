@@ -72,6 +72,10 @@ ul li a{
     --bs-btn-active-bg: #4b4b4b;
 }
 
+.buttons-student{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     .responsive-menu{
         display: none;
@@ -81,12 +85,61 @@ ul li a{
         display: flex;
     }
 
+    .buttons-student{
+        display: flex;
+        height: 100%;
+        gap: 30px;
+    }
+
     .navigator ul li, .navigator-menu{
         flex-direction: row;
     }
 
     nav{
         padding: 10px 30px;
+    }
+
+    .buttons-student span:nth-child(1){
+        width: 30px;
+        font-size: 27px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .buttons-student span:nth-child(2), .buttons-student span:nth-child(3){
+        width: 25px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .buttons-student span:nth-child(4){
+        width: 50px;
+    }
+
+    .buttons-student span img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .navigator span{
+        display: flex;
+        margin-right: 40px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navigator span input{
+        border-radius: 50px;
+        padding-left: 40px;
+    }
+
+    .navigator span i{
+        position: absolute;
+        margin-left: 110px;
     }
 }
 

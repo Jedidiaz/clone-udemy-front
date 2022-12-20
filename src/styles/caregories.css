@@ -1,0 +1,300 @@
+.container-categories{
+    width: 100vw;
+    padding: 10px;
+}
+
+.container-categories section{
+    margin-bottom: 50px;
+}
+
+
+.container-categories h1, .container-categories h2{
+    font-weight: 700;
+    color: #000;
+}
+
+.featured-course-categories, .popular-instructors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-featrued-categories, .title-popular-categories{
+    width: 100%;
+    text-align: start;
+    margin-bottom: 50px;
+}
+
+.card-main-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-main-categories .img-main-card{
+    width: 100%;
+}
+
+.content-card-main{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 4px 11.83px rgba(0, 0, 0, 0.15);
+}
+
+.content-card-main p{
+    margin: 0;
+}
+
+.content-card-main div:nth-child(1) p{
+    color: #000;
+}
+
+.profile-card-categories{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-card-categories span:nth-child(1){
+    display: flex;
+    gap: 20px;
+}
+
+.profile-card-categories span:nth-child(1) img {
+    width: 80px;
+}
+
+
+.profile-card-categories .btn{
+    background-color: #000;
+    border-radius: 50px;
+    border: 0;
+}
+
+.stats{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stats p{
+    margin: 0;
+}
+
+.stats span{
+    font-weight: 700;
+}
+
+.stats span:nth-child(3) i{
+    color: #F3B601;
+}
+
+/* popular instructors */
+
+.content-cards-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    justify-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.card-categories{
+    display: flex;
+    flex-direction: row;
+    background-color: #F1F1F1;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    width: 290px;
+}
+
+.card-categories img{
+    width: 70px;
+}
+
+.card-categories div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-categories div:nth-child(1) span, .card-categories div:nth-child(2) span{
+    font-weight: 700;
+}
+
+.card-categories div:nth-child(1) span i{
+    color: #F3B601;
+    font-weight: 700;
+}
+
+.card-categories div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Section 3 */
+
+.development-courses {
+    width: 100%;
+}
+
+.title-development-categories{
+    margin-bottom: 50px;
+}
+
+.filter-categories{
+    display: none;
+}
+
+.filter-responsive-categories{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 50px;
+}
+
+.filter-responsive-categories div{
+    width: 110px;
+}
+
+.filter-responsive-categories div button{
+    width: 100%;
+    background-color: #000;
+    border: none;
+}
+
+.filter-responsive-categories div button:hover{
+    background-color: #F3B601;
+}
+
+.content-cards-courses-categories{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+.content-cards-courses-categories .card-Home{
+    width: 300px;
+    box-shadow: 0px 4px 11.83px rgba(0, 0, 0, 0.15);
+}
+
+.card-Home:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: .2s;
+}
+
+.content-cards-courses-categories .card-Home .image-card-home{
+    width: 100%;
+}
+
+.content-cards-courses-categories .card-Home .info-card-home{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.info-card-home p:nth-child(3) i {
+    color: #F3B601;
+}
+
+@media screen and (min-width: 768px) {
+    .card-main-categories{
+        gap: 0;
+    }
+    
+    .content-card-main{
+        padding: 30px;
+    }
+    
+    .profile-card-categories{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .profile-card-categories .btn{
+        width: 150px;
+    }
+
+    .crad-buttons-home-section-sev{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .filter-responsive-categories{
+        grid-template-columns: repeat(6, minmax(110px, 1fr));
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container-categories{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-categories section{
+        width: 1024px;
+        padding: 20px;
+    }
+    
+    .card-main-categories{
+        flex-direction: row;
+    }
+
+    .card-main-categories .img-main-card{
+        width: 50%;
+    }
+
+    .filter-responsive-categories{
+        display: none;
+    }
+
+    .filter-categories{
+        display: block;
+        width: 30%;
+    }
+
+    .filter-categories form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 0px 4px 11.83px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .filter-categories form div input + label{
+        font-weight: 700;
+    }
+
+    .filter-categories form div input:checked{
+        background-color: #E5C148;
+        border-color: #E5C148;
+    }
+
+    .filter-categories form div:nth-child(1) input + label i{
+        color: #F3B601;
+    }
+
+    .courses-categories{
+        display: flex;
+        gap: 40px;
+    }
+
+    .content-cards-courses-categories{
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}

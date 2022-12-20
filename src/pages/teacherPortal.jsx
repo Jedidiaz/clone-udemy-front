@@ -1,13 +1,24 @@
 import React from "react";
 import "../styles/teacherPortal.css";
 import { Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Footer from "../pages/shared/footerTeach";
 
 import TeacherLogo from "../assets/TeacherLogo.svg";
 import imageTest from "../assets/teacher-video.svg";
 import imageProfile from "../assets/imageProfile.svg";
 import imageProfileChat from "../assets/Profile-chat.svg";
 import send from "../assets/send.svg";
-import { Link } from "react-router-dom";
+
+import record from "../assets/record1.svg";
+import record2 from "../assets/record2.svg";
+import record3 from "../assets/record3.svg";
+
+import instructor1 from "../assets/instructor1.svg";
+import instructor2 from "../assets/instructor2.svg";
+import instructor3 from "../assets/instructor3.svg";
+import instructor4 from "../assets/instructor4.svg";
+import instructor5 from "../assets/instructor5.svg";
 
 const TeacherPortal = () => {
   const state1 = {
@@ -65,7 +76,7 @@ const TeacherPortal = () => {
                   name="group5"
                   type="radio"
                   id="dash"
-                  //   onChange={() => viewDash()}
+                  onChange={() => closeMessages()}
                 />
                 <Form.Check
                   label={<i className="bi bi-chat-left"></i>}
@@ -110,7 +121,7 @@ const TeacherPortal = () => {
             </div>
           </div>
           {/* views */}
-          <div className="messagesPortalTeacher">
+          <div className="messagesPortalTeacher" id="messagesPortalTeacher">
             <div className="options-teacher-messages">
               <Form>
                 <div className="mb-3">
@@ -142,7 +153,7 @@ const TeacherPortal = () => {
             <div className="qya" id="qya">
               <div className="video-repro">
                 <div className="image-img-teacher">
-                <img src={imageTest} />
+                  <img src={imageTest} />
                 </div>
               </div>
               <div className="description-video-teacher">
@@ -198,7 +209,10 @@ const TeacherPortal = () => {
                 <div className="divider"></div>
                 <div className="view-chat" id="view-chat">
                   <div className="header-chat">
-                    <i className="bi bi-arrow-left-short" onClick={() => chatHiden()}></i>
+                    <i
+                      className="bi bi-arrow-left-short"
+                      onClick={() => chatHiden()}
+                    ></i>
                     <div>
                       <img src={imageProfileChat} />
                     </div>
@@ -211,22 +225,22 @@ const TeacherPortal = () => {
                     <div className="message1">
                       {state1.messages.map((message) => (
                         <div className="message-cloud1">
-                            <p key={message.text}>{message.text}</p>
+                          <p key={message.text}>{message.text}</p>
                         </div>
                       ))}
                     </div>
                     <div className="message2">
                       {state2.messages.map((message) => (
                         <div className="message-cloud2">
-                            <p key={message.text}>{message.text}</p>
+                          <p key={message.text}>{message.text}</p>
                         </div>
                       ))}
                     </div>
                   </div>
                   <div className="footer-chat">
                     <input type="text" className="form-control" />
-                      <i className="bi bi-paperclip"></i>
-                      <img src={send} />
+                    <i className="bi bi-paperclip"></i>
+                    <img src={send} />
                   </div>
                 </div>
               </div>
@@ -234,14 +248,90 @@ const TeacherPortal = () => {
             {/*  announcements */}
             <div className="announcements" id="announcements"></div>
           </div>
+          {/* Home */}
+          <div className="home-instructor">
+            <div>
+              <h1>
+                Hola,<span style={{fontWeight: '700'}}> Usuario.</span>¡Qué bueno verte!
+              </h1>
+            </div>
+            <div className="card-main-home-instructor">
+              <h1>Jump Into Course Creation</h1>
+              <p>start now and enjoy the moment</p>
+              <button type="button" className="btn btn-primary">
+                Create your course
+              </button>
+            </div>
+            <section className="resources-instructor">
+              <div>
+                <h5>We think these resources will be helpful.</h5>
+              </div>
+              <div className="recording">
+                <div className="buttons-recording">
+                    <img src={record} />
+                  <p>Go now{" "}</p> 
+                </div>
+                <div className="buttons-recording">
+                    <img src={record2} />
+                  <p>How to Build Your Audience{" "}</p> 
+                </div>
+                <div className="buttons-recording">
+                    <img src={record3} />
+                  <p>How to launch your first course faster!{" "}</p> 
+                </div>
+              </div>
+            </section>
+            <section>
+              <div className="mb-5">
+                <h5>
+                  Have questions? Here are our most popular instructor
+                  resources.
+                </h5>
+              </div>
+              <div className="options-home-instructor">
+                <div className="option-instructor">
+                  <img src={instructor1} />
+                  <span>Test video</span>
+                  <p>Send us a sample video and get expert feedback.</p>
+                </div>
+                <div className="option-instructor">
+                  <img src={instructor2} />
+                  <span>Community</span>
+                  <p>Connect with like-minded individuals to change lives through learning</p>
+                </div>
+                <div className="option-instructor">
+                  <img src={instructor3} />
+                  <span>Teaching center</span>
+                  <p>Learn how to teach online with us.</p>
+                </div>
+              </div>
+              <div className="options-home-instructor2">
+                <div className="option-instructor">
+                  <img src={instructor4} />
+                  <span>Test video</span>
+                  <p>Validate your course topic by exploring our marketplace supply and demand.</p>
+                </div>
+                <div className="option-instructor">
+                  <img src={instructor5} />
+                  <span>Test video</span>
+                  <p>Browse our Help Center or contact our support team.</p>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 
   //menu
   function viewMessages() {
-    document.getElementById("dash-business").style.display = "flex";
+    document.getElementById("messagesPortalTeacher").style.display = "block";
+  }
+
+  function closeMessages() {
+    document.getElementById("messagesPortalTeacher").style.display = "none";
   }
 
   //submenu
@@ -269,7 +359,7 @@ const TeacherPortal = () => {
   }
 
   function chatHiden() {
-      document.getElementById("view-chat").style.left = "100%";
+    document.getElementById("view-chat").style.left = "100%";
   }
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./shared/header";
+import Header from "./shared/headerStudent";
 import Footer from "./shared/footer";
 
 import "../styles/homeStudends.css";

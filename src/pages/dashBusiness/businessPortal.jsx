@@ -5,6 +5,7 @@ import { Doughnut } from "react-chartjs-2";
 import "../../styles/businessProtal.css";
 import Carousel from "react-bootstrap/Carousel";
 import Accordion from "react-bootstrap/Accordion";
+import Footers from '../shared/footerBusiness'
 
 import businessLogo from "../../assets/businessLogo.svg";
 import imageProfile from "../../assets/imageProfile.svg";
@@ -452,6 +453,7 @@ const BusinessPortal = () => {
           </div>
         </div>
       </div>
+      <Footers />
     </>
   );
 

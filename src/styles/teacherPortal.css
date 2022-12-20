@@ -45,9 +45,9 @@
 
 /* messages */
 .messagesPortalTeacher{
+    display: none;
     width: 100%;
     height: 150vh;
-    flex-direction: row;
     align-items: flex-start;
     padding: 10px;
     overflow: hidden;
@@ -282,8 +282,112 @@
     font-weight: 700;
 }
 
+/* home instructor */
+
+.card-main-home-instructor{
+    background-color: #F3B601;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.card-main-home-instructor p { 
+    color: #000;
+}
+
+.card-main-home-instructor p { 
+    color: #000;
+}
+
+.card-main-home-instructor .btn{
+    background-color: #000;
+    border-radius: 50px;
+    border: none;
+}
+
+/*  */
+
+.home-instructor{
+    padding: 10px;
+}
+
+.recording{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.buttons-recording{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius:  20px;
+    align-content: center;
+}
+
+.buttons-recording:hover {
+    color: #fff;
+    background-color: #2F2F2F;
+}
+
+.buttons-recording img{
+    position: sticky;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 200px;
+}
+
+.buttons-recording p{
+    height: calc(100% - 60px);
+    margin: 0;
+    padding: 40px 40px;
+}
+
+/* optiones home */
+.options-home-instructor, .options-home-instructor2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100;
+    gap: 20px;
+}
+
+.option-instructor img{
+    width: 70px;
+}
+
+.option-instructor span{
+    font-weight: 700;
+ }
+
+.option-instructor{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+
 
 @media screen and (min-width: 1024px) {
+
+    .qya, .messages-teacher, .announcements{
+        display: none ;
+    }
+
     .video-repro, .description-video-teacher{
         width: 975.42px;
     }
@@ -300,6 +404,7 @@
         align-items: center;
     }
 
+
     /* chat */
 
     .view-chat{
@@ -315,14 +420,37 @@
         width: 50%;
     }
 
+
     .Chat{
         width: 950px;
     }
 
-    .messages-teacher{
+    .messages-teacher, .announcements {
         width: calc(100vw - 70px);
-        display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    /* Home view */
+
+    .home-instructor{
+        padding: 20px;
+        width: calc(1024px - 40px);
+        margin-bottom: 50px;
+    }
+
+    .card-main-home-instructor{
+        padding: 50px 
+    }
+
+    .recording{
+        flex-direction: row;
+    }
+
+    .options-home-instructor, .options-home-instructor2{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 100px;
     }
 }
