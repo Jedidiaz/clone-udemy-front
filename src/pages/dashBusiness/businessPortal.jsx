@@ -217,6 +217,10 @@ const BusinessPortal = () => {
               <img src={imageProfile} />
             </div>
           </div>
+          {/* homePage */}
+          <div className="homePage-business">
+            <h1 style={{marginLeft: '20px'}}>¡BIENVENIDO!</h1>
+          </div>
           {/* dash Business */}
           <div className="dash-business" id="dash-business">
             <div className="buttons-business-dash">
