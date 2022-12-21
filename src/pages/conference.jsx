@@ -2,6 +2,8 @@ import React from 'react'
 import Dropdown from "react-bootstrap/Dropdown";
 import { Form } from "react-bootstrap";
 import "../styles/caregories.css";
+import Header from './shared/headerStudent'
+import Footer from './shared/footer'
 
 import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
@@ -54,6 +56,7 @@ const Conference = () => {
 
   return (
     <>
+    <Header />
       <div className="container-categories">
         {/* section 1 */}
         <section className="featured-course-categories">
@@ -324,6 +327,7 @@ const Conference = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   )
 }
