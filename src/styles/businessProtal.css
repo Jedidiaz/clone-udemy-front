@@ -67,6 +67,7 @@
     justify-content: end;
     padding: 10px;
     margin-bottom: 40px;
+    padding-right: 20px;
 }
 
 .header-business img {
@@ -88,7 +89,7 @@
 
 .dash-business, .report-business{
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
     padding: 10px;
@@ -266,6 +267,29 @@
     width: 100%;
 }
 
+/* overlay */
+.buttons-select-notifications form div input{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.barra{
+    width: 100%;
+    height: 2px;
+    background-color: #4b4b4b;
+    border-radius: 50px;
+}
+
+.buttons-select-notifications form div input:checked + label span .barra{
+    background-color: #E5C148;
+}
+
+.buttons-select-notifications form div .form-check{
+    margin: 0;
+    padding: 0;
+}
+
 @media screen and (min-width: 475px) {
     .history-business .filter{
         width: 355px;
@@ -302,5 +326,9 @@
 
     .questions-business{
         width: 500px;
+    }
+
+    .dash-business, .report-business{
+        padding: 10px 30px;
     }
 }

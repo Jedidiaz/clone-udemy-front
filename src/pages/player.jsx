@@ -19,6 +19,11 @@ const Player = () => {
     });
   }
 
+  const styleH2 = {
+    fontSize: '20px',
+    textAlign: 'center'
+  }
+
   //steper
   const [activeStep, setActiveStep] = React.useState(1);
   return (
@@ -105,7 +110,7 @@ const Player = () => {
         </div>
         <div className="follow-class-player">
           <div className="reports-player">
-            <h2>Course content</h2>
+            <h2 style={styleH2}>Course content</h2>
             <div>
               <button type="button" className="btn btn-primary">
                 <i className="bi bi-person-fill"></i> instructor

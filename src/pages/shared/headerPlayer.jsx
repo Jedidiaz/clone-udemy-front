@@ -19,6 +19,7 @@ const HeaderPlayer = () => {
 //variables navigates
   const history = useNavigate();
   const redirect = (uno) => {
+    // eslint-disable-next-line default-case
     switch (uno) {
       case 1:
         history("/register");
@@ -33,6 +34,11 @@ const HeaderPlayer = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const styleH2 = {
+    color: '#fff',
+    fontSize: '20px'
+  }
   return (
     <header style={{backgroundColor: '#2F2F2F'}}>
       <nav>
@@ -40,7 +46,7 @@ const HeaderPlayer = () => {
           <img src={logo} alt="img" />
         </div>
         <div className="navigator">
-            <h2 style={{color: '#fff'}}>Machine Learning and Data Science with Python</h2>
+            <h2 style={styleH2}>Machine Learning and Data Science with Python</h2>
         </div>
         <div className="buttons-student">
           <span style={{width: '55px'}}><img src={player} /></span>

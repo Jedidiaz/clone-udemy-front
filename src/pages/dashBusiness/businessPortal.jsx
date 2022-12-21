@@ -5,7 +5,7 @@ import { Doughnut } from "react-chartjs-2";
 import "../../styles/businessProtal.css";
 import Carousel from "react-bootstrap/Carousel";
 import Accordion from "react-bootstrap/Accordion";
-import Footers from '../shared/footerBusiness'
+import Footers from "../shared/footerBusiness";
 
 import businessLogo from "../../assets/businessLogo.svg";
 import imageProfile from "../../assets/imageProfile.svg";
@@ -80,9 +80,87 @@ const BusinessPortal = () => {
   };
 
   const options = {};
+  //variables estilos
+  const styleOverlay = {
+    position: "fixed",
+    display: "none",
+    width: "100%",
+    height: "100%",
+    top: "0",
+    left: "0",
+    right: "0",
+    bottom: "0",
+    backgroundColor: "rgba(0,0,0,0.5)",
+    zIndex: "100",
+  };
 
+  const styleNotifications = {
+    width: "300px",
+    height: "250px",
+    backgroundColor: "#fff",
+    position: "absolute",
+    top: "calc(0% + 70px)",
+    right: "calc(0% + 20px)",
+    borderRadius: "20px",
+    padding: "10px 20px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  };
+
+  const styleBack = {
+    width: "100%",
+    height: "100%",
+  };
+
+  const styleOptions = {
+    width: "100%",
+    display: "flex",
+    gap: "40px",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+  const styleLabel = {
+    display: "flex",
+    flexDirection: "column",
+  };
   return (
     <>
+      <div id="overlay" style={styleOverlay}>
+        <div onClick={() => notificationHide()} style={styleBack}></div>
+        <div className="notifications" style={styleNotifications}>
+          <div className="buttons-select-notifications">
+            <Form>
+              <div className="mb-3" style={styleOptions}>
+                <Form.Check
+                  label={
+                    <span style={styleLabel}>
+                      Student<div className="barra"></div>
+                    </span>
+                  }
+                  name="group11"
+                  type="radio"
+                  id="Student"
+                  checked
+                />
+                <Form.Check
+                  label={
+                    <span>
+                      Instructor<div className="barra"></div>
+                    </span>
+                  }
+                  name="group11"
+                  type="radio"
+                  id="Instructor"
+                />
+              </div>
+            </Form>
+          </div>
+          <div className="content-notifications">
+            <p>not notifications</p>
+          </div>
+        </div>
+      </div>
       <div className="contenedor-business">
         <div className="bar-business">
           <div className="logo-business">
@@ -133,7 +211,7 @@ const BusinessPortal = () => {
         <div className="views-business">
           <div className="header-business">
             <div>
-              <span>
+              <span onClick={()=> viewNotifications()} style={{cursor: 'pointer'}}>
                 <i className="bi bi-bell"></i>
               </span>
               <img src={imageProfile} />
@@ -458,45 +536,51 @@ const BusinessPortal = () => {
   );
 
   function viewDash() {
-    document.getElementById('dash-business').style.display = 'flex'
-    document.getElementById('report-business').style.display = 'none'
-    document.getElementById('history-business').style.display = 'none'
-    document.getElementById('shop-business').style.display = 'none'
-    document.getElementById('faq-business').style.display = 'none'
+    document.getElementById("dash-business").style.display = "flex";
+    document.getElementById("report-business").style.display = "none";
+    document.getElementById("history-business").style.display = "none";
+    document.getElementById("shop-business").style.display = "none";
+    document.getElementById("faq-business").style.display = "none";
   }
 
   function viewReport() {
-    document.getElementById('dash-business').style.display = 'none'
-    document.getElementById('report-business').style.display = 'flex'
-    document.getElementById('history-business').style.display = 'none'
-    document.getElementById('shop-business').style.display = 'none'
-    document.getElementById('faq-business').style.display = 'none'
+    document.getElementById("dash-business").style.display = "none";
+    document.getElementById("report-business").style.display = "flex";
+    document.getElementById("history-business").style.display = "none";
+    document.getElementById("shop-business").style.display = "none";
+    document.getElementById("faq-business").style.display = "none";
   }
 
   function viewHistory() {
-    document.getElementById('dash-business').style.display = 'none'
-    document.getElementById('report-business').style.display = 'none'
-    document.getElementById('history-business').style.display = 'flex'
-    document.getElementById('shop-business').style.display = 'none'
-    document.getElementById('faq-business').style.display = 'none'
+    document.getElementById("dash-business").style.display = "none";
+    document.getElementById("report-business").style.display = "none";
+    document.getElementById("history-business").style.display = "flex";
+    document.getElementById("shop-business").style.display = "none";
+    document.getElementById("faq-business").style.display = "none";
   }
 
   function viewShop() {
-    document.getElementById('dash-business').style.display = 'none'
-    document.getElementById('report-business').style.display = 'none'
-    document.getElementById('history-business').style.display = 'none'
-    document.getElementById('shop-business').style.display = 'flex'
-    document.getElementById('faq-business').style.display = 'none'
+    document.getElementById("dash-business").style.display = "none";
+    document.getElementById("report-business").style.display = "none";
+    document.getElementById("history-business").style.display = "none";
+    document.getElementById("shop-business").style.display = "flex";
+    document.getElementById("faq-business").style.display = "none";
   }
 
   function viewFaq() {
-    document.getElementById('dash-business').style.display = 'none'
-    document.getElementById('report-business').style.display = 'none'
-    document.getElementById('history-business').style.display = 'none'
-    document.getElementById('shop-business').style.display = 'none'
-    document.getElementById('faq-business').style.display = 'flex'
+    document.getElementById("dash-business").style.display = "none";
+    document.getElementById("report-business").style.display = "none";
+    document.getElementById("history-business").style.display = "none";
+    document.getElementById("shop-business").style.display = "none";
+    document.getElementById("faq-business").style.display = "flex";
   }
 
+  function viewNotifications() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  function notificationHide() {
+    document.getElementById("overlay").style.display = "none";
+  }
 };
 
 export default BusinessPortal;

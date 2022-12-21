@@ -161,12 +161,12 @@ const PerfilStudent = () => {
                   <div className="paypal">
                     <div>
                       <Form.Check
-                        label="Paypal"
+                        label={<img src={paypal} />}
                         name="group2"
                         type="radio"
                         id="paypal"
                       />
-                      <img src={paypal} />
+                      
                     </div>
                     <p>
                       Acoount: <span>prueba@gmail.com</span>
@@ -174,12 +174,11 @@ const PerfilStudent = () => {
                   </div>
                   <div className="stripe">
                     <Form.Check
-                      label="Credit or debit card"
+                      label={<img src={stripe} />}
                       name="group2"
                       type="radio"
                       id="stripe"
                     />
-                    <img src={stripe} />
                     <p>
                       Acoount: <span>prueba@gmail.com</span>
                     </p>
