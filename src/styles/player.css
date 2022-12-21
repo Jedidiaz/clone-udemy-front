@@ -80,6 +80,10 @@
         border: 1px solid #E5C148;
         border-radius: 50%;
     }
+
+    .player-player .description{
+        overflow: hidden;
+    }
 }
 
 @media screen and (min-width: 1440px) {
