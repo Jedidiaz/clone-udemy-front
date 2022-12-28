@@ -314,6 +314,8 @@
 /*  */
 
 .home-instructor{
+    width: 100%;
+    display: none;
     padding: 10px;
 }
 
@@ -379,6 +381,7 @@
     text-align: center;
     cursor: pointer;
 }
+
 
 
 
@@ -452,5 +455,12 @@
         width: 100%;
         justify-content: center;
         gap: 100px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .home-instructor{
+        width: auto;
+        padding: 20px 19%;
     }
 }

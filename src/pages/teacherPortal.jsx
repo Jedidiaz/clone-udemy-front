@@ -76,7 +76,8 @@ const TeacherPortal = () => {
                   name="group5"
                   type="radio"
                   id="dash"
-                  onChange={() => closeMessages()}
+                  onChange={() => viewHome()}
+
                 />
                 <Form.Check
                   label={<i className="bi bi-chat-left"></i>}
@@ -121,6 +122,7 @@ const TeacherPortal = () => {
             </div>
           </div>
           {/* views */}
+          {/* messages */}
           <div className="messagesPortalTeacher" id="messagesPortalTeacher">
             <div className="options-teacher-messages">
               <Form>
@@ -249,7 +251,7 @@ const TeacherPortal = () => {
             <div className="announcements" id="announcements"></div>
           </div>
           {/* Home */}
-          <div className="home-instructor">
+          <div className="home-instructor" id="home-instructor">
             <div>
               <h1>
                 Hola,<span style={{fontWeight: '700'}}> Usuario.</span>¡Qué bueno verte!
@@ -328,11 +330,15 @@ const TeacherPortal = () => {
   //menu
   function viewMessages() {
     document.getElementById("messagesPortalTeacher").style.display = "block";
+    document.getElementById("home-instructor").style.display = "none";
   }
 
-  function closeMessages() {
+  function viewHome() {
+    document.getElementById("home-instructor").style.display = "block";
     document.getElementById("messagesPortalTeacher").style.display = "none";
   }
+
+  
 
   //submenu
   function viewMessage() {
