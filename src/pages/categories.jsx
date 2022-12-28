@@ -2,8 +2,8 @@ import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Form } from "react-bootstrap";
 import "../styles/caregories.css";
-import Header from './shared/headerStudent'
-import Footer from './shared/footer'
+import Header from "./shared/headerStudent";
+import Footer from "./shared/footer";
 
 import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
@@ -40,6 +40,22 @@ const Categories = () => {
     });
   }
 
+  let cardsCart = [];
+  for (let i = 0; i < 3; i++) {
+    cardsCart.push({
+      image: Imagetest1,
+      title: "Machine Learning and Data Science with Python",
+      imageP: HomestProfile,
+      name: "Ana Maria Diaz",
+      role: "Engineer",
+      clases: 12,
+      folowers: 865562,
+      price: "60.99",
+    });
+  }
+
+  const titles = ['Design', 'Cake shop', 'Programming', 'Marketing', 'Finance', 'Languages', 'Architecture', 'Oratory', 'Attendance']
+
   const ratings = ["+4.0", "4.0", "+3.0", "3.0"];
   const category = [
     "Web development",
@@ -53,16 +69,98 @@ const Categories = () => {
   const lenguaje = ["English", "Spanish", "Portugues", "Italiano", "Polski"];
   const price = ["Paid", "Free"];
 
+  const backOverlayStyle = {
+    width: '100%',
+    height: '100%',
+  }
+
   return (
     <>
-    <Header />
+      <div className="overlay-store" id="overlay">
+        <div className="add-to-cart">
+          <h2>Añadido a la cesta</h2>
+          <img src={Imagetest1} />
+          <div className="description-add-cart">
+            <div>
+              <h3>Branding from zero to expert, grow your brand</h3>
+              <div>
+                <p>
+                  Learn in the most creative and modern way with the best
+                  shortcuts and methods
+                </p>
+                <div className="button-añadir">
+                  <button type="button" className="btn btn-primary">
+                    AÑADIR
+                  </button>
+                </div>
+              </div>
+              <div className="profile-teacher-add-cart">
+                <img src={imageProfile} />
+                <div>
+                  <h5>De Anabella Ortiz</h5>
+                  <p>Graphic Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-cards-cart">
+            {cardsCart?.map((el) => (
+              <article className="card-Home">
+                <img src={el.image} className="image-card-home" />
+                <h4 key="{el.title}">{el.title}</h4>
+                <div className="profile-hoe-card">
+                  <img src={el.imageP} alt="" />
+                  <div>
+                    <h5 key="{el.name}">{el.name}</h5>
+                    <p key="{el.role}">{el.role}</p>
+                  </div>
+                </div>
+                <div className="info-card-home">
+                  <p key="{el.clases}">
+                    <i className="bi bi-folder2-open"></i> {el.clases}
+                    Class
+                  </p>
+                  <p key="{el.folowers}">
+                    <i className="bi bi-person"></i> {el.folowers}
+                  </p>
+                  <p>
+                    <i className="bi bi-star-fill"></i> 5.0
+                  </p>
+                </div>
+                <div className="footer-card-home">
+                  <button type="button" className="btn btn-ptimary">
+                  <i className="bi bi-plus-lg"></i>
+                  </button>
+                  <span key="{el.price}">${el.price}USD</span>
+                </div>
+              </article>
+            ))}
+          </div>
+          <br/>
+          <br/>
+          <div className="interesting-tag">
+              <h2>Tambien te podria interesar</h2>
+              <br />
+              <div className="content-tags-cart">
+              {titles.map(item => (
+                <div className="tag-cart">
+                  <input type="checkbox" id={item}/>
+                  <label htmlFor={item} key={item}>{item}</label>
+                </div>
+              ))}
+              </div>
+          </div>
+        </div>
+        <div style={backOverlayStyle} onClick={()=> back()}></div>
+      </div>
+      <Header />
       <div className="container-categories">
         {/* section 1 */}
         <section className="featured-course-categories">
           <div className="title-featrued-categories">
             <h1>Featured course</h1>
           </div>
-          <div className="card-main-categories" >
+          <div className="card-main-categories">
             <img src={cardMain} className="img-main-card" />
             <div className="content-card-main">
               <div>
@@ -213,7 +311,16 @@ const Categories = () => {
                 <div className="Ratings">
                   <h3>Ratings</h3>
                   {ratings.map((el) => (
-                    <Form.Check label={<span><i className="bi bi-star-fill"></i> {el}</span>  } name="group8" type="radio" id={el} />
+                    <Form.Check
+                      label={
+                        <span>
+                          <i className="bi bi-star-fill"></i> {el}
+                        </span>
+                      }
+                      name="group8"
+                      type="radio"
+                      id={el}
+                    />
                   ))}
                 </div>
                 <div className="Category">
@@ -271,22 +378,22 @@ const Categories = () => {
             {/* cards categories courses */}
             <div className="content-cards-courses-categories">
               {cardsCourses?.map((el) => (
-                <article className="card-Home">
+                <article className="card-Home" onClick={() => addCart()}>
                   <img src={el.image} className="image-card-home" />
-                  <h4 key="{el.title}">{el.title}</h4>
+                  <h4 key={el.title}>{el.title}</h4>
                   <div className="profile-hoe-card">
                     <img src={el.imageP} alt="" />
                     <div>
-                      <h5 key="{el.name}">{el.name}</h5>
-                      <p key="{el.role}">{el.role}</p>
+                      <h5 key={el.name}>{el.name}</h5>
+                      <p key={el.role}>{el.role}</p>
                     </div>
                   </div>
                   <div className="info-card-home">
-                    <p key="{el.clases}">
+                    <p key={el.clases}>
                       <i className="bi bi-folder2-open"></i> {el.clases}
                       Class
                     </p>
-                    <p key="{el.folowers}">
+                    <p key={el.folowers}>
                       <i className="bi bi-person"></i> {el.folowers}
                     </p>
                     <p>
@@ -297,7 +404,7 @@ const Categories = () => {
                     <button type="button" className="btn btn-ptimary">
                       Buy Now
                     </button>
-                    <span key="{el.price}">${el.price}USD</span>
+                    <span key={el.price}>${el.price}USD</span>
                   </div>
                 </article>
               ))}
@@ -329,6 +436,14 @@ const Categories = () => {
       <Footer />
     </>
   );
+
+  function addCart(){
+    document.getElementById('overlay').style.display = 'flex'
+  }
+
+  function back(){
+    document.getElementById('overlay').style.display = 'none'
+  }
 };
 
 export default Categories;

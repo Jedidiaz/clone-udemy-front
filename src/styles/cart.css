@@ -1,0 +1,138 @@
+.info-cart{
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background-color: #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.info-cart .btn{
+    font-size: 24px;
+    background-color: transparent;
+    border: 0;
+}
+
+.buttons-credit-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.buttons-credit-cards img{
+    width: 60px;
+}
+
+.tramitar-cart{
+    margin-bottom: 100px;
+}
+
+.tramitar-cart .btn{
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: #FFC004;
+}
+
+/* content cards cart */
+.content-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.cart-card{
+    width: 100%;
+    box-shadow: 0px 0px 66px rgba(0, 0, 0, 0.11);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cart-card h2 {
+    font-weight: 700;
+}
+
+.prifile-teacher-cart{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#star{
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .info-cart{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info-cart h2, .info-cart h3{
+        margin: 0;
+    }
+
+    .content-cart{
+        padding: 20px 10%;
+    }
+
+    .cart-card{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .image1{
+        width: 50% !important;
+    }
+
+    .description-card-cart{
+        width: 50%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .description-card-cart h2{
+        font-size: 25px !important;
+    }
+
+    .description-card-cart h3{
+        font-weight: 400;
+        margin: 0;
+    }
+
+    #star{
+        font-size: 20px;
+    }
+
+    .prifile-teacher-cart img{
+        width: 70px !important;
+    }
+    .image1-card-cart{
+        width: 50%;
+    }
+    .buttons-credit-cards{
+        justify-content: start;
+        margin-left: 10px;
+    }
+    
+    .title-description-cart{
+        gap: 40px !important;
+    }
+}
+

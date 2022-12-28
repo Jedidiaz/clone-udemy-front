@@ -1,0 +1,68 @@
+
+.payMcontainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    max-width: 600px;
+}
+
+.card-payM{
+    width: 100%;
+    padding: 20px;
+    background-color: #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.header-card-payM{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-payM input{
+    border-radius: 50px;
+    border: 0;
+}
+
+.button-credit-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-credit-card .btn{
+    background-color: #FFC004;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.paypal-payM {
+    background-color: #2C2C2C;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.paypal-payM label{
+    margin-left: 10px;
+}
+
+.coments-card-payM h2{
+    font-weight: 700;
+}
+
+.coments-card-payM p{
+    color: #494949;
+}

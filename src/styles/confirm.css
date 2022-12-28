@@ -1,0 +1,131 @@
+.confirm-pay {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card-confirm-course{
+    background-color: #2C2C2C;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.first-part-card{
+    width: 100%;
+}
+
+.first-part-card p{
+    color: #fff;
+}
+
+.first-part-card img{
+    width: 100%;
+}
+
+.stats-confirm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-teacher-comfirm{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-confirm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.price-confirm .btn{
+    background-color: #FFC004;
+    border: 0;
+    border-radius: 50px;
+    font-size: 1.25rem;
+}
+
+/* description */
+.description-confirm .btn{
+    margin: 10px 0; 
+    font-size: 20px;
+    background-color: #FFC004;
+    border: 0;
+    border-radius: 50px;
+}
+
+.description-confirm h5{
+    font-size: 16px;
+}
+
+.description-confirm div input{
+    padding: 12px;
+    border-color: #000;
+    border-radius: 50px;
+    width: 351px;
+}
+
+/* button outside */
+
+#continue{
+    background-color: transparent;
+    border: 0;
+    color: #2C2C2C;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+#continue i{
+  color: #000;
+  font-size: 35px;
+}
+
+/* section 2 */
+
+.also-be-interested{
+    margin-bottom: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+    .also-be-interested .card-contenedor-homeStudends{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .confirm-pay{
+        flex-direction: row;
+        padding: 30px 100px;
+        gap: 20px;
+    }
+
+    .card-confirm-course{
+        flex-direction: row;
+        width: 60%;
+        gap: 20px;
+    }  
+    
+    .first-part-card, .description-card-confirm{
+        width: 50%;
+    }
+
+    .description-confirm{
+        width: 30%;
+    }
+
+    #price{
+        font-size: 50px !important;
+    }
+}
+

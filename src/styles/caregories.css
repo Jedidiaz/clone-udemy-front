@@ -207,6 +207,163 @@
 .info-card-home p:nth-child(3) i {
     color: #F3B601;
 }
+/* overlay */
+.overlay-store{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0px;
+    position: fixed;
+    padding: 10px;
+    z-index: 100;
+}
+
+.add-to-cart{
+    width: calc(100% - 20px);
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 700px;
+    max-height: 800px;
+    overflow: scroll;
+}
+
+.add-to-cart h2{
+    text-align: center;
+}
+
+
+.add-to-cart img:nth-child(2){
+    width: 100%;
+}
+
+.description-add-cart{
+    padding: 10px;
+}
+
+
+.profile-teacher-add-cart{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.profile-teacher-add-cart img{
+    width: 60px;
+}
+
+.profile-teacher-add-cart h5, .profile-teacher-add-cart p{
+    margin-bottom: 5px;
+}   
+
+.button-añadir {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.button-añadir .btn{
+    background-color: #F3B601;
+    border: 0;
+}
+
+.profile-teacher-add-cart div{
+    flex-direction: column;
+    text-align: start;
+}
+
+/* cards */
+.content-cards-cart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.content-cards-cart .card-Home{
+    width: 200px;
+    box-shadow: 0px 4px 11.83px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+
+.content-cards-cart .card-Home img:nth-child(1){
+    width: 100%;
+}
+
+.content-cards-cart .card-Home h4, .content-cards-cart .card-Home h5{
+    font-size: 14px;
+}
+
+.content-cards-cart .card-Home p{
+    font-size: 10px;
+}
+
+.content-cards-cart .card-Home .profile-hoe-card img{
+    width: 50px;
+}
+
+.content-cards-cart .card-Home .profile-hoe-card{
+    padding: 0;
+    gap: 10px;
+}
+
+.content-cards-cart .card-Home .footer-card-home span{
+    font-size: 14px;
+}
+
+.content-cards-cart .card-Home .footer-card-home .btn{
+    border-radius: 50%;
+    background-color: #F3B601;
+    margin-bottom: -40px;
+}
+
+.content-cards-cart .card-Home .footer-card-home{
+    padding: 0;
+    height: 21px;
+}
+
+.interesting-tag, .content-cards-cart{
+    display: none;
+}
+
+.interesting-tag h2{
+    text-align: start;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.content-tags-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    justify-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tag-cart input{
+    display: none;
+}
+
+.tag-cart input + label{
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+}
+.tag-cart input:checked + label{
+    color: #fff;
+    background-color: #000;
+}
 
 @media screen and (min-width: 768px) {
     .card-main-categories{
@@ -234,6 +391,19 @@
 
     .filter-responsive-categories{
         grid-template-columns: repeat(6, minmax(110px, 1fr));
+    }
+
+    .description-add-cart div:nth-child(1) div:nth-child(2){
+        display: flex;
+        align-items: center;
+    }
+
+    .interesting-tag{
+        display: block;
+    }
+
+    .content-cards-cart{
+        display: grid;
     }
 }
 
@@ -277,7 +447,7 @@
     }
 
     .filter-categories form div input + label{
-        font-weight: 700;
+        font-weight: 400;
     }
 
     .filter-categories form div input:checked{
