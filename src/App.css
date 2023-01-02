@@ -13,3 +13,7 @@ ul, li, a{
 a{
   cursor: pointer;
 }
+
+body{
+  overflow-x: hidden;
+}

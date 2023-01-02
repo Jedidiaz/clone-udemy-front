@@ -13,6 +13,7 @@ import visa from "../assets/visa.svg";
 import masterCard from "../assets/mastercard.svg";
 import americaE from "../assets/americanExpress.svg";
 import paypal from "../assets/paypallow.svg";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   let card = [];
@@ -121,7 +122,10 @@ const Cart = () => {
         <div className="tramitar-cart">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit</p>
             <br />
-            <button type="button" className="btn btn-secondary"><i className="bi bi-cart3"></i> Tramitar pedido</button>
+            <a href={"/payment-method"}>
+              <button type="button" className="btn btn-secondary" ><i className="bi bi-cart3"></i> Tramitar pedido</button>
+            </a>
+            
         </div>
       </div>
       <Footer />

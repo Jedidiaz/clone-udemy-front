@@ -17,8 +17,6 @@ import {
   Cart,
   PayM,
 } from "./pages";
-import Header from "./pages/shared/header";
-import Footer from "./pages/shared/footer";
 
 function App() {
   return (

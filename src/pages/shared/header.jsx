@@ -29,15 +29,17 @@ const Header = () => {
     <header>
       <nav>
         <div className="logo-img">
-          <img src={logo} alt="img" />
+          <Link to={"/"}>
+            <img src={logo} alt="img"/>
+          </Link>
         </div>
         <div className="navigator">
           <ul>
             <li>
-              <Link to={""}> Conference </Link>
-              <Link to={""}> Courses </Link>
-              <Link to={""}> Business </Link>
-              <Link to={""}> Teach </Link>
+              <Link to={"/conference"}> Conference </Link>
+              <Link to={"categories"}> Courses </Link>
+              <Link to={"/business"}> Business </Link>
+              <Link to={"/teacher"}> Teach </Link>
             </li>
           </ul>
         </div>
