@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6dd0a88d.css",
-    "main.js": "/static/js/main.c648c78e.js",
+    "main.css": "/static/css/main.46779cb5.css",
+    "main.js": "/static/js/main.3c622a72.js",
     "static/media/Homes1.png": "/static/media/Homes1.e010b93e31b90a3c2288.png",
     "static/media/login1.png": "/static/media/login1.a12c26e7ba0e2f13e9e9.png",
     "static/media/loginB.png": "/static/media/loginB.0656aec27e301e6da12e.png",
@@ -30,8 +30,12 @@
     "static/media/comillasHome.svg": "/static/media/comillasHome.0fc6fcdfc2151da58c4b566206974816.svg",
     "static/media/playerHeader.svg": "/static/media/playerHeader.4492b36be37e13df787878ebbb1af208.svg",
     "static/media/logoWhite.svg": "/static/media/logoWhite.11c2b6f6718ae6c274c1dd458f5c1b85.svg",
+    "static/media/americanExpress.svg": "/static/media/americanExpress.4369cd5662666f6c81cb1029b8a7395e.svg",
+    "static/media/visa.svg": "/static/media/visa.63b29171d7b88ce9b5f6259da32c3b94.svg",
+    "static/media/mastercard.svg": "/static/media/mastercard.56caa0da6c9d915b2868cc56b0574673.svg",
     "static/media/record2.svg": "/static/media/record2.3721eb8c8a6237a2dd9aa34a6887e93f.svg",
     "static/media/instructor5.svg": "/static/media/instructor5.fd54ae5fb39df0afe4797dce28fb33b4.svg",
+    "static/media/paypallow.svg": "/static/media/paypallow.a7ceb185cf4de0614849a626748301f7.svg",
     "static/media/instructor4.svg": "/static/media/instructor4.5a5b9fd4c561eb14c65a5ba9e4186b0d.svg",
     "static/media/instructor2.svg": "/static/media/instructor2.f0d17c62e9f25b6f88765ecbbfa8eb1d.svg",
     "static/media/heart.svg": "/static/media/heart.b2e47be4ae651895754d5c1bcbfabc25.svg",
@@ -48,11 +52,11 @@
     "static/media/headerStudent.svg": "/static/media/headerStudent.3dbf97ded2d4e6421dc34ca7352304d7.svg",
     "static/media/businessLogo.svg": "/static/media/businessLogo.5164adcca01b7849924931b65301dcc6.svg",
     "static/media/TeacherLogo.svg": "/static/media/TeacherLogo.b2f41a6cd5540b353facac0a2fbe4ee5.svg",
-    "main.6dd0a88d.css.map": "/static/css/main.6dd0a88d.css.map",
-    "main.c648c78e.js.map": "/static/js/main.c648c78e.js.map"
+    "main.46779cb5.css.map": "/static/css/main.46779cb5.css.map",
+    "main.3c622a72.js.map": "/static/js/main.3c622a72.js.map"
   },
   "entrypoints": [
-    "static/css/main.6dd0a88d.css",
-    "static/js/main.c648c78e.js"
+    "static/css/main.46779cb5.css",
+    "static/js/main.3c622a72.js"
   ]
 }
