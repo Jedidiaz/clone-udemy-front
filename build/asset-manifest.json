@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.46779cb5.css",
-    "main.js": "/static/js/main.3c622a72.js",
+    "main.css": "/static/css/main.7e42c0e0.css",
+    "main.js": "/static/js/main.0af86fe4.js",
     "static/media/Homes1.png": "/static/media/Homes1.e010b93e31b90a3c2288.png",
     "static/media/login1.png": "/static/media/login1.a12c26e7ba0e2f13e9e9.png",
     "static/media/loginB.png": "/static/media/loginB.0656aec27e301e6da12e.png",
@@ -14,7 +14,9 @@
     "static/media/Group 1HomeS2.png": "/static/media/Group 1HomeS2.a2fe39bfed69ce008fa3.png",
     "static/media/conference.svg": "/static/media/conference.df4529a2c8f145accf0e4cc457b93b80.svg",
     "static/media/CarouselImagegomeS.svg": "/static/media/CarouselImagegomeS.4cace3d46d76ab096cf89eb7518a1453.svg",
+    "static/media/helpCenter.svg": "/static/media/helpCenter.2ff14094221a555b3a89fbba8dfb9875.svg",
     "static/media/Imagetest1.svg": "/static/media/Imagetest1.0f1c0fe4271fe241b535dd73448ffe24.svg",
+    "static/media/profileTeacher.svg": "/static/media/profileTeacher.24a2edd51e0f7318a631a8c39cec75f7.svg",
     "static/media/Profile-chat.svg": "/static/media/Profile-chat.c0b5c57a126de6be326953b29b4802d7.svg",
     "static/media/login.png": "/static/media/login.2377462b1e13380dfdd1.png",
     "static/media/videoHomeStudend.svg": "/static/media/videoHomeStudend.192564dd7aa4ea2087999ab355096bb1.svg",
@@ -52,11 +54,11 @@
     "static/media/headerStudent.svg": "/static/media/headerStudent.3dbf97ded2d4e6421dc34ca7352304d7.svg",
     "static/media/businessLogo.svg": "/static/media/businessLogo.5164adcca01b7849924931b65301dcc6.svg",
     "static/media/TeacherLogo.svg": "/static/media/TeacherLogo.b2f41a6cd5540b353facac0a2fbe4ee5.svg",
-    "main.46779cb5.css.map": "/static/css/main.46779cb5.css.map",
-    "main.3c622a72.js.map": "/static/js/main.3c622a72.js.map"
+    "main.7e42c0e0.css.map": "/static/css/main.7e42c0e0.css.map",
+    "main.0af86fe4.js.map": "/static/js/main.0af86fe4.js.map"
   },
   "entrypoints": [
-    "static/css/main.46779cb5.css",
-    "static/js/main.3c622a72.js"
+    "static/css/main.7e42c0e0.css",
+    "static/js/main.0af86fe4.js"
   ]
 }
