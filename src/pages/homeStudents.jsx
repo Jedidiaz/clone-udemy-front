@@ -46,7 +46,7 @@ const HomeStudents = () => {
 
   return (
     <>
-    <Header />
+      <Header />
       <div className="contenedor-homeStudends">
         <section className="continue-watching">
           <h1>
@@ -108,7 +108,7 @@ const HomeStudents = () => {
                   <button type="button" className="btn btn-ptimary">
                     Buy Now
                   </button>
-                  <span key="{el.price}">${el.price}USD</span>
+                  <span key={el.price}>${el.price}USD</span>
                 </div>
               </article>
             ))}
@@ -118,13 +118,28 @@ const HomeStudents = () => {
           <h1>
             Conferences <span> recommended</span> for <span>you</span>
           </h1>
-          <Carousel variant="dark">
+          {/* <Carousel variant="dark">
             {carousel.map((el) => (
               <Carousel.Item>
                 <img className="d-block w-100" src={el} alt="First slide" />
               </Carousel.Item>
             ))}
-          </Carousel>
+          </Carousel> */}
+          <div className="scroll-images-homeStudents">
+              <button className="btn btn-secondary left" type="button" onClick={()=> leftScroll()}>
+                <i className="bi bi-chevron-left"></i>
+              </button>
+            <div className="content-images-homeStudent">
+              {carousel.map((el) => (
+                <div className="image-carousel-homeStudet">
+                  <img key={el} src={el} style={{ width: "290px" }} />
+                </div>
+              ))}
+            </div>
+              <button className="btn btn-secondary right" type="button" onClick={()=> rightScroll()}>
+                <i className="bi bi-chevron-right"></i>
+              </button>
+          </div>
         </section>
         <section className="need-help-homeStudends">
           <div className="help-homeStudends">
@@ -142,9 +157,19 @@ const HomeStudents = () => {
           </div>
         </section>
       </div>
-    <Footer />  
+      <Footer />
     </>
   );
+
+  function leftScroll(){
+    const left = document.querySelector(".content-images-homeStudent");
+    left.scrollBy(-200, 0);
+  }
+
+  function rightScroll(){
+    const right = document.querySelector(".content-images-homeStudent");
+    right.scrollBy(200, 0);
+  }
 };
 
 export default HomeStudents;
