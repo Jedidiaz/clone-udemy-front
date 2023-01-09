@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
+    overflow-x: hidden;
 }
 
 .bar-business{
@@ -67,7 +68,6 @@
     justify-content: end;
     padding: 10px;
     margin-bottom: 40px;
-    padding-right: 20px;
 }
 
 .header-business img {
@@ -117,7 +117,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center ;
-    width: 100%;
+    width: 328.7px;
     gap: 30px;
     padding: 10px;
 }
@@ -144,6 +144,10 @@
     width: 100%;
     flex-direction: row;
     gap: 10px;
+}
+
+.history-business .history-info{
+    width: 100%;
 }
 
 .history-business .last{
@@ -225,6 +229,7 @@
     border-radius: 20px;
     padding: 20px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .faq-business .card-faq h2{
@@ -290,9 +295,20 @@
     padding: 0;
 }
 
+/* table info */
+
+.table-info-business{
+    width: 100%;   
+    max-width: 1200px; 
+}
+
 @media screen and (min-width: 475px) {
     .history-business .filter{
         width: 355px;
+    }
+
+    .history-business{
+        width: auto;
     }
 }
 
@@ -330,5 +346,20 @@
 
     .dash-business, .report-business{
         padding: 10px 30px;
+    }
+
+    .history-business .history-info{
+        width: 455px;
+    }
+
+    .history-business .filter{
+        width: 400px;
+    }
+
+    .header-shop{
+        width: 100%;
+        justify-content: start;
+        flex-direction: row-reverse !important;
+        width: 980px;
     }
 }

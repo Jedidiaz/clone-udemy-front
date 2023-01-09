@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./shared/headerStudent";
 import Footer from "./shared/footer";
 
@@ -18,6 +18,11 @@ import stripe from "../assets/stripe.svg";
 import { Link } from "react-router-dom";
 
 const PerfilStudent = () => {
+
+  useEffect(() => {
+    checkedpaymethod();
+  });
+
   let videos = [];
   for (let i = 0; i < 8; i++) {
     videos.push({
@@ -43,7 +48,7 @@ const PerfilStudent = () => {
         <div className="description-perfilStudent">
           <div className="image-portada-perfilStudent">
           <button type="button" className="btn btn-primary">
-              Colse account
+              Close account
             </button>
             <img src={imageport} />
           </div>
@@ -298,7 +303,7 @@ const PerfilStudent = () => {
     </>
   );
 
-  function checkedpaymethod(el){
+  function checkedpaymethod(){
     document.getElementById('payment-methods').style.display = 'flex'
     document.getElementById('u-credits').style.display = 'none'
     document.getElementById('purchase-history').style.display = 'none'

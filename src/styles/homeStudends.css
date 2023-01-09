@@ -36,8 +36,6 @@
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
-    height: 230px;
-    overflow: scroll;
 }
 
 .card-video-homeStudends {
@@ -93,7 +91,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .card-contenedor-homeStudends .card-Home{
@@ -190,6 +188,8 @@
 
     .video-prev-homeStudends, .list-video-homeStudends {
         width: 50%;
+        overflow-y: scroll;
+        height: 230px;
     }
 
     .Recomended-for-you-homeStudends{

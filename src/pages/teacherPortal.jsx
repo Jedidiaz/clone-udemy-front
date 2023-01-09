@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/teacherPortal.css";
 import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -21,6 +21,10 @@ import instructor4 from "../assets/instructor4.svg";
 import instructor5 from "../assets/instructor5.svg";
 
 const TeacherPortal = () => {
+  
+  useEffect(() => {
+    viewHome();
+  });
   const state1 = {
     messages: [
       {

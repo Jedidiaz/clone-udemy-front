@@ -16,6 +16,8 @@ import {
   Confirm,
   Cart,
   PayM,
+  ProfileTeacher,
+  HelpCenter
 } from "./pages";
 
 function App() {
@@ -27,7 +29,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/loginB" element={<LoginBusiness />} />
         <Route path="/homeStudents" element={<HomeStudents />} />
-        <Route path="/perfil" element={<PerfilStudent />} />
+        <Route path="/profile" element={<PerfilStudent />} />
         <Route path="/player" element={<Player />} />
         <Route path="/business" element={<Business />} />
         <Route path="/teacher" element={<TeacherPortal />} />
@@ -36,6 +38,8 @@ function App() {
         <Route path="/confirm" element={<Confirm />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/payment-method" element={<PayM />} />
+        <Route path="/profile-teacher" element={<ProfileTeacher />} />
+        <Route path="/help" element={<HelpCenter />} />
       </Routes>
     </>
   );

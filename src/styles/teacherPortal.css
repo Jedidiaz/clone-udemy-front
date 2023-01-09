@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .bar-teacher{
@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: start;
     width: 50px;
+    min-width: 50px;
     height: auto;
     padding: 10px;
     z-index: 100;
@@ -30,7 +31,7 @@
 
 /* header teacher */
 .views-teacher{
-    width: 100%;
+    width: calc(100%-70px);
 }
 
 .views-teacher .header-business div span:nth-child(1){
@@ -46,8 +47,8 @@
 /* messages */
 .messagesPortalTeacher{
     display: none;
-    width: 100%;
-    height: 150vh;
+    width: calc(100vw - 50px);
+    height: calc(100vh - 110px);
     align-items: flex-start;
     padding: 10px;
     overflow: hidden;
@@ -239,6 +240,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .video-repro, .video-repro .image-img-teacher  img {
@@ -402,7 +404,7 @@
     }
 
     .qya{
-        width: calc(100vw - 50px);
+        width: calc(100vw - 70px);
         justify-content: center;
         align-items: center;
     }
@@ -456,11 +458,12 @@
         justify-content: center;
         gap: 100px;
     }
+
 }
 
 @media screen and (min-width: 1025px) {
     .home-instructor{
-        width: auto;
+        width: calc(100vw - 50px);
         padding: 20px 19%;
     }
 }

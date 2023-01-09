@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { Form, Table } from "react-bootstrap";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
@@ -20,6 +20,11 @@ import faq from "../../assets/business-faq.svg";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const BusinessPortal = () => {
+
+  useEffect(() => {
+    viewDash();
+  });
+
   let tableDash = [];
   for (let i = 0; i < 10; i++) {
     tableDash.push({
@@ -216,10 +221,6 @@ const BusinessPortal = () => {
               </span>
               <img src={imageProfile} />
             </div>
-          </div>
-          {/* homePage */}
-          <div className="homePage-business">
-            <h1 style={{marginLeft: '20px'}}>¡BIENVENIDO!</h1>
           </div>
           {/* dash Business */}
           <div className="dash-business" id="dash-business">

@@ -151,6 +151,7 @@
     color: black !important;
     font-weight: 700 !important;
 }
+
 @media screen and (max-width: 1201px) {
     .contenedor{
         display: flex;
@@ -179,6 +180,11 @@
 
     .contenedor{
         padding: 5px;
+    }
+}
+@media screen and (min-width: 1202px) and (max-width: 1439px) {
+    .contenedor{
+        margin-bottom: 200px;
     }
 }
 

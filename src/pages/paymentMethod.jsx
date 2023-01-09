@@ -13,6 +13,7 @@ import masterCard from "../assets/mastercard.svg";
 import americaE from "../assets/americanExpress.svg";
 import paypal from "../assets/paypallow.svg";
 import paypalH from "../assets/paypal.svg";
+import { Link } from "react-router-dom";
 
 const PaymentMethod = () => {
   const styleContainer = {
@@ -143,10 +144,12 @@ const PaymentMethod = () => {
               tation ullamcorper suscipit
             </p>
             <br />
-            <button type="button" className="btn btn-secondary">
-              <i className="bi bi-cart3" style={{ color: "#000" }}></i> Ver
-              carrito
-            </button>
+            <Link to={'/cart'}>
+              <button type="button" className="btn btn-secondary">
+                <i className="bi bi-cart3" style={{ color: "#000" }}></i> Ver
+                carrito
+              </button>
+            </Link>
           </div>
         </div>
         <section className="also-be-interested">

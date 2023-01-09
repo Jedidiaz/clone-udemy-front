@@ -76,7 +76,7 @@ const Categories = () => {
 
   return (
     <>
-      <div className="overlay-store" id="overlay">
+      <div className="overlay-store" id="overlayShop">
         <div className="add-to-cart">
           <h2>Añadido a la cesta</h2>
           <img src={Imagetest1} />
@@ -438,11 +438,11 @@ const Categories = () => {
   );
 
   function addCart(){
-    document.getElementById('overlay').style.display = 'flex'
+    document.getElementById('overlayShop').style.display = 'flex'
   }
 
   function back(){
-    document.getElementById('overlay').style.display = 'none'
+    document.getElementById('overlayShop').style.display = 'none'
   }
 };
 
