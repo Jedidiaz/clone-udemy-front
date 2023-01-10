@@ -5,7 +5,7 @@ import Footer from "./shared/footer";
 import home1 from "../assets/Homes1.png";
 import home2 from "../assets/Group 1HomeS2.png";
 import home41 from "../assets/Home4-1.png";
-import home42 from "../assets/Home4-2.png";
+import home42 from "../assets/Home4-2.svg";
 import icon1 from "../assets/iconHome1.svg";
 import icon2 from "../assets/iconHome2.svg";
 import icon3 from "../assets/iconHome3.svg";
@@ -14,6 +14,10 @@ import HomeSse from "../assets/HomeSse.svg";
 import HomeSse2 from "../assets/HomesSse2.svg";
 import comillas from "../assets/comillasHome.svg";
 import google from "../assets/google-play.png";
+import circle from "../assets/circle.svg";
+import circleCard from "../assets/circleCard.svg";
+import puntos from "../assets/puntos.svg";
+import puntosCard from "../assets/puntosCardHome.svg";
 
 import Imagetest1 from '../assets/Imagetest1.svg'
 import HomestProfile from '../assets/HometestProfile.svg'
@@ -114,6 +118,7 @@ export default class home extends Component {
             </div>
           </section>
           <section className="section-home-four">
+          <img src={circle} className="circleHome" />
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path
                 fill="#F1F1F1"
@@ -193,7 +198,7 @@ export default class home extends Component {
             <h1>Our services</h1>
             <div className="buttons-section-five">
               <button type="button" className="btn btn-primary">
-                <img src={icon1} className="iconsHome" style={{color: 'red'}} /> Special Planes
+                <img src={icon1} className="iconsHome" /> Special Planes
               </button>
               <button type="button" className="btn btn-primary">
                 <img src={icon2} className="iconsHome" /> Conferences
@@ -211,6 +216,7 @@ export default class home extends Component {
             <h1>From Our Comunity</h1>
             <div className="subcontent-section-six">
               <img src={HomeSse} alt="" />
+              <img src={puntos} className="iconPuntosHome" />
               <div style={{ backgroundImage: comillas }}>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -219,10 +225,14 @@ export default class home extends Component {
                 </p>
               </div>
               <img src={HomeSse2} alt="" />
+              <img src={comillas} className="iconComillasHome" />
             </div>
           </section>
           <section className="content-section-seven">
             <div className="card-section-sev-home">
+            <img src={circleCard} className="circleCard" />
+            <img src={puntosCard} className="puntosCard" />
+            <img src={puntosCard} className="puntosCard2" />
               <button type="button" className="btn btn-primary">
                 Sign Up
               </button>

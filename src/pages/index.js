@@ -9,6 +9,7 @@ export {default as HelpCenter} from './helpCenter'
 export {default as Confirm} from './confirm-buy'
 export {default as Cart} from './cart'
 export {default as PayM} from './paymentMethod'
+export {default as HomeBussiness} from './HomeBusiness'
 //dashTeachers
 export { default as TeacherPortal} from './teacherPortal'
 
