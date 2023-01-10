@@ -238,7 +238,7 @@ export default class home extends Component {
               </button>
               <h1>Let’s Get Started</h1>
               <h2>Your Education</h2>
-              <div className="crad-buttons-home-section-sev">
+              <div className="card-buttons-home-section-sev">
                 <button type="button" className="btn btn-primary">
                   Download Now! <p><img src={google} alt="" /> Google Play</p>
                 </button>

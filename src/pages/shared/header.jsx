@@ -38,7 +38,7 @@ const Header = () => {
             <li>
               <Link to={"/conference"}> Conference </Link>
               <Link to={"categories"}> Courses </Link>
-              <Link to={"/business"}> Business </Link>
+              <Link to={"/homeBusiness"}> Business </Link>
               <Link to={"/teacher"}> Teach </Link>
             </li>
           </ul>
