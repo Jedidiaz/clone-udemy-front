@@ -149,6 +149,11 @@
 
 
 /* Section 4 */
+
+.section-home-four{
+    padding: 0 !important;
+}
+
 .content-section-four{
     display: flex;
     flex-direction: column;
@@ -459,21 +464,29 @@
         font-size: 60px
     }
 
-    .content-section-seven {
-        margin-bottom: 100px;
-    }
-
     .section-home-three .card-contenedor-home {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         justify-items: center;
     }
+
+    /* hover icons home */
+    .iconsHome{
+        fill: #A8A8A8 !important;
+    }
 }
-@media screen and (min-width: 1441px) {
-    .contenedor-home section{
+@media screen and (min-width: 1440px) {
+    .contenedor-home section, .content-section-four{
         padding: 10px 17%;
     }
 
+    .content-section-four{
+        margin-top: -150px;
+    }
+
+    .content-section-five{
+        margin-top: -400px;
+    }
     
 }
 

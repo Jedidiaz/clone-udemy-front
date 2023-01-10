@@ -6,10 +6,10 @@ import home1 from "../assets/Homes1.png";
 import home2 from "../assets/Group 1HomeS2.png";
 import home41 from "../assets/Home4-1.png";
 import home42 from "../assets/Home4-2.png";
-import icon1 from "../assets/iconHome1.png";
-import icon2 from "../assets/iconHome2.png";
-import icon3 from "../assets/iconHome3.png";
-import icon4 from "../assets/iconHome4.png";
+import icon1 from "../assets/iconHome1.svg";
+import icon2 from "../assets/iconHome2.svg";
+import icon3 from "../assets/iconHome3.svg";
+import icon4 from "../assets/iconHome4.svg";
 import HomeSse from "../assets/HomeSse.svg";
 import HomeSse2 from "../assets/HomesSse2.svg";
 import comillas from "../assets/comillasHome.svg";
@@ -193,17 +193,18 @@ export default class home extends Component {
             <h1>Our services</h1>
             <div className="buttons-section-five">
               <button type="button" className="btn btn-primary">
-                <img src={icon1} /> Special Planes
+                <img src={icon1} className="iconsHome" style={{color: 'red'}} /> Special Planes
               </button>
               <button type="button" className="btn btn-primary">
-                <img src={icon2} /> Conferences
+                <img src={icon2} className="iconsHome" /> Conferences
               </button>
               <button type="button" className="btn btn-primary">
-                <img src={icon3} /> Courses
+                <img src={icon3} className="iconsHome" /> Courses
               </button>
               <button type="button" className="btn btn-primary">
-                <img src={icon4} /> Remote Friendly
+                <img src={icon4} className="iconsHome" /> Remote Friendly
               </button>
+             
             </div>
           </section>
           <section className="content-section-six">
