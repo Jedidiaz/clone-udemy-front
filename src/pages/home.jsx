@@ -22,6 +22,8 @@ import puntosCard from "../assets/puntosCardHome.svg";
 import Imagetest1 from '../assets/Imagetest1.svg'
 import HomestProfile from '../assets/HometestProfile.svg'
 
+import bgHome from '../assets/bghome.png'
+
 import { Link } from "react-router-dom";
 import "../styles/home.css";
 
@@ -126,7 +128,7 @@ export default class home extends Component {
                 d="M0,64L120,58.7C240,53,480,43,720,53.3C960,64,1200,96,1320,112L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
               ></path>
             </svg>
-            <div className="content-section-four">
+            <div className="content-section-four" >
               <div className="content-wave-home">
                 <img src={home41} alt="" />
                 <div>

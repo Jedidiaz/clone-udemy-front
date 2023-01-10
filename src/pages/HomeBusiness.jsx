@@ -17,18 +17,10 @@ import icon2 from "../assets/adminHomeBusiness.svg";
 import icon3 from "../assets/screenHomeBusiness.svg";
 
 //imagesicons
-<<<<<<< HEAD
 import iconHome1 from "../assets/1b.svg";
 import iconHome2 from "../assets/2b.svg";
 import iconHome3 from "../assets/3b.svg";
 import iconHome4 from "../assets/4b.svg";
-=======
-import iconHome1 from "../assets/icon1HomeBusiness.svg";
-import iconHome2 from "../assets/icon2HomeBusiness.svg";
-import iconHome3 from "../assets/icon3HomeBusiness.svg";
-import iconHome4 from "../assets/icon4HomeBusiness.svg";
-import { display, width } from "@mui/system";
->>>>>>> 405ff2048ef711ecaacdd2c8a93bca5cad3e76bd
 
 const HomeBusiness = () => {
   //var styles
@@ -268,25 +260,6 @@ const HomeBusiness = () => {
         {/* section 5 */}
         <section style={{ margin: "50px 0" }}>
           {/* How we do it */}
-<<<<<<< HEAD
-          <div className="container">
-            <h1>How we do it</h1>
-            <div>
-              <button type="button" className="btn btn-secondary btnIconHomeBusiness">
-                <img src={iconHome1} />
-                Integrated Solutions
-              </button>
-              <button type="button" className="btn btn-secondary btnIconHomeBusiness">
-                <img src={iconHome2} />
-                Overview On-Demand
-              </button>
-              <button type="button" className="btn btn-secondary btnIconHomeBusiness">
-                <img src={iconHome3} />
-                Learning Immersive
-              </button>
-              <button type="button" className="btn btn-secondary btnIconHomeBusiness">
-                <img src={iconHome4} />
-=======
           <div className="container section5HomeBusiness">
             <h1 style={{ fontWeight: "bold", textAlign: "center" }}>
               How we do it
@@ -294,35 +267,38 @@ const HomeBusiness = () => {
             <div className="buttonsSection5HomeBusiness">
               <button
                 type="button"
-                style={styles.styleButtonS5}
+                // style={styles.styleButtonS5}
                 className="btn btn-secondary"
+                id="iconHomeBusinesss5"
               >
                 <img src={iconHome1} style={{ width: "100%" }} />
                 Integrated Solutions
               </button>
               <button
                 type="button"
-                style={styles.styleButtonS5}
+                // style={styles.styleButtonS5}
                 className="btn btn-secondary"
+                id="iconHomeBusinesss5"
               >
                 <img src={iconHome2} style={{ width: "100%" }} />
                 Overview On-Demand
               </button>
               <button
                 type="button"
-                style={styles.styleButtonS5}
+                // style={styles.styleButtonS5}
                 className="btn btn-secondary"
+                id="iconHomeBusinesss5"
               >
                 <img src={iconHome3} style={{ width: "100%" }} />
                 Learning Immersive
               </button>
               <button
                 type="button"
-                style={styles.styleButtonS5}
+                // style={styles.styleButtonS5}
                 className="btn btn-secondary"
+                id="iconHomeBusinesss5"
               >
                 <img src={iconHome4} style={{ width: "100%" }} />
->>>>>>> 405ff2048ef711ecaacdd2c8a93bca5cad3e76bd
                 Learning Cohort Learnings
               </button>
             </div>

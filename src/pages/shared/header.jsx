@@ -65,10 +65,10 @@ const Header = () => {
               <div className="navigator-menu">
                 <ul>
                   <li>
-                    <Link to={""}> Conference </Link>
-                    <Link to={""}> Courses </Link>
-                    <Link to={""}> Business </Link>
-                    <Link to={""}> Teach </Link>
+                    <Link to={"/conference"}> Conference </Link>
+                    <Link to={"/categories"}> Courses </Link>
+                    <Link to={"/homeBusiness"}> Business </Link>
+                    <Link to={"/teacher"}> Teach </Link>
                   </li>
                 </ul>
               </div>
