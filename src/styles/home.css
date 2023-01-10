@@ -331,7 +331,13 @@
 
 /* hover incons */
 .buttons-section-five .btn:hover  img{
-    filter: invert(93%) sepia(20%) saturate(1450%) hue-rotate(337deg) brightness(98%) contrast(90%);
+    filter: brightness(0) saturate(100%) invert(84%) sepia(24%) saturate(1029%) hue-rotate(355deg) brightness(98%) contrast(91%);
+    transform: scale(1.05);
+}
+
+.buttons-section-five .btn:hover{
+   border-color: #F3B601;
+   color: #F3B601; 
 }
 
 @media screen and (min-width: 375px) {

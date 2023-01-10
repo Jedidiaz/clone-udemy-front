@@ -16,10 +16,10 @@ import icon2 from "../assets/adminHomeBusiness.svg";
 import icon3 from "../assets/screenHomeBusiness.svg";
 
 //imagesicons
-import iconHome1 from "../assets/icon1HomeBusiness.svg";
-import iconHome2 from "../assets/icon2HomeBusiness.svg";
-import iconHome3 from "../assets/icon3HomeBusiness.svg";
-import iconHome4 from "../assets/icon4HomeBusiness.svg";
+import iconHome1 from "../assets/1b.svg";
+import iconHome2 from "../assets/2b.svg";
+import iconHome3 from "../assets/3b.svg";
+import iconHome4 from "../assets/4b.svg";
 
 const HomeBusiness = () => {
   return (
@@ -139,19 +139,19 @@ const HomeBusiness = () => {
           <div className="container">
             <h1>How we do it</h1>
             <div>
-              <button type="button" className="btn btn-secondary">
+              <button type="button" className="btn btn-secondary btnIconHomeBusiness">
                 <img src={iconHome1} />
                 Integrated Solutions
               </button>
-              <button type="button" className="btn btn-secondary">
+              <button type="button" className="btn btn-secondary btnIconHomeBusiness">
                 <img src={iconHome2} />
                 Overview On-Demand
               </button>
-              <button type="button" className="btn btn-secondary">
+              <button type="button" className="btn btn-secondary btnIconHomeBusiness">
                 <img src={iconHome3} />
                 Learning Immersive
               </button>
-              <button type="button" className="btn btn-secondary">
+              <button type="button" className="btn btn-secondary btnIconHomeBusiness">
                 <img src={iconHome4} />
                 Learning Cohort Learnings
               </button>
