@@ -1,0 +1,86 @@
+.contenedor-HomeBusiness{
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.section-one-HomeBusiness{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: -20%;
+}
+
+/* style button */
+.btn-warning{
+    border: 0;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    
+}
+
+.section-two-HomeBusiness, .ContentCardsGlobalHomeBusiness{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* section3 */
+.section-3-Homebusiness{
+    margin-top: -7%;
+    background-color: #2F2F2F;
+    padding-bottom: 50px;
+}
+
+.section3HomeBusiness, .section4HomeBusiness{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.imageSection3HomeBusiness, .InputsSection3HomeBusiness{
+    width: 100%;
+}
+
+.section5HomeBusiness, .buttonsSection5HomeBusiness, .contentsection6HomeBusiness{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.iconHomeBusiness11{
+    color: #F3B601;
+}
+
+@media screen and (min-width: 1024px) {
+    .section-one-HomeBusiness{
+        flex-direction: row;
+        margin-bottom: -15%;
+    }
+
+    .section-one-HomeBusiness img{
+        width: 50% !important;
+    }
+
+    .section3HomeBusiness, .section4HomeBusiness{
+        flex-direction: row;
+    }
+
+    .ContentCardsGlobalHomeBusiness, .buttonsSection5HomeBusiness{
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .contentsection6HomeBusiness{
+        flex-direction: row;
+    }
+
+}

@@ -41,7 +41,7 @@ function App() {
         <Route path="/payment-method" element={<PayM />} />
         <Route path="/profile-teacher" element={<ProfileTeacher />} />
         <Route path="/help" element={<HelpCenter />} />
-        <Route path="/homeBussiness" element={<HomeBussiness />} />
+        <Route path="/homeBusiness" element={<HomeBussiness />} />
       </Routes>
     </>
   );
