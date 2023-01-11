@@ -27,10 +27,10 @@ const Header = () => {
   const handleShow = () => setShow(true);
   return (
     <header>
-      <nav>
+      <nav className="container">
         <div className="logo-img">
           <Link to={"/"}>
-            <img src={logo} alt="img"/>
+            <img src={logo} alt="img" />
           </Link>
         </div>
         <div className="navigator">
@@ -47,7 +47,7 @@ const Header = () => {
           <div className="link">
             <Link to={"/login"}> Sign Up </Link>
           </div>
-          <button className="btn btn-primary" onClick={() => redirect(1)}>
+          <button className="btn btn-primary" style={{borderRadius: '50px', padding: '6px 50px'}} onClick={() => redirect(1)}>
             Create Account
           </button>
         </div>
