@@ -21,10 +21,10 @@ import puntos from "../assets/puntos.svg";
 import circleCard from "../assets/circleCard.svg";
 import puntosCard from "../assets/puntosCardHome.svg";
 
-import Imagetest1 from '../assets/Imagetest1.svg'
-import HomestProfile from '../assets/HometestProfile.svg'
+import Imagetest1 from "../assets/Imagetest1.svg";
+import HomestProfile from "../assets/HometestProfile.svg";
 
-import bgHome from '../assets/bghome.png'
+import bgHome from "../assets/bghome.png";
 
 import { Link } from "react-router-dom";
 import "../styles/home.css";
@@ -48,22 +48,40 @@ export default class home extends Component {
     const Styles = {
       styleSection1: {
         backgroundImage: `url(${home1})`,
-        backgroundSize: 'cover',
-        borderRadius: '40px'
-      }
-    }
+        backgroundSize: "cover",
+        borderRadius: "40px",
+      },
+    };
     console.log(cards);
     return (
       <>
-      <Header />
+        <Header />
         <div className="contenedor-home">
-          <section className="section-home-one">
+          <section className="container section-home-one">
             <div style={Styles.styleSection1} className="cardSection1Home">
               <div className="descriptionSection1Home">
-                <h1 style={{color: '#fff', fontWeight: 'bold', fontSize: 'calc(2.575rem + 1.5vw)', maxWidth: '300px'}}>Do't Wait To Learn Something New</h1>
-                <p style={{color: '#959595'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                <h1
+                  style={{
+                    color: "#fff",
+                    fontWeight: "bold",
+                    fontSize: "calc(3.075rem + 1.5vw)",
+                    maxWidth: "350px",
+                  }}
+                >
+                  Do't Wait To Learn Something New
+                </h1>
+                <p style={{ color: "#959595", maxWidth: "350px" }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
                 <div className="buttons-section-home-pesent">
-                  <button type="button" className="btn btn-primary">
+                  <button
+                    type="button"
+                    className="btn btn-primary"
+                    style={{ border: "1px solid #000" }}
+                  >
                     Read More
                   </button>
                   <button type="button" className="btn btn-primary">
@@ -72,18 +90,18 @@ export default class home extends Component {
                 </div>
               </div>
               <div className="imageSection1Home">
-                <img src={home12} style={{width: '100%'}} />
+                <img src={home12} style={{ width: "100%" }} />
               </div>
             </div>
           </section>
-          <section className="section-home-two">
+          <section className="container section-home-two">
             <div className="image-home">
               <img src={home2} />
             </div>
             <div className="description-home-two">
-              <h5>ABOUT US</h5>
+              <h5 style={{ fontWeight: "600" }}>ABOUT US</h5>
               <h1>Lest talk about the course and certificates</h1>
-              <p>
+              <p style={{ color: "#707070" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
                 ipsum suspendisse ultrices gravida. Risus commodo viverra
@@ -95,48 +113,56 @@ export default class home extends Component {
             <h1>Explore All Courses</h1>
             <ul>
               <li>
-                <Link to={""}>All</Link>
-                <Link to={""}>Design</Link>
-                <Link to={""}>Technology</Link>
-                <Link to={""}>Video</Link>
+                <Link to={""}>
+                  All <div className="underLinkHome"></div>
+                </Link>
+                <Link to={""}>
+                  Design <div className="underLinkHome"></div>
+                </Link>
+                <Link to={""}>
+                  Technology <div className="underLinkHome"></div>
+                </Link>
+                <Link to={""}>
+                  Video <div className="underLinkHome"></div>
+                </Link>
               </li>
             </ul>
             <div className="card-contenedor-home">
               {cards?.map((el) => (
                 <article className="card-Home">
-                  <img src={el.image} className="image-card-home"/>
-                    <h4 key="{el.title}">{el.title}</h4>
+                  <img src={el.image} className="image-card-home" />
+                  <h4 key={el.title}>{el.title}</h4>
                   <div className="profile-hoe-card">
                     <img src={el.imageP} alt="" />
                     <div>
-                      <h5 key="{el.name}">{el.name}</h5>
-                      <p key="{el.role}">{el.role}</p>
+                      <h5 key={el.name}>{el.name}</h5>
+                      <p key={el.role}>{el.role}</p>
                     </div>
                   </div>
-                    <div className="info-card-home">
-                      <p key="{el.clases}">
-                        <i className="bi bi-folder2-open"></i> {el.clases}
-                        Clases
-                      </p>
-                      <p key="{el.folowers}">
-                        <i className="bi bi-person"></i> {el.folowers}
-                      </p>
-                      <p>
-                        <i className="bi bi-star"></i> 5.0
-                      </p>
-                    </div>
-                    <div className="footer-card-home">
-                      <button type="button" className="btn btn-ptimary">
-                        Buy Now
-                      </button>
-                      <span key="{el.price}">${el.price}USD</span>
-                    </div>
+                  <div className="info-card-home">
+                    <p key={el.clases}>
+                      <i className="bi bi-folder2-open"></i> {el.clases}
+                      Clases
+                    </p>
+                    <p key="{el.folowers}">
+                      <i className="bi bi-person"></i> {el.folowers}
+                    </p>
+                    <p>
+                      <i className="bi bi-star-fill"></i> 5.0
+                    </p>
+                  </div>
+                  <div className="footer-card-home">
+                    <button type="button" className="btn btn-ptimary">
+                      Buy Now
+                    </button>
+                    <span key="{el.price}">${el.price}USD</span>
+                  </div>
                 </article>
               ))}
             </div>
           </section>
           <section className="section-home-four">
-          <img src={circle} className="circleHome" />
+            <img src={circle} className="circleHome" />
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path
                 fill="#F1F1F1"
@@ -144,7 +170,7 @@ export default class home extends Component {
                 d="M0,64L120,58.7C240,53,480,43,720,53.3C960,64,1200,96,1320,112L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
               ></path>
             </svg>
-            <div className="content-section-four" >
+            <div className="content-section-four">
               <div className="content-wave-home">
                 <img src={home41} alt="" />
                 <div>
@@ -227,7 +253,6 @@ export default class home extends Component {
               <button type="button" className="btn btn-primary">
                 <img src={icon4} className="iconsHome" /> Remote Friendly
               </button>
-             
             </div>
           </section>
           <section className="content-section-six">
@@ -246,11 +271,11 @@ export default class home extends Component {
               <img src={comillas} className="iconComillasHome" />
             </div>
           </section>
-          <section className="content-section-seven">
+          <section className="container content-section-seven">
             <div className="card-section-sev-home">
-            <img src={circleCard} className="circleCard" />
-            <img src={puntosCard} className="puntosCard" />
-            <img src={puntosCard} className="puntosCard2" />
+              <img src={circleCard} className="circleCard" />
+              <img src={puntosCard} className="puntosCard" />
+              <img src={puntosCard} className="puntosCard2" />
               <button type="button" className="btn btn-primary">
                 Sign Up
               </button>
@@ -258,16 +283,22 @@ export default class home extends Component {
               <h2>Your Education</h2>
               <div className="card-buttons-home-section-sev">
                 <button type="button" className="btn btn-primary">
-                  Download Now! <p><img src={google} alt="" /> Google Play</p>
+                  Download Now!{" "}
+                  <p>
+                    <img src={google} alt="" /> Google Play
+                  </p>
                 </button>
                 <button type="button" className="btn btn-primary">
-                  Download Now! <p><i className="bi bi-apple"></i> App Store</p>
+                  Download Now!{" "}
+                  <p>
+                    <i className="bi bi-apple"></i> App Store
+                  </p>
                 </button>
               </div>
             </div>
           </section>
         </div>
-      <Footer />  
+        <Footer />
       </>
     );
   }

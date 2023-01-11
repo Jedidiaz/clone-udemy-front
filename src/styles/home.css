@@ -4,11 +4,6 @@
     flex-direction: column;
     gap: 100px;
     margin-bottom: 50px;
-    margin-top: 20px;
-}
-
-.contenedor-home > section{
-    padding: 10px;
 }
 
 .home-section-1-pesent img{
@@ -18,18 +13,20 @@
 
 .buttons-section-home-pesent{
     display: flex;
-    gap: 5px;
+    gap: 20px;
     padding: 2%;
     top: 39%;
     z-index: 10;
+    max-width: 400px;
 }
 
 .buttons-section-home-pesent .btn{
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 15px;
     border: 0;
     border-radius: 50px;
+    font-weight: 600;
 }
 
 .buttons-section-home-pesent .btn:nth-child(1){
@@ -53,6 +50,9 @@
 }
 
 .description-home-two{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: end;
 }
 
@@ -81,10 +81,25 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
+    gap: 30px;
 }
 
-.section-home-three ul li a:hover{
-    color:  #D3AF37;
+.section-home-three ul li a{
+    font-size: 26px;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+
+/* underline and hover */
+
+.underLinkHome{
+    display: flex;
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.section-home-three ul li a:hover .underLinkHome{
+    border-color:  #D3AF37; 
 }
 
 .section-home-three .card-contenedor-home{
@@ -98,7 +113,7 @@
 }
 
 .card-contenedor-home .card-Home{
-    width: 300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,12 +126,25 @@
 
 .card-Home h4{
     font-size: 20px;
+    font-weight: 700;
     padding: 0 10px;
+}
+
+.card-Home .profile-hoe-card h5{
+    font-size: 14px;
+    margin: 0;
+}
+
+.card-Home .profile-hoe-card p{
+    margin: 0;
+    font-size: 14px;
+    color: #909090;
 }
 
 .profile-hoe-card{
     display: flex;
     justify-content: start;
+    align-items: center;
     width: 100%;
     padding: 10px;
     gap: 20px;
@@ -127,14 +155,17 @@
 }
 
 .info-card-home{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
 .info-card-home p{
     color: black;
-    font-weight: 500;
+    font-weight: 700;
+    margin: 0;
 }
 
 .footer-card-home {
@@ -142,16 +173,19 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
 }
 
 .footer-card-home .btn{
     background-color: black;
     color: white;
+    border: 0;
+    border-radius: 15px;
 }
 
 .footer-card-home span{
     color: #A7A7A7;
+    font-size: 24px;
 }
 
 
@@ -358,7 +392,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 20px;
+    
 }
 
 @media screen and (min-width: 375px) {
@@ -374,10 +408,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .contenedor-home section{
-        padding: 0 100px;
-    }
-
     .section-home-two{
         flex-direction: row;
         gap: 20px;
@@ -385,11 +415,11 @@
     }
 
     .image-home{
-        width: 50%;
+        width: 40%;
     }
 
     .description-home-two{
-        width: 50%;
+        width: 60%;
     }
 
     .description-home-two h1{
@@ -401,9 +431,9 @@
     }
 
     .description-home-two p{
-        max-height: none !important;
-        overflow: auto !important;
-        font-size: 20px;
+        max-width: 640px;
+        font-size: 18px;
+        color: #4b4b4b;
     }
 
     .content-section-four {
@@ -440,8 +470,9 @@
     .content-wave-home div .btn{
         margin-top: 10%;
         font-size: 20px;
+        font-weight: 600;
         width: auto;
-        padding: 10px 20px;
+        padding: 13px 40px;
     }
 
     .contenedor-home div h3{
@@ -478,7 +509,6 @@
 
     .subcontent-section-six div p{
         font-size: 25px;
-        color: #707070;
     }
 
     .subcontent-section-six img {
@@ -514,9 +544,9 @@
 
     .section-home-three .card-contenedor-home {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         justify-items: center;
-        max-width: 940px;
+        max-width: 1000px;
     }
 
     .content-section-five{
@@ -562,27 +592,27 @@
 
     /* Correcion banner */
     .imageSection1Home{
-        width: 50%;
+        width: 55%;
     }
 
     .cardSection1Home{
         flex-direction: row;
-        padding: 60px 40px;
+        padding: 40px 50px;
     }
 
     .descriptionSection1Home{
-        width: 50%;
+        width: 45%;
     }
 
-    .descriptionSection1Home h1{
-        max-width: 300px;
+    .section-home-three h1{
+        font-size: 50px;
     }
 }
-@media screen and (min-width: 1440px) {
-    .contenedor-home section, .content-section-four{
-        padding: 10px 17%;
-    }
 
+@media screen and (min-width: '1200px') {
+}
+
+@media screen and (min-width: 1440px) {
     .content-section-four{
         margin-top: -150px;
     }
