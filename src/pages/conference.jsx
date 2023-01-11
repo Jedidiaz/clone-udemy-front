@@ -10,6 +10,7 @@ import HomestProfile from "../assets/HometestProfile.svg";
 
 import cardMain from "../assets/conference.svg";
 import imageProfile from "../assets/HometestProfile.svg";
+import bg from "../assets/bgCategories.svg";
 
 import google from "../assets/google-play.png";
 
@@ -57,7 +58,7 @@ const Conference = () => {
   return (
     <>
     <Header />
-      <div className="container-categories">
+      <div className="container container-categories">
         {/* section 1 */}
         <section className="featured-course-categories">
           <div className="title-featrued-categories">
@@ -307,18 +308,18 @@ const Conference = () => {
         </section>
         {/* section 4 */}
         <section className="download">
-          <div className="card-section-sev-home">
+          <div className="card-section-sev-home" style={{backgroundImage: `url(${bg})`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat'}} >
             <h1>Download the app </h1>
             <h2>and learn at your own pace</h2>
-            <div className="crad-buttons-home-section-sev">
+            <div className="card-buttons-home-section-sev">
               <button type="button" className="btn btn-primary">
-                Download Now!{" "}
+                Download Now!
                 <p>
                   <img src={google} alt="" /> Google Play
                 </p>
               </button>
               <button type="button" className="btn btn-primary">
-                Download Now!{" "}
+                Download Now!
                 <p>
                   <i className="bi bi-apple"></i> App Store
                 </p>

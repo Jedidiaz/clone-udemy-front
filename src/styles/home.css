@@ -17,16 +17,17 @@
 }
 
 .buttons-section-home-pesent{
-    position: sticky;
     display: flex;
     gap: 5px;
     padding: 2%;
     top: 39%;
+    z-index: 10;
 }
 
 .buttons-section-home-pesent .btn{
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
+    padding: 10px 15px;
     border: 0;
     border-radius: 50px;
 }
@@ -64,6 +65,12 @@
 }
 
 /* Section 3 aqui */
+.section-home-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section-home-three h1{
     text-align: center;
     font-weight: 700;
@@ -86,7 +93,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     margin-top: 50px;
 }
 
@@ -209,7 +216,7 @@
     background-color: transparent;
     color: #9E9E9E;
     border: 1px solid #9E9E9E;
-    border-radius: 20px; 
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,7 +226,7 @@
 
 .buttons-section-five .btn img{
     width: 100%;
-}   
+}
 /* Section 6 */
 .content-section-six {
     display: flex;
@@ -337,7 +344,21 @@
 
 .buttons-section-five .btn:hover{
    border-color: #F3B601;
-   color: #F3B601; 
+   color: #F3B601;
+}
+
+/*  correcion banner hoome */
+.imageSection1Home{
+    width: 100%;
+}
+
+.cardSection1Home{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
 }
 
 @media screen and (min-width: 375px) {
@@ -355,22 +376,6 @@
 @media screen and (min-width: 1024px) {
     .contenedor-home section{
         padding: 0 100px;
-    }
-
-    .buttons-section-home-pesent{
-        width: 30%;
-        gap: 20px;
-    }
-
-    .buttons-section-home-pesent .btn{
-        position: absolute;
-        top: -150%;
-        width: 186px;
-        font-size: 20px;
-    }
-
-    .buttons-section-home-pesent .btn:nth-child(2){
-        margin-left: 200px;
     }
 
     .section-home-two{
@@ -511,6 +516,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         justify-items: center;
+        max-width: 940px;
     }
 
     .content-section-five{
@@ -553,6 +559,24 @@
         right: 0;
         margin-right: 170px;
     }
+
+    /* Correcion banner */
+    .imageSection1Home{
+        width: 50%;
+    }
+
+    .cardSection1Home{
+        flex-direction: row;
+        padding: 60px 40px;
+    }
+
+    .descriptionSection1Home{
+        width: 50%;
+    }
+
+    .descriptionSection1Home h1{
+        max-width: 300px;
+    }
 }
 @media screen and (min-width: 1440px) {
     .contenedor-home section, .content-section-four{
@@ -586,6 +610,6 @@
     .puntosCard2{
         margin-right: 22%;
     }
-    
+
 }
 

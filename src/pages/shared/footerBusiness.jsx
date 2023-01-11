@@ -6,6 +6,7 @@ const FooterBusiness = () => {
   return (
     <>
     <footer style={{backgroundColor: '#2F2F2F'}} className='Business-footer'>
+      <div className="contenedor-footer">
         <div className="section-one">
           <img src={logo} alt="img" />
           <h3 className='titles-footer'>Pages</h3>
@@ -57,6 +58,8 @@ const FooterBusiness = () => {
             Send Now
           </button>
         </div>
+      </div>
+      <a href="http://miamisignaturedesigns.com/" style={{color: '#A7A7A7', textDecoration: 'none'}}>Copyright © 2022 Developed by MSD Soft</a>
     </footer>
   </>
   )

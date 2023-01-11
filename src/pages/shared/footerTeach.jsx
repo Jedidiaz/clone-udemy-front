@@ -7,6 +7,7 @@ const FooterStudent = () => {
   return (
     <>
       <footer style={{backgroundColor: '#F3B601'}}>
+        <div className="contenedor-footer">
           <div className="section-one">
             <img src={logo} alt="img" />
             <h3>Pages</h3>
@@ -58,6 +59,8 @@ const FooterStudent = () => {
               Send Now
             </button>
           </div>
+        </div>
+        <a href="http://miamisignaturedesigns.com/" style={{color: '#fff', textDecoration: 'none'}}>Copyright © 2022 Developed by MSD Soft</a>
       </footer>
     </>
   );

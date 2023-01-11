@@ -10,6 +10,7 @@ import HomestProfile from "../assets/HometestProfile.svg";
 
 import cardMain from "../assets/image-categories.svg";
 import imageProfile from "../assets/HometestProfile.svg";
+import bg from "../assets/bgCategories.svg";
 
 import google from "../assets/google-play.png";
 
@@ -154,7 +155,7 @@ const Categories = () => {
         <div style={backOverlayStyle} onClick={()=> back()}></div>
       </div>
       <Header />
-      <div className="container-categories">
+      <div className="container container-categories">
         {/* section 1 */}
         <section className="featured-course-categories">
           <div className="title-featrued-categories">
@@ -173,7 +174,7 @@ const Categories = () => {
                 </p>
               </div>
               <div className="profile-card-categories">
-                <span>
+                <span style={{marginTop: '10px'}}>
                   <img src={imageProfile} />
                   <span>
                     <h4>Alisson Gimenez</h4>
@@ -215,7 +216,7 @@ const Categories = () => {
                 </div>
                 <div>
                   <span>
-                    <h5 key={el.name}>{el.name}</h5>
+                    <h5 key={el.name} style={{fontSize: '18px'}}>{el.name}</h5>
                     <p key={el.role}>{el.role}</p>
                   </span>
                   <span key={el.followers}>
@@ -413,18 +414,18 @@ const Categories = () => {
         </section>
         {/* section 4 */}
         <section className="download">
-          <div className="card-section-sev-home">
+          <div className="card-section-sev-home" style={{backgroundImage: `url(${bg})`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat'}} >
             <h1>Download the app </h1>
             <h2>and learn at your own pace</h2>
-            <div className="crad-buttons-home-section-sev">
+            <div className="card-buttons-home-section-sev">
               <button type="button" className="btn btn-primary">
-                Download Now!{" "}
+                Download Now!
                 <p>
                   <img src={google} alt="" /> Google Play
                 </p>
               </button>
               <button type="button" className="btn btn-primary">
-                Download Now!{" "}
+                Download Now!
                 <p>
                   <i className="bi bi-apple"></i> App Store
                 </p>

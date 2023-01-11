@@ -52,7 +52,7 @@ const Cart = () => {
   return (
     <>
       <Header />
-      <div className="container">
+      <div className="container contenedorCart" style={{paddingTop: '3%'}}>
         <div className="info-cart">
           <h2>
             Carrito (<span>5</span> cursos)

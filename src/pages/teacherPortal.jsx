@@ -118,7 +118,9 @@ const TeacherPortal = () => {
         <div className="views-teacher">
           <div className="header-business">
             <div>
-              <span className="Back">back to student mode</span>
+              <Link to={'/homeStudents'}>
+                <span className="Back" style={{color: '#232323'}}>back to student mode</span>
+              </Link>
               <span>
                 <i className="bi bi-bell"></i>
               </span>

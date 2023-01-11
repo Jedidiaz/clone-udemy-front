@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Header from "./shared/header";
 import Footer from "./shared/footer";
 //import images
-import home1 from "../assets/Homes1.png";
+import home1 from "../assets/Homes1.svg";
+import home12 from "../assets/Homes1Image.svg";
+
 import home2 from "../assets/Group 1HomeS2.png";
 import home41 from "../assets/Home4-1.png";
 import home42 from "../assets/Home4-2.svg";
@@ -15,8 +17,8 @@ import HomeSse2 from "../assets/HomesSse2.svg";
 import comillas from "../assets/comillasHome.svg";
 import google from "../assets/google-play.png";
 import circle from "../assets/circle.svg";
-import circleCard from "../assets/circleCard.svg";
 import puntos from "../assets/puntos.svg";
+import circleCard from "../assets/circleCard.svg";
 import puntosCard from "../assets/puntosCardHome.svg";
 
 import Imagetest1 from '../assets/Imagetest1.svg'
@@ -42,21 +44,35 @@ export default class home extends Component {
         price: "60.99",
       });
     }
+
+    const Styles = {
+      styleSection1: {
+        backgroundImage: `url(${home1})`,
+        backgroundSize: 'cover',
+        borderRadius: '40px'
+      }
+    }
     console.log(cards);
     return (
       <>
       <Header />
         <div className="contenedor-home">
           <section className="section-home-one">
-            <div className="home-section-1-pesent">
-              <img src={home1} />
-              <div className="buttons-section-home-pesent">
-                <button type="button" className="btn btn-primary">
-                  Read More
-                </button>
-                <button type="button" className="btn btn-primary">
-                  Start Today
-                </button>
+            <div style={Styles.styleSection1} className="cardSection1Home">
+              <div className="descriptionSection1Home">
+                <h1 style={{color: '#fff', fontWeight: 'bold', fontSize: 'calc(2.575rem + 1.5vw)', maxWidth: '300px'}}>Do't Wait To Learn Something New</h1>
+                <p style={{color: '#959595'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                <div className="buttons-section-home-pesent">
+                  <button type="button" className="btn btn-primary">
+                    Read More
+                  </button>
+                  <button type="button" className="btn btn-primary">
+                    Start Today
+                  </button>
+                </div>
+              </div>
+              <div className="imageSection1Home">
+                <img src={home12} style={{width: '100%'}} />
               </div>
             </div>
           </section>
