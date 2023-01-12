@@ -31,10 +31,11 @@ const Footer = () => {
           </ul>
         </div>
         <div className="privacity">
-          <h3>Conditions</h3>
+          <h3>Privacy</h3>
           <ul>
             <li>
-              <Link to={""}>Privacy Plicy</Link>
+              <Link to={""}>Conditions</Link>
+              <Link to={""}>Privacy Policy</Link>
               <Link to={""}>Side Configuration</Link>
               <Link to={""}>Cookie map</Link>
             </li>

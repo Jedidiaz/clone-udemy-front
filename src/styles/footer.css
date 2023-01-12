@@ -43,6 +43,14 @@ ul {
     color: #ffffff;
 }
 
+.regist h3{
+    margin: 0;
+}
+
+.regist p{
+    color: #A7A7A7;
+}
+
 .regist .inputs{
     display: flex;
     flex-direction: column;
@@ -52,27 +60,31 @@ ul {
 
 .regist .inputs .form-control{
     border: none;
-    border-radius: 30px;
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
 }
 
 
 .regist .inputs .form-control::placeholder{
-    font-size: 14px;
+    font-size: 16px;
     color: #A7A7A7;
 
 }
 
 .regist .btn{
     background-color: #2F2F2F;
-    ;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     width: 160px;
-    border-radius: 30px;
+    border-radius: 15px;
     --bs-btn-active-bg: #4b4b4b;
 }
+
+footer ul li a{
+    color: #A7A7A7;
+}
+
 /* correcion movil */
 @media screen and (min-width: 375px) and (max-width: 425px) {
     .regist{
@@ -109,5 +121,7 @@ ul {
         width: 100%;
     }
 
-
+    .contenedor-footer{
+        margin-bottom: 150px;
+    }
 }

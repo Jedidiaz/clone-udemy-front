@@ -15,11 +15,11 @@ import icon4 from "../assets/4a.svg";
 import HomeSse from "../assets/HomeSse.svg";
 import HomeSse2 from "../assets/HomesSse2.svg";
 import comillas from "../assets/comillasHome.svg";
-import google from "../assets/google-play.png";
+import google from "../assets/google-play.svg";
+import apple from "../assets/apple.svg";
 import circle from "../assets/circle.svg";
 import puntos from "../assets/puntos.svg";
-import circleCard from "../assets/circleCard.svg";
-import puntosCard from "../assets/puntosCardHome.svg";
+import bgcard from "../assets/bgHomeCard2.svg";
 
 import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
@@ -255,12 +255,12 @@ export default class home extends Component {
               </button>
             </div>
           </section>
-          <section className="content-section-six">
+          <section className="container content-section-six">
             <h1>From Our Comunity</h1>
             <div className="subcontent-section-six">
               <img src={HomeSse} alt="" />
               <img src={puntos} className="iconPuntosHome" />
-              <div style={{ backgroundImage: comillas }}>
+              <div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor in cididunt ut labore et dolore magna
@@ -272,10 +272,7 @@ export default class home extends Component {
             </div>
           </section>
           <section className="container content-section-seven">
-            <div className="card-section-sev-home">
-              <img src={circleCard} className="circleCard" />
-              <img src={puntosCard} className="puntosCard" />
-              <img src={puntosCard} className="puntosCard2" />
+            <div className="card-section-sev-home" style={{backgroundImage: `url(${bgcard})`, backgroundRepeat: 'no-repeat'}}>
               <button type="button" className="btn btn-primary">
                 Sign Up
               </button>
@@ -283,16 +280,12 @@ export default class home extends Component {
               <h2>Your Education</h2>
               <div className="card-buttons-home-section-sev">
                 <button type="button" className="btn btn-primary">
-                  Download Now!{" "}
-                  <p>
-                    <img src={google} alt="" /> Google Play
-                  </p>
+                  Download Now!
+                  <img src={google} className="googleImage" />
                 </button>
                 <button type="button" className="btn btn-primary">
-                  Download Now!{" "}
-                  <p>
-                    <i className="bi bi-apple"></i> App Store
-                  </p>
+                  Download Now!
+                  <img src={apple} className="appleImage" />
                 </button>
               </div>
             </div>
