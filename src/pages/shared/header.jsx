@@ -25,21 +25,37 @@ const Header = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  //var styles
+  const styles = {
+    style: {
+      fontWeight: "500",
+      fontSize: "18px",
+    },
+  };
   return (
     <header>
-      <nav>
+      <nav className="container">
         <div className="logo-img">
           <Link to={"/"}>
-            <img src={logo} alt="img"/>
+            <img src={logo} alt="img" />
           </Link>
         </div>
         <div className="navigator">
           <ul>
             <li>
-              <Link to={"/conference"}> Conference </Link>
-              <Link to={"categories"}> Courses </Link>
-              <Link to={"/homeBusiness"}> Business </Link>
-              <Link to={"/teacher"}> Teach </Link>
+              <Link to={"/conference"} style={styles.style}>
+                Conference
+              </Link>
+              <Link to={"categories"} style={styles.style}>
+                Courses
+              </Link>
+              <Link to={"/homeBusiness"} style={styles.style}>
+                Business
+              </Link>
+              <Link to={"/teacher"} style={styles.style}>
+                Teach
+              </Link>
             </li>
           </ul>
         </div>
@@ -47,7 +63,15 @@ const Header = () => {
           <div className="link">
             <Link to={"/login"}> Sign Up </Link>
           </div>
-          <button className="btn btn-primary" onClick={() => redirect(1)}>
+          <button
+            className="btn btn-primary"
+            style={{
+              borderRadius: "50px",
+              padding: "3px 30px",
+              fontWeight: "500",
+            }}
+            onClick={() => redirect(1)}
+          >
             Create Account
           </button>
         </div>
@@ -73,7 +97,7 @@ const Header = () => {
                 </ul>
               </div>
               <div className="buttons-menu">
-                <div className="link"> 
+                <div className="link">
                   <Link to={"/login"}> Sign Up </Link>
                 </div>
                 <button className="btn btn-primary" onClick={() => redirect(1)}>
