@@ -182,12 +182,19 @@
 }
 
 .content-cards-courses-categories{
-    width: 100%;
+    width: 350px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
     justify-items: center;
     margin-bottom: 100px;
+}
+
+.courses-categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-cards-courses-categories .card-Home{
@@ -479,11 +486,14 @@
 
     .courses-categories{
         display: flex;
+        flex-direction: row;
+        align-items: start;
         gap: 40px;
     }
 
     .content-cards-courses-categories{
         grid-template-columns: repeat(2, 1fr);
+        width: 100% !important;
         padding: 0 5%;
     }
 
