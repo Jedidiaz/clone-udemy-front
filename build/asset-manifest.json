@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.92241c85.css",
-    "main.js": "/static/js/main.21193c7e.js",
-    "static/media/Homes1.png": "/static/media/Homes1.e010b93e31b90a3c2288.png",
+    "main.css": "/static/css/main.44ab1c43.css",
+    "main.js": "/static/js/main.7bb57e7d.js",
     "static/media/imageHomeBusiness2.svg": "/static/media/imageHomeBusiness2.eb6e9582dba264e33c3a55db17f95579.svg",
     "static/media/login1.png": "/static/media/login1.a12c26e7ba0e2f13e9e9.png",
     "static/media/loginB.png": "/static/media/loginB.0656aec27e301e6da12e.png",
+    "static/media/Homes1Image.svg": "/static/media/Homes1Image.fdbfb8a8bbe9ba651c07a9a62b84d55d.svg",
     "static/media/videoTestStudend.svg": "/static/media/videoTestStudend.14c4b87d2122c45e8c550857828b6cd5.svg",
     "static/media/Home4-1.png": "/static/media/Home4-1.c57002f43541ec4b613e.png",
     "static/media/teacher-video.svg": "/static/media/teacher-video.d06ad372045625fad95b5d919c2b8ebb.svg",
@@ -30,14 +30,15 @@
     "static/media/HomeBusiness1.png": "/static/media/HomeBusiness1.a60171e1509f99088b85.png",
     "static/media/stripe.svg": "/static/media/stripe.379d3267625bdbcbc8f10b040234776f.svg",
     "static/media/imagePortada.svg": "/static/media/imagePortada.9dcd6074996a990a4be943fa60bdbeb1.svg",
+    "static/media/Homes1.svg": "/static/media/Homes1.0f2a3ec7d451619365fcc5ac5f0e3746.svg",
+    "static/media/bgHomeCard2.svg": "/static/media/bgHomeCard2.c2866360d7d2a1ff5bfd91e2e2a8e156.svg",
     "static/media/HometestProfile.svg": "/static/media/HometestProfile.9013900b3dff688dd138436cfe9d197e.svg",
+    "static/media/google-play.svg": "/static/media/google-play.87b52dac51b932e570aa0abde4b0febd.svg",
     "static/media/business-faq.svg": "/static/media/business-faq.ef975c6bdf513a91ae8baf1016c35469.svg",
-    "static/media/google-play.png": "/static/media/google-play.2156965d30af9e3a297c.png",
     "static/media/comillasHome.svg": "/static/media/comillasHome.0fc6fcdfc2151da58c4b566206974816.svg",
-    "static/media/puntosCardHome.svg": "/static/media/puntosCardHome.9f9b964dde9f3ed4a72ee752dcfd83ed.svg",
+    "static/media/apple.svg": "/static/media/apple.3aa1221a1ab44acd1af91441d70c7ac2.svg",
     "static/media/puntos.svg": "/static/media/puntos.32e2199d26c8537d21b6d6daf3dbb1c2.svg",
     "static/media/playerHeader.svg": "/static/media/playerHeader.4492b36be37e13df787878ebbb1af208.svg",
-    "static/media/circleCard.svg": "/static/media/circleCard.8f64f8ce059fc9c32153ccbc5d90d85a.svg",
     "static/media/logoWhite.svg": "/static/media/logoWhite.11c2b6f6718ae6c274c1dd458f5c1b85.svg",
     "static/media/4a.svg": "/static/media/4a.8dbc29efdd54be5badec76aef52a3505.svg",
     "static/media/adminHomeBusiness.svg": "/static/media/adminHomeBusiness.068c7e55c4a4bed5f7687045aadfe492.svg",
@@ -68,16 +69,17 @@
     "static/media/imageProfile.svg": "/static/media/imageProfile.443ce3cfab0454eba4ec047635651dec.svg",
     "static/media/leave.svg": "/static/media/leave.e00c495cd97c4f686b287b3df04f9eed.svg",
     "static/media/record3.svg": "/static/media/record3.0d881cec89747722f32a8bd1addf2568.svg",
+    "static/media/BackCardHome.svg": "/static/media/BackCardHome.38d1e7a36846ffb86ae4ad90c41671e5.svg",
     "static/media/send.svg": "/static/media/send.b40c3edee8315a80599a0b39409cd3b8.svg",
     "static/media/headerStudent.svg": "/static/media/headerStudent.3dbf97ded2d4e6421dc34ca7352304d7.svg",
     "static/media/circle.svg": "/static/media/circle.0ec4e393938ba99fe61508436591aeeb.svg",
     "static/media/businessLogo.svg": "/static/media/businessLogo.5164adcca01b7849924931b65301dcc6.svg",
     "static/media/TeacherLogo.svg": "/static/media/TeacherLogo.b2f41a6cd5540b353facac0a2fbe4ee5.svg",
-    "main.92241c85.css.map": "/static/css/main.92241c85.css.map",
-    "main.21193c7e.js.map": "/static/js/main.21193c7e.js.map"
+    "main.44ab1c43.css.map": "/static/css/main.44ab1c43.css.map",
+    "main.7bb57e7d.js.map": "/static/js/main.7bb57e7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.92241c85.css",
-    "static/js/main.21193c7e.js"
+    "static/css/main.44ab1c43.css",
+    "static/js/main.7bb57e7d.js"
   ]
 }

@@ -2,21 +2,20 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 //componets
 import logo from "../../assets/logoWhite.svg";
-import heart from '../../assets/heart.svg'
-import leave from '../../assets/leave.svg'
-import player from '../../assets/playerHeader.svg'
+import heart from "../../assets/heart.svg";
+import leave from "../../assets/leave.svg";
+import player from "../../assets/playerHeader.svg";
 
 import "../../styles/header.css";
-import imageProfile from '../../assets/imageProfile.svg'
-import headerImage from '../../assets/headerStudent.svg'
-import cart from '../../assets/cart.svg'
-import notification from '../../assets/notification.svg'
+import imageProfile from "../../assets/imageProfile.svg";
+import headerImage from "../../assets/headerStudent.svg";
+import cart from "../../assets/cart.svg";
+import notification from "../../assets/notification.svg";
 //bootstrap modules
 import Offcanvas from "react-bootstrap/Offcanvas";
 
 const HeaderPlayer = () => {
-
-//variables navigates
+  //variables navigates
   const history = useNavigate();
   const redirect = (uno) => {
     // eslint-disable-next-line default-case
@@ -36,23 +35,31 @@ const HeaderPlayer = () => {
   const handleShow = () => setShow(true);
 
   const styleH2 = {
-    color: '#fff',
-    fontSize: '20px'
-  }
+    color: "#fff",
+    fontSize: "20px",
+  };
   return (
-    <header style={{backgroundColor: '#2F2F2F'}}>
+    <header style={{ backgroundColor: "#2F2F2F" }}>
       <nav>
         <div className="logo-img">
           <img src={logo} alt="img" />
         </div>
         <div className="navigator">
-            <h2 style={styleH2}>Machine Learning and Data Science with Python</h2>
+          <h2 style={styleH2}>Machine Learning and Data Science with Python</h2>
         </div>
         <div className="buttons-student">
-          <span style={{width: '55px'}}><img src={player} /></span>
-          <span><img src={heart} /></span>
-          <span><img src={leave} /></span>
-          <span><img src={imageProfile} /></span>
+          <span style={{ width: "55px" }}>
+            <img src={player} />
+          </span>
+          <span>
+            <img src={heart} />
+          </span>
+          <span>
+            <img src={leave} />
+          </span>
+          <span>
+            <img src={imageProfile} />
+          </span>
         </div>
         {/* sidebar ** -------------------- ** -------------------- ** -------------- */}
         <div className="responsive-menu">
@@ -68,15 +75,15 @@ const HeaderPlayer = () => {
               <div className="navigator-menu">
                 <ul>
                   <li>
-                    <Link to={""}> Conference </Link>
-                    <Link to={""}> Courses </Link>
-                    <Link to={""}> Business </Link>
-                    <Link to={""}> Teach </Link>
+                    <Link to={"/conference"}>Conference</Link>
+                    <Link to={"/categories"}>Courses</Link>
+                    <Link to={"/homeBusiness"}>Business</Link>
+                    <Link to={"/teacher"}>Teach</Link>
                   </li>
                 </ul>
               </div>
               <div className="buttons-menu">
-                <div className="link"> 
+                <div className="link">
                   <Link to={"/login"}> Sign Up </Link>
                 </div>
                 <button className="btn btn-primary" onClick={() => redirect(1)}>
@@ -88,7 +95,7 @@ const HeaderPlayer = () => {
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default HeaderPlayer
+export default HeaderPlayer;
