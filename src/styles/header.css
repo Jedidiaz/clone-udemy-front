@@ -9,7 +9,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 15px;
+    padding-top: 15px;
     align-items: center;
 }
 

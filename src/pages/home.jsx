@@ -20,6 +20,7 @@ import apple from "../assets/apple.svg";
 import circle from "../assets/circle.svg";
 import puntos from "../assets/puntos.svg";
 import bgcard from "../assets/bgHomeCard2.svg";
+import back from "../assets/BackCardHome.svg";
 
 import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
@@ -28,6 +29,7 @@ import bgHome from "../assets/bghome.png";
 
 import { Link } from "react-router-dom";
 import "../styles/home.css";
+import { Form } from "react-bootstrap";
 
 export default class home extends Component {
   render() {
@@ -113,18 +115,63 @@ export default class home extends Component {
             <h1>Explore All Courses</h1>
             <ul>
               <li>
-                <Link to={""}>
-                  All <div className="underLinkHome"></div>
-                </Link>
-                <Link to={""}>
-                  Design <div className="underLinkHome"></div>
-                </Link>
-                <Link to={""}>
-                  Technology <div className="underLinkHome"></div>
-                </Link>
-                <Link to={""}>
-                  Video <div className="underLinkHome"></div>
-                </Link>
+                <div>
+                  <Form.Check
+                    type="radio"
+                    label={
+                      <div>
+                        All
+                        <div className="underLinkHome"></div>
+                      </div>
+                    }
+                    id="all"
+                    name="group10"
+                    checked
+                  />
+                  <div className="underLinkHome"></div>
+                </div>
+                <div>
+                  <Form.Check
+                    type="radio"
+                    label={
+                      <div>
+                        Design
+                        <div className="underLinkHome"></div>
+                      </div>
+                    }
+                    id="design"
+                    name="group10"
+                  />
+                  <div className="underLinkHome"></div>
+                </div>
+                <div>
+                  <Form.Check
+                    type="radio"
+                    label={
+                      <div>
+                        Technology
+                        <div className="underLinkHome"></div>
+                      </div>
+                    }
+                    id="technology"
+                    name="group10"
+                  />
+                  <div className="underLinkHome"></div>
+                </div>
+                <div>
+                  <Form.Check
+                    type="radio"
+                    label={
+                      <div>
+                        Video
+                        <div className="underLinkHome"></div>
+                      </div>
+                    }
+                    id="video"
+                    name="group10"
+                  />
+                  <div className="underLinkHome"></div>
+                </div>
               </li>
             </ul>
             <div className="card-contenedor-home">
@@ -267,12 +314,23 @@ export default class home extends Component {
                   aliqua. Quis ipsum suspendisse ultrices gravida.
                 </p>
               </div>
+              <div
+                className="container bgCardS6"
+              >
+                <img src={back} alt="" style={{width: '52%'}} />
+              </div>
               <img src={HomeSse2} alt="" />
               <img src={comillas} className="iconComillasHome" />
             </div>
           </section>
           <section className="container content-section-seven">
-            <div className="card-section-sev-home" style={{backgroundImage: `url(${bgcard})`, backgroundRepeat: 'no-repeat'}}>
+            <div
+              className="card-section-sev-home"
+              style={{
+                backgroundImage: `url(${bgcard})`,
+                backgroundRepeat: "no-repeat",
+              }}
+            >
               <button type="button" className="btn btn-primary">
                 Sign Up
               </button>

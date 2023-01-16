@@ -10,9 +10,10 @@ import HomestProfile from "../assets/HometestProfile.svg";
 
 import cardMain from "../assets/image-categories.svg";
 import imageProfile from "../assets/HometestProfile.svg";
-import bg from "../assets/bgCategories.svg";
+import bgcard from "../assets/bgHomeCard2.svg";
+import apple from "../assets/apple.svg";
 
-import google from "../assets/google-play.png";
+import google from "../assets/google-play.svg";
 
 const Categories = () => {
   let cardsInstructors = [];
@@ -22,7 +23,7 @@ const Categories = () => {
       name: "Alisson Gimenez",
       role: "IT manager",
       followers: "13200",
-      star: "13200",
+      star: "4.0",
       courses: "12",
     });
   }
@@ -55,7 +56,17 @@ const Categories = () => {
     });
   }
 
-  const titles = ['Design', 'Cake shop', 'Programming', 'Marketing', 'Finance', 'Languages', 'Architecture', 'Oratory', 'Attendance']
+  const titles = [
+    "Design",
+    "Cake shop",
+    "Programming",
+    "Marketing",
+    "Finance",
+    "Languages",
+    "Architecture",
+    "Oratory",
+    "Attendance",
+  ];
 
   const ratings = ["+4.0", "4.0", "+3.0", "3.0"];
   const category = [
@@ -71,10 +82,15 @@ const Categories = () => {
   const price = ["Paid", "Free"];
 
   const backOverlayStyle = {
-    width: '100%',
-    height: '100%',
-  }
+    width: "100%",
+    height: "100%",
+  };
 
+    const styles = {
+      styleIcons: {
+        fontSize: '20px'
+      }
+    }
   return (
     <>
       <div className="overlay-store" id="overlayShop">
@@ -108,20 +124,20 @@ const Categories = () => {
             {cardsCart?.map((el) => (
               <article className="card-Home">
                 <img src={el.image} className="image-card-home" />
-                <h4 key="{el.title}">{el.title}</h4>
+                <h4 key={el.title}>{el.title}</h4>
                 <div className="profile-hoe-card">
                   <img src={el.imageP} alt="" />
                   <div>
-                    <h5 key="{el.name}">{el.name}</h5>
-                    <p key="{el.role}">{el.role}</p>
+                    <h5 key={el.name}>{el.name}</h5>
+                    <p key={el.role}>{el.role}</p>
                   </div>
                 </div>
                 <div className="info-card-home">
-                  <p key="{el.clases}">
+                  <p key={el.clases}>
                     <i className="bi bi-folder2-open"></i> {el.clases}
                     Class
                   </p>
-                  <p key="{el.folowers}">
+                  <p key={el.folowers}>
                     <i className="bi bi-person"></i> {el.folowers}
                   </p>
                   <p>
@@ -130,29 +146,31 @@ const Categories = () => {
                 </div>
                 <div className="footer-card-home">
                   <button type="button" className="btn btn-ptimary">
-                  <i className="bi bi-plus-lg"></i>
+                    <i className="bi bi-plus-lg"></i>
                   </button>
                   <span key="{el.price}">${el.price}USD</span>
                 </div>
               </article>
             ))}
           </div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <div className="interesting-tag">
-              <h2>Tambien te podria interesar</h2>
-              <br />
-              <div className="content-tags-cart">
-              {titles.map(item => (
+            <h2>Tambien te podria interesar</h2>
+            <br />
+            <div className="content-tags-cart">
+              {titles.map((item) => (
                 <div className="tag-cart">
-                  <input type="checkbox" id={item}/>
-                  <label htmlFor={item} key={item}>{item}</label>
+                  <input type="checkbox" id={item} />
+                  <label htmlFor={item} key={item}>
+                    {item}
+                  </label>
                 </div>
               ))}
-              </div>
+            </div>
           </div>
         </div>
-        <div style={backOverlayStyle} onClick={()=> back()}></div>
+        <div style={backOverlayStyle} onClick={() => back()}></div>
       </div>
       <Header />
       <div className="container container-categories">
@@ -165,7 +183,7 @@ const Categories = () => {
             <img src={cardMain} className="img-main-card" />
             <div className="content-card-main">
               <div>
-                <h2>
+                <h2 style={{fontSize: '34px'}}>
                   Python Django 4 Masterclass | Build a Real World Project
                 </h2>
                 <p>
@@ -174,11 +192,11 @@ const Categories = () => {
                 </p>
               </div>
               <div className="profile-card-categories">
-                <span style={{marginTop: '10px'}}>
+                <span style={{ marginTop: "10px" }}>
                   <img src={imageProfile} />
-                  <span>
-                    <h4>Alisson Gimenez</h4>
-                    <p>Engineer</p>
+                  <span style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                    <h4 style={{fontSize: '14px', margin: '0', fontWeight: '600'}}>Alisson Gimenez</h4>
+                    <p style={{fontSize: '14px', color: '#909090'}}>Engineer</p>
                   </span>
                 </span>
                 <button type="button" className="btn btn-primary">
@@ -187,13 +205,13 @@ const Categories = () => {
               </div>
               <div className="stats">
                 <span>
-                  <i className="bi bi-folder2"></i>10 class
+                  <i className="bi bi-folder2" style={styles.styleIcons}></i>10 class
                 </span>
                 <span>
-                  <i className="bi bi-person"></i> 13200
+                  <i className="bi bi-person" style={styles.styleIcons}></i> 13200
                 </span>
                 <span>
-                  <i className="bi bi-star-fill"></i> 4.0
+                  <i className="bi bi-star-fill" style={styles.styleIcons}></i> 4.0
                 </span>
                 <p>$60.99USD</p>
               </div>
@@ -211,19 +229,31 @@ const Categories = () => {
                 <div>
                   <img src={el.image} />
                   <span>
-                    <i className="bi bi-star-fill"></i> {el.star}
+                    <i className="bi bi-star-fill" style={styles.styleIcons}></i> {el.star}
                   </span>
                 </div>
                 <div>
                   <span>
-                    <h5 key={el.name} style={{fontSize: '18px'}}>{el.name}</h5>
-                    <p key={el.role}>{el.role}</p>
+                    <h5 key={el.name} style={{ fontSize: "14px", margin: '0' }}>
+                      {el.name}
+                    </h5>
+                    <p
+                      key={el.role}
+                      style={{
+                        marginBottom: "8px",
+                        fontSize: "14px",
+                        color: "#909090",
+                        fontWeight: "400",
+                      }}
+                    >
+                      {el.role}
+                    </p>
                   </span>
                   <span key={el.followers}>
-                    <i className="bi bi-person"></i> {el.followers}
+                    <i className="bi bi-person" style={styles.styleIcons}></i> {el.followers}
                   </span>
                   <span key={el.courses}>
-                    <i className="bi bi-folder2-open"></i> {el.courses}
+                    <i className="bi bi-folder2-open" style={{fontSize: '20px'}}></i> {el.courses} Courses
                   </span>
                 </div>
               </div>
@@ -413,37 +443,48 @@ const Categories = () => {
           </div>
         </section>
         {/* section 4 */}
-        <section className="download">
-          <div className="card-section-sev-home" style={{backgroundImage: `url(${bg})`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat'}} >
-            <h1>Download the app </h1>
-            <h2>and learn at your own pace</h2>
-            <div className="card-buttons-home-section-sev">
-              <button type="button" className="btn btn-primary">
-                Download Now!
-                <p>
-                  <img src={google} alt="" /> Google Play
-                </p>
-              </button>
-              <button type="button" className="btn btn-primary">
-                Download Now!
-                <p>
-                  <i className="bi bi-apple"></i> App Store
-                </p>
-              </button>
-            </div>
-          </div>
-        </section>
       </div>
+      <section className="container content-section-seven">
+        <div
+          className="card-section-sev-home cardDowndload"
+          style={{
+            backgroundImage: `url(${bgcard})`,
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <h1>Download the app</h1>
+          <h2
+            style={{
+              marginBottom: "50px",
+              color: "#fff",
+              fontWeight: "400",
+              fontSize: "30px",
+            }}
+          >
+            and learn at your own pace
+          </h2>
+          <div className="card-buttons-home-section-sev buttonscarddown">
+            <button type="button" className="btn btn-primary">
+              Download Now!
+              <img src={google} className="googleImage" />
+            </button>
+            <button type="button" className="btn btn-primary">
+              Download Now!
+              <img src={apple} className="appleImage" />
+            </button>
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   );
 
-  function addCart(){
-    document.getElementById('overlayShop').style.display = 'flex'
+  function addCart() {
+    document.getElementById("overlayShop").style.display = "flex";
   }
 
-  function back(){
-    document.getElementById('overlayShop').style.display = 'none'
+  function back() {
+    document.getElementById("overlayShop").style.display = "none";
   }
 };
 

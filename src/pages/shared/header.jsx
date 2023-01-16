@@ -47,7 +47,7 @@ const Header = () => {
               <Link to={"/conference"} style={styles.style}>
                 Conference
               </Link>
-              <Link to={"categories"} style={styles.style}>
+              <Link to={"/categories"} style={styles.style}>
                 Courses
               </Link>
               <Link to={"/homeBusiness"} style={styles.style}>

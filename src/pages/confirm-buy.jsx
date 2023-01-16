@@ -49,10 +49,11 @@ const ConfirmBuy = () => {
     height: '50px',
     alignItems: 'center',
     justifyContent: 'end',
-    width: '351px',
+    width: '300px',
     fontSize: '30px',
     paddingRight: '20px'
   }
+
 
 
   return (
@@ -107,8 +108,8 @@ const ConfirmBuy = () => {
               </div>
               <br/>
               <div className="price-confirm">
-                <h5 style={{textDecoration: 'line-through'}}>$76.99USD</h5>
-                <button type="button" className="btn btn-secondary">
+                <h5 style={{textDecoration: 'line-through', fontWeight: '400'}}>$76.99USD</h5>
+                <button type="button" className="btn btn-secondary" style={{borderRadius: '15px'}}>
                   $60.99USD
                 </button>
               </div>
@@ -131,7 +132,7 @@ const ConfirmBuy = () => {
         </section>
         <button type="button" className="btn btn-secondary"  id="continue"> Continuar comprando <i className="bi bi-chevron-right"></i></button>
         <section className="also-be-interested">
-           <h2 className="mb-5" style={{fontWeight: '700'}}>También puede interesarte</h2>
+           <h2 className="mb-5" style={{fontWeight: '700', width: '100%', textAlign: 'start'}}>También puede interesarte</h2>
            <div className="card-contenedor-homeStudends" style={{gap: '30px'}}>
             {cards?.map((el) => (
               <article className="card-Home" style={{width: '350px'}}>

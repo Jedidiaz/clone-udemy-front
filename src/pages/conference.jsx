@@ -1,22 +1,23 @@
-import React from 'react'
+import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Form } from "react-bootstrap";
 import "../styles/caregories.css";
-import Header from './shared/headerStudent'
-import Footer from './shared/footer'
+import Header from "./shared/headerStudent";
+import Footer from "./shared/footer";
 
 import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
 
 import cardMain from "../assets/conference.svg";
 import imageProfile from "../assets/HometestProfile.svg";
-import bg from "../assets/bgCategories.svg";
+import bgcard from "../assets/bgHomeCard2.svg";
+import apple from "../assets/apple.svg";
 
-import google from "../assets/google-play.png";
+import google from "../assets/google-play.svg";
+import { padding } from "@mui/system";
 
 const Conference = () => {
-
-    let cardsInstructors = [];
+  let cardsInstructors = [];
   for (let i = 0; i < 4; i++) {
     cardsInstructors.push({
       image: imageProfile,
@@ -55,84 +56,87 @@ const Conference = () => {
   const lenguaje = ["English", "Spanish", "Portugues", "Italiano", "Polski"];
   const price = ["Paid", "Free"];
 
+  const styles = {
+    styleIcons: {
+      fontSize: "20px",
+    },
+    styleDivCard: {
+      width: "100%",
+    },
+    styledivContent: {
+      justifyContent: "space-between",
+      paddingTop: "50px",
+    },
+  };
+
   return (
     <>
-    <Header />
+      <Header />
       <div className="container container-categories">
         {/* section 1 */}
         <section className="featured-course-categories">
           <div className="title-featrued-categories">
             <h1>Featured conference</h1>
           </div>
-          <div className="card-main-categories" style={{width: '80%'}}>
-            <img src={cardMain} className="img-main-card" />
-            <div className="content-card-main">
+          <div className="card-main-categories" style={{ width: "80%" }}>
+            <img src={cardMain} className="img-main-cardd" />
+            <div className="content-card-main" style={styles.styledivContent}>
               <div>
-                <h2>
-                  Python Django 4 Masterclass | Build a Real World Project
-                </h2>
-                <p>
-                  Become an Expert Django Web Developer and Dramatically
-                  Increase Your Career Potential
-                </p>
+                <h2>Marketing for agencys</h2>
+                <p>become an expert web development agency manager</p>
               </div>
-              <div className="profile-card-categories">
-                <span>
-                  <img src={imageProfile} />
-                  <span>
-                    <h4>Alisson Gimenez</h4>
-                    <p>Engineer</p>
+              <div style={styles.styleDivCard}>
+                <div className="profile-card-categories">
+                  <span style={{ marginTop: "10px" }}>
+                    <img src={imageProfile} />
+                    <span
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <h4
+                        style={{
+                          fontSize: "14px",
+                          margin: "0",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Alisson Gimenez
+                      </h4>
+                      <p style={{ fontSize: "14px", color: "#909090" }}>
+                        Engineer
+                      </p>
+                    </span>
                   </span>
-                </span>
-                <button type="button" className="btn btn-primary">
-                  Buy Now
-                </button>
-              </div>
-              <div className="stats">
-                <span>
-                  <i className="bi bi-folder2"></i>10 class
-                </span>
-                <span>
-                  <i className="bi bi-person"></i> 13200
-                </span>
-                <span>
-                  <i className="bi bi-star-fill"></i> 4.0
-                </span>
-                <p>$60.99USD</p>
+                  <button type="button" className="btn btn-primary">
+                    Buy Now
+                  </button>
+                </div>
+                <div className="stats">
+                  <span>
+                    <i className="bi bi-folder2" style={styles.styleIcons}></i>
+                    10 class
+                  </span>
+                  <span>
+                    <i className="bi bi-person" style={styles.styleIcons}></i>{" "}
+                    13200
+                  </span>
+                  <span>
+                    <i
+                      className="bi bi-star-fill"
+                      style={styles.styleIcons}
+                    ></i>{" "}
+                    4.0
+                  </span>
+                  <p>$60.99USD</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
         {/* section 2 */}
-        {/* <section className="popular-instructors">
-          <div className="title-popular-categories">
-            <h1>Popular Instructors</h1>
-          </div>
-          <div className="content-cards-categories">
-            {cardsInstructors.map((el) => (
-              <div className="card-categories">
-                <div>
-                  <img src={el.image} />
-                  <span>
-                    <i className="bi bi-star-fill"></i> {el.star}
-                  </span>
-                </div>
-                <div>
-                  <span>
-                    <h5 key={el.name}>{el.name}</h5>
-                    <p key={el.role}>{el.role}</p>
-                  </span>
-                  <span key={el.followers}>
-                    <i className="bi bi-person"></i> {el.followers}
-                  </span>
-                  <span key={el.courses}>
-                    <i className="bi bi-folder2-open"></i> {el.courses}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section> */}
         {/* section 3 */}
         <section className="development-courses">
           <div className="title-development-categories">
@@ -215,7 +219,16 @@ const Conference = () => {
                 <div className="Ratings">
                   <h3>Ratings</h3>
                   {ratings.map((el) => (
-                    <Form.Check label={<span><i className="bi bi-star-fill"></i> {el}</span>  } name="group8" type="radio" id={el} />
+                    <Form.Check
+                      label={
+                        <span>
+                          <i className="bi bi-star-fill"></i> {el}
+                        </span>
+                      }
+                      name="group8"
+                      type="radio"
+                      id={el}
+                    />
                   ))}
                 </div>
                 <div className="Category">
@@ -307,30 +320,41 @@ const Conference = () => {
           </div>
         </section>
         {/* section 4 */}
-        <section className="download">
-          <div className="card-section-sev-home" style={{backgroundImage: `url(${bg})`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat'}} >
-            <h1>Download the app </h1>
-            <h2>and learn at your own pace</h2>
-            <div className="card-buttons-home-section-sev">
-              <button type="button" className="btn btn-primary">
-                Download Now!
-                <p>
-                  <img src={google} alt="" /> Google Play
-                </p>
-              </button>
-              <button type="button" className="btn btn-primary">
-                Download Now!
-                <p>
-                  <i className="bi bi-apple"></i> App Store
-                </p>
-              </button>
-            </div>
-          </div>
-        </section>
       </div>
+      <section className="container content-section-seven">
+        <div
+          className="card-section-sev-home cardDowndload"
+          style={{
+            backgroundImage: `url(${bgcard})`,
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <h1>Download the app</h1>
+          <h2
+            style={{
+              marginBottom: "50px",
+              color: "#fff",
+              fontWeight: "400",
+              fontSize: "30px",
+            }}
+          >
+            and learn at your own pace
+          </h2>
+          <div className="card-buttons-home-section-sev buttonscarddown">
+            <button type="button" className="btn btn-primary">
+              Download Now!
+              <img src={google} className="googleImage" />
+            </button>
+            <button type="button" className="btn btn-primary">
+              Download Now!
+              <img src={apple} className="appleImage" />
+            </button>
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Conference
+export default Conference;

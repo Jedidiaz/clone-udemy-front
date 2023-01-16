@@ -49,6 +49,14 @@ const Cart = () => {
     width: '100%',
     borderRadius: '20px'
   }
+
+  const styles = {
+    styleP: {
+      fontSize: '14px', 
+      margin: '0',
+      fontWeight: '600'
+    }
+  }
   return (
     <>
       <Header />
@@ -82,10 +90,10 @@ const Cart = () => {
                 <h3 key={item.price} style={{color: '#898989'}} >${item.price}USD</h3>
                 <div style={statsStyke}>
                   <div>
-                    <p key={item.sub} style={{marginBottom: '5px'}} >
+                    <p key={item.sub} style={styles.styleP} >
                       <i className="bi bi-badge-cc"></i> {item.sub}
                     </p>
-                    <p key={item.audio} style={{marginBottom: '5px'}}>
+                    <p key={item.audio} style={styles.styleP}>
                       <i className="bi bi-volume-up-fill"></i> {item.audio}
                     </p>
                   </div>
@@ -99,7 +107,7 @@ const Cart = () => {
         </div>
         <div className="info-cart">
           <h2>Total</h2>
-          <h3>$210.00 USD</h3>
+          <h3 style={{fontWeigth: '400'}}>$210.00 USD</h3>
         </div>
         <div className="buttons-credit-cards">
             <div>

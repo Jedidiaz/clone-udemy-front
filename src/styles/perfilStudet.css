@@ -25,6 +25,15 @@
     object-fit: cover;
 }
 
+.image-portada-perfilStudent img{
+    margin-top: 20px;
+}
+
+.image-portada-perfilStudent .btn{
+    margin-top: 30px !important;
+    margin-right: 10px !important;
+}
+
 .image-portada-perfilStudent .btn{
     position: absolute;
     right: 0;
@@ -341,7 +350,6 @@
 
     .info1, .list-video-perfilStudet {
         width: 50%;
-        max-height: 300px;
         overflow-y: scroll;
     }
 
