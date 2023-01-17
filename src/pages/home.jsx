@@ -86,9 +86,11 @@ export default class home extends Component {
                   >
                     Read More
                   </button>
-                  <button type="button" className="btn btn-primary">
-                    Start Today
-                  </button>
+                  <Link to={""}>
+                    <button type="button" className="btn btn-primary">
+                      Start Today
+                    </button>
+                  </Link>
                 </div>
               </div>
               <div className="imageSection1Home">
@@ -199,9 +201,11 @@ export default class home extends Component {
                     </p>
                   </div>
                   <div className="footer-card-home">
-                    <button type="button" className="btn btn-ptimary">
-                      Buy Now
-                    </button>
+                    <Link to="/cart">
+                      <button type="button" className="btn btn-ptimary">
+                        Buy Now
+                      </button>
+                    </Link>
                     <span key="{el.price}">${el.price}USD</span>
                   </div>
                 </article>
@@ -314,10 +318,8 @@ export default class home extends Component {
                   aliqua. Quis ipsum suspendisse ultrices gravida.
                 </p>
               </div>
-              <div
-                className="container bgCardS6"
-              >
-                <img src={back} alt="" style={{width: '52%'}} />
+              <div className="container bgCardS6">
+                <img src={back} alt="" style={{ width: "52%" }} />
               </div>
               <img src={HomeSse2} alt="" />
               <img src={comillas} className="iconComillasHome" />
