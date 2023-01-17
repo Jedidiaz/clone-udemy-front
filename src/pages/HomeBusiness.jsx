@@ -194,7 +194,7 @@ const HomeBusiness = () => {
                   flexDirection: "column",
                   gap: "20px",
                   width: "100%",
-                  maxWidth: '500px'
+                  maxWidth: "500px",
                 }}
               >
                 <input
@@ -263,14 +263,14 @@ const HomeBusiness = () => {
             <h1 style={{ fontWeight: "bold", textAlign: "center" }}>
               How we do it
             </h1>
-            <div className="buttonsSection5HomeBusiness">
+            <div className="buttons-section-five">
               <button
                 type="button"
                 // style={styles.styleButtonS5}
                 className="btn btn-secondary"
                 id="iconHomeBusinesss5"
               >
-                <img src={iconHome1} style={{ width: "100%" }} />
+                <img src={iconHome1} style={{ width: "70%" }} />
                 Integrated Solutions
               </button>
               <button
@@ -279,7 +279,7 @@ const HomeBusiness = () => {
                 className="btn btn-secondary"
                 id="iconHomeBusinesss5"
               >
-                <img src={iconHome2} style={{ width: "100%" }} />
+                <img src={iconHome2} style={{ width: "70%" }} />
                 Overview On-Demand
               </button>
               <button
@@ -288,7 +288,7 @@ const HomeBusiness = () => {
                 className="btn btn-secondary"
                 id="iconHomeBusinesss5"
               >
-                <img src={iconHome3} style={{ width: "100%" }} />
+                <img src={iconHome3} style={{ width: "70%" }} />
                 Learning Immersive
               </button>
               <button
@@ -297,7 +297,7 @@ const HomeBusiness = () => {
                 className="btn btn-secondary"
                 id="iconHomeBusinesss5"
               >
-                <img src={iconHome4} style={{ width: "100%" }} />
+                <img src={iconHome4} style={{ width: "70%" }} />
                 Learning Cohort Learnings
               </button>
             </div>
@@ -305,7 +305,15 @@ const HomeBusiness = () => {
         </section>
         {/* section 6 */}
         <section className="container">
-          <h1 style={{ fontWeight: "bold", textAlign: "center", margin: '50px 0' }}>Plans</h1>
+          <h1
+            style={{
+              fontWeight: "bold",
+              textAlign: "center",
+              margin: "50px 0",
+            }}
+          >
+            Plans
+          </h1>
           {/* planes */}
           <div className="contentsection6HomeBusiness">
             <div style={styles.stylePLans}>
@@ -314,135 +322,165 @@ const HomeBusiness = () => {
                 <span>21 or more users</span>
               </div>
               <h4>Contact sales for pricing</h4>
-              <button type="button" className="btn btn-warning" style={{color: '#fff'}}>
+              <button
+                type="button"
+                className="btn btn-warning"
+                style={{ color: "#fff" }}
+              >
                 Request a demo
               </button>
               <div>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Access to 17,000+
-                  courses*
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Access to 17,000+ courses*
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Custom logo & URL
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Custom logo & URL
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Create learning paths
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Create learning paths
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Create and host
-                  proprietary courses
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Create and host proprietary courses
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Create user groups
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Create user groups
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Custom topics
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Custom topics
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Advanced insights and
-                  analytics
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Advanced insights and analytics
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> International collection
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  International collection
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Mobile app access
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Mobile app access
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Eligible for Udemy
-                  Business Pro add-on*
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Eligible for Udemy Business Pro add-on*
                 </p>
               </div>
             </div>
             <div style={styles.stylePLans}>
-            <div>
+              <div>
                 <h3>Enterprise</h3>
                 <span>21 or more users</span>
               </div>
               <h4>Contact sales for pricing</h4>
-              <button type="button" className="btn btn-warning" style={{color: '#fff'}}>
+              <button
+                type="button"
+                className="btn btn-warning"
+                style={{ color: "#fff" }}
+              >
                 Request a demo
               </button>
               <div>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Access to 17,000+
-                  courses*
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Access to 17,000+ courses*
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Custom logo & URL
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Custom logo & URL
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Create learning paths
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Create learning paths
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Create and host
-                  proprietary courses
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Create and host proprietary courses
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Create user groups
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Create user groups
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Custom topics
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Custom topics
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Advanced insights and
-                  analytics
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Advanced insights and analytics
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> International collection
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  International collection
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Mobile app access
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Mobile app access
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Eligible for Udemy
-                  Business Pro add-on*
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Eligible for Udemy Business Pro add-on*
                 </p>
               </div>
             </div>
             <div style={styles.stylePLans}>
-            <div>
+              <div>
                 <h3>Enterprise</h3>
                 <span>21 or more users</span>
               </div>
               <h4>Contact sales for pricing</h4>
-              <button type="button" className="btn btn-warning" style={{color: '#fff'}}>
+              <button
+                type="button"
+                className="btn btn-warning"
+                style={{ color: "#fff" }}
+              >
                 Request a demo
               </button>
               <div>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Access to 17,000+
-                  courses*
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Access to 17,000+ courses*
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Custom logo & URL
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Custom logo & URL
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Create learning paths
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Create learning paths
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Create and host
-                  proprietary courses
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Create and host proprietary courses
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Create user groups
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Create user groups
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Custom topics
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Custom topics
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Advanced insights and
-                  analytics
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Advanced insights and analytics
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> International collection
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  International collection
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Mobile app access
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Mobile app access
                 </p>
                 <p>
-                  <i className="bi bi-check-circle iconHomeBusiness11"></i> Eligible for Udemy
-                  Business Pro add-on*
+                  <i className="bi bi-check-circle iconHomeBusiness11"></i>{" "}
+                  Eligible for Udemy Business Pro add-on*
                 </p>
               </div>
             </div>

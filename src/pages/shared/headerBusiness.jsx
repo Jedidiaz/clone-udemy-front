@@ -30,7 +30,7 @@ const HeaderBusiness = () => {
       <nav>
         <div className="logo-img">
           <Link to={"/"}>
-            <img src={logo} alt="img"/>
+            <img src={logo} alt="img" />
           </Link>
         </div>
         <div className="navigator">
@@ -64,15 +64,15 @@ const HeaderBusiness = () => {
               <div className="navigator-menu">
                 <ul>
                   <li>
-                    <Link to={""}> Conference </Link>
-                    <Link to={""}> Courses </Link>
-                    <Link to={""}> Business </Link>
-                    <Link to={""}> Teach </Link>
+                    <Link to={"/conference"}>Conference</Link>
+                    <Link to={"/categories"}>Courses</Link>
+                    <Link to={"/homeBusiness"}>Business</Link>
+                    <Link to={"/teacher"}>Teach</Link>
                   </li>
                 </ul>
               </div>
               <div className="buttons-menu">
-                <div className="link"> 
+                <div className="link">
                   <Link to={"/login"}> Sign Up </Link>
                 </div>
                 <button className="btn btn-primary" onClick={() => redirect(1)}>

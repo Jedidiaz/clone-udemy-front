@@ -32,66 +32,73 @@ const HeaderStudent = () => {
   const handleShow = () => setShow(true);
   //variables estilos
   const styleOverlay = {
-    position: 'fixed',
-    display: 'none',
-    width: '100%',
-    height: '100%',
-    top: '0',
-    left: '0',
-    right: '0',
-    bottom: '0',
-    backgroundColor: 'rgba(0,0,0,0.5)',
-    zIndex: '100',
-  }
+    position: "fixed",
+    display: "none",
+    width: "100%",
+    height: "100%",
+    top: "0",
+    left: "0",
+    right: "0",
+    bottom: "0",
+    backgroundColor: "rgba(0,0,0,0.5)",
+    zIndex: "100",
+  };
 
   const styleNotifications = {
-    width: '300px',
-    height: '250px',
-    backgroundColor: '#fff',
-    position: 'absolute',
-    top: 'calc(0% + 70px)',
-    right: 'calc(0% + 20px)',
-    borderRadius: '20px',
-    padding: '10px 20px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-
-  }
+    width: "300px",
+    height: "250px",
+    backgroundColor: "#fff",
+    position: "absolute",
+    top: "calc(0% + 70px)",
+    right: "calc(0% + 20px)",
+    borderRadius: "20px",
+    padding: "10px 20px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  };
 
   const styleBack = {
-    width: '100%',
-    height: '100%'
-  }
+    width: "100%",
+    height: "100%",
+  };
 
   const styleOptions = {
-    width: '100%',
-    display: 'flex',
-    gap: '40px',
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
+    width: "100%",
+    display: "flex",
+    gap: "40px",
+    justifyContent: "center",
+    alignItems: "center",
+  };
   const styleLabel = {
-    display: 'flex',
-    flexDirection: 'column',
-  }
+    display: "flex",
+    flexDirection: "column",
+  };
   return (
     <>
-      <div id="overlay" style={styleOverlay} >
-        <div onClick={()=> notificationHide()} style={styleBack}></div>
+      <div id="overlay" style={styleOverlay}>
+        <div onClick={() => notificationHide()} style={styleBack}></div>
         <div className="notifications" style={styleNotifications}>
-          <div className="buttons-select-notifications" > 
-          <Form>
+          <div className="buttons-select-notifications">
+            <Form>
               <div className="mb-3" style={styleOptions}>
                 <Form.Check
-                  label= {<span style={styleLabel}>Student<div className="barra"></div></span>}
+                  label={
+                    <span style={styleLabel}>
+                      Student<div className="barra"></div>
+                    </span>
+                  }
                   name="group11"
                   type="radio"
                   id="Student"
                   checked
                 />
                 <Form.Check
-                  label={<span>Instructor<div className="barra"></div></span>}
+                  label={
+                    <span>
+                      Instructor<div className="barra"></div>
+                    </span>
+                  }
                   name="group11"
                   type="radio"
                   id="Instructor"
@@ -100,15 +107,15 @@ const HeaderStudent = () => {
             </Form>
           </div>
           <div className="content-notifications">
-              <p>not notifications</p>
+            <p>not notifications</p>
           </div>
         </div>
       </div>
-      <header id='header'>
+      <header id="header">
         <nav>
           <div className="logo-img">
             <Link to={"/"}>
-              <img src={logo} alt="img"/>
+              <img src={logo} alt="img" />
             </Link>
           </div>
           <div className="navigator">
@@ -119,18 +126,18 @@ const HeaderStudent = () => {
             </span>
             <ul>
               <li>
-                <Link to={"/conference"} > Conference </Link>
-                <Link to={"/business"}> Business </Link>
+                <Link to={"/conference"}> Conference </Link>
+                <Link to={"/homeBusiness"}> Business </Link>
                 <Link to={"/teacher"}> Teach </Link>
               </li>
             </ul>
           </div>
           <div className="buttons-student">
-            <span >
+            <span>
               <img src={headerImage} />
             </span>
             <span>
-              <Link to={'/cart'}>
+              <Link to={"/cart"}>
                 <img src={cart} />
               </Link>
             </span>
@@ -180,13 +187,12 @@ const HeaderStudent = () => {
       </header>
     </>
   );
-  function viewNotifications(){
-    document.getElementById('overlay').style.display = 'block'
+  function viewNotifications() {
+    document.getElementById("overlay").style.display = "block";
   }
-  function notificationHide(){
-    document.getElementById('overlay').style.display = 'none' 
+  function notificationHide() {
+    document.getElementById("overlay").style.display = "none";
   }
-  
 };
 
 export default HeaderStudent;
