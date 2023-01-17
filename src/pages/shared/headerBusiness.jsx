@@ -37,7 +37,7 @@ const HeaderBusiness = () => {
           <ul>
             <li>
               <a href="#ww"> What we do </a>
-              <a href="#hw"> What we do </a>
+              <a href="#hw"> How we do it </a>
               <a href="#plans"> Plans </a>
             </li>
           </ul>
@@ -46,7 +46,7 @@ const HeaderBusiness = () => {
           <div className="link">
             <Link to={"/loginB"}> Sign Up </Link>
           </div>
-          <button className="btn btn-primary" onClick={() => redirect(1)}>
+          <button className="btn btn-primary" style={{borderRadius: '50px'}} onClick={() => redirect(1)}>
             Create Account
           </button>
         </div>
