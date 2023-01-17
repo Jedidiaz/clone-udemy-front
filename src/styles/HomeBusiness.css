@@ -139,6 +139,12 @@
     margin-bottom: 100px;
   }
 
+  /* card section2 */
+  .cardSecrtion2HomeB:hover{
+    cursor: pointer;
+    scale: 1.03;
+  }
+
 @media screen and (min-width: 1024px) {
     .section-one-HomeBusiness{
         flex-direction: row;

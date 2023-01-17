@@ -137,19 +137,19 @@ const HomeBusiness = () => {
             {/* content two */}
             <div className="ContentCardsGlobalHomeBusiness">
               {/* cards */}
-              <div style={styles.styleCardButton}>
+              <div style={styles.styleCardButton} className="cardSecrtion2HomeB">
                 <div style={styles.styleDivIcon}>
                   <img src={icon1} style={{ width: "100%" }} />
                 </div>
                 <h4 style={{ marginTop: "50px" }}>Global instructors</h4>
               </div>
-              <div style={styles.styleCardButton}>
-                <div style={styles.styleDivIcon} className="">
+              <div style={styles.styleCardButton} className="cardSecrtion2HomeB">
+                <div style={styles.styleDivIcon}>
                   <img src={icon2} style={{ width: "100%" }} />
                 </div>
                 <h4 style={{ marginTop: "50px" }}>Admin functionality</h4>
               </div>
-              <div style={styles.styleCardButton}>
+              <div style={styles.styleCardButton} className="cardSecrtion2HomeB">
                 <div style={styles.styleDivIcon}>
                   <img src={icon3} style={{ width: "100%" }} />
                 </div>
