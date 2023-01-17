@@ -10,39 +10,39 @@ const FooterStudent = () => {
         <div className="contenedor-footer">
           <div className="section-one">
             <img src={logo} alt="img" />
-            <h3>Pages</h3>
+            <h3 style={{color: '#fff'}}>Pages</h3>
             <br />
             <ul>
               <li>
-              <Link to={'/'} >Home</Link>
-              <Link to={''} >Our App</Link>
-              <Link to={'/categories'} >Courses</Link>
-              <Link to={'/teacher'} >Teach</Link>
+              <Link to={'/'} style={{color: '#fff'}} >Home</Link>
+              <Link to={''} style={{color: '#fff'}}>Our App</Link>
+              <Link to={'/categories'} style={{color: '#fff'}}>Courses</Link>
+              <Link to={'/teacher'} style={{color: '#fff'}}>Teach</Link>
               </li>
             </ul>
           </div>
           <div className="links">
-            <h3>Links</h3>
+            <h3 style={{color: '#fff'}}>Links</h3>
             <ul>
               <li>
-                <Link to={""}>Blogs</Link>
-                <Link to={""}>Support</Link>
+                <Link to={""} style={{color: '#fff'}}>Blogs</Link>
+                <Link to={""} style={{color: '#fff'}}>Support</Link>
               </li>
             </ul>
           </div>
           <div className="privacity">
-            <h3>Conditions</h3>
+            <h3 style={{color: '#fff'}}>Conditions</h3>
             <ul>
-              <li>
-                <Link to={""}>Privacy Plicy</Link>
-                <Link to={""}>Side Configuration</Link>
-                <Link to={""}>Cookie map</Link>
+              <li >
+                <Link to={""} style={{color: '#fff'}}>Privacy Plicy</Link>
+                <Link to={""} style={{color: '#fff'}}>Side Configuration</Link>
+                <Link to={""} style={{color: '#fff'}}>Cookie map</Link>
               </li>
             </ul>
           </div>
-          <div className="regist">
-            <h3>Do you want to be the first?</h3>
-            <p>Register and do not miss the news</p>
+          <div className="regist" >
+            <h3 style={{color: '#fff'}}>Do you want to be the first?</h3>
+            <p style={{color: '#fff'}}>Register and do not miss the news</p>
             <div className="inputs">
               <input
                 type="text"

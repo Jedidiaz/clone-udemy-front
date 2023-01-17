@@ -81,6 +81,7 @@ const TeacherPortal = () => {
                   type="radio"
                   id="dash"
                   onChange={() => viewHome()}
+                  defaultChecked
 
                 />
                 <Form.Check

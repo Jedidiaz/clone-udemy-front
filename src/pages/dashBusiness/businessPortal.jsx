@@ -16,6 +16,7 @@ import HomestProfile from "../../assets/HometestProfile.svg";
 import carouselImage from "../../assets/CarouselImagegomeS.svg";
 
 import faq from "../../assets/business-faq.svg";
+import { useNavigate } from "react-router";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -129,6 +130,8 @@ const BusinessPortal = () => {
     display: "flex",
     flexDirection: "column",
   };
+
+  const navigate = useNavigate()
   return (
     <>
       <div id="overlay" style={styleOverlay}>
@@ -180,6 +183,7 @@ const BusinessPortal = () => {
                   type="radio"
                   id="dash"
                   onChange={() => viewDash()}
+                  defaultChecked
                 />
                 <Form.Check
                   label={<i className="bi bi-file-earmark"></i>}
@@ -369,28 +373,28 @@ const BusinessPortal = () => {
                   {cards?.map((el) => (
                     <article className="card-Home">
                       <img src={el.image} className="image-card-home" />
-                      <h4 key="{el.title}">{el.title}</h4>
+                      <h4 key={el.title}>{el.title}</h4>
                       <div className="profile-hoe-card">
                         <img src={el.imageP} alt="" />
                         <div>
-                          <h5 key="{el.name}">{el.name}</h5>
-                          <p key="{el.role}">{el.role}</p>
+                          <h5 key={el.name}>{el.name}</h5>
+                          <p key={el.role}>{el.role}</p>
                         </div>
                       </div>
                       <div className="info-card-home">
-                        <p key="{el.clases}">
+                        <p key={el.clases}>
                           <i className="bi bi-folder2-open"></i> {el.clases}
                           Clases
                         </p>
-                        <p key="{el.folowers}">
+                        <p key={el.folowers}>
                           <i className="bi bi-person"></i> {el.folowers}
                         </p>
                         <p>
-                          <i className="bi bi-star"></i> 5.0
+                          <i className="bi bi-star-fill"></i> 5.0
                         </p>
                       </div>
                       <div className="footer-card-home">
-                        <button type="button" className="btn btn-ptimary">
+                        <button type="button" className="btn btn-ptimary" onClick={()=> navigate('/confirm')}>
                           Buy Now
                         </button>
                         <span key="{el.price}">${el.price}USD</span>

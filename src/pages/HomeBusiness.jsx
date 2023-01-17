@@ -237,7 +237,7 @@ const HomeBusiness = () => {
           </div>
         </section>
         {/* section 4 */}
-        <section style={{ margin: "50px 0" }}>
+        <section style={{ margin: "50px 0" }} id="ww">
           <h1 style={{ textAlign: "center", fontWeight: "bold" }}>
             What we do
           </h1>
@@ -257,7 +257,7 @@ const HomeBusiness = () => {
           </div>
         </section>
         {/* section 5 */}
-        <section style={{ margin: "50px 0" }}>
+        <section style={{ margin: "50px 0" }} id="hw">
           {/* How we do it */}
           <div className="container section5HomeBusiness">
             <h1 style={{ fontWeight: "bold", textAlign: "center" }}>
@@ -304,7 +304,7 @@ const HomeBusiness = () => {
           </div>
         </section>
         {/* section 6 */}
-        <section className="container">
+        <section className="container" id="plans">
           <h1
             style={{
               fontWeight: "bold",

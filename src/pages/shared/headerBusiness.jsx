@@ -36,9 +36,9 @@ const HeaderBusiness = () => {
         <div className="navigator">
           <ul>
             <li>
-              <Link to={""}> What we do </Link>
-              <Link to={""}> What we do </Link>
-              <Link to={""}> Plans </Link>
+              <a href="#ww"> What we do </a>
+              <a href="#hw"> What we do </a>
+              <a href="#plans"> Plans </a>
             </li>
           </ul>
         </div>

@@ -98,7 +98,7 @@ const ProfileTeacher = () => {
               className="btn btn-secondaty"
               type="buttom"
               style={{textDecoration: 'underline'}}
-              onClick={el => readMore()}
+              onClick={() => readMore()}
             >
               Show more
             </button>
@@ -118,8 +118,8 @@ const ProfileTeacher = () => {
         </section>
         <br />
         <br />
-        <section className="topics-profile">
-          <h1 style={{ fontWeight: "700" }}>My courses</h1>
+        <section className="topics-profile" style={{marginBottom: '200px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+          <h1 style={{ fontWeight: "700", width: '100%' }}>My courses</h1>
           <br />
           <div className="card-contenedor-homeStudends" >
             {cards?.map((el) => (
