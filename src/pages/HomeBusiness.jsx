@@ -144,8 +144,7 @@ const HomeBusiness = () => {
                 <h4 style={{ marginTop: "50px" }}>Global instructors</h4>
               </div>
               <div style={styles.styleCardButton}>
-                <div style={styles.styleDivIcon}>
-                  {" "}
+                <div style={styles.styleDivIcon} className="">
                   <img src={icon2} style={{ width: "100%" }} />
                 </div>
                 <h4 style={{ marginTop: "50px" }}>Admin functionality</h4>

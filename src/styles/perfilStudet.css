@@ -350,12 +350,12 @@
 
     .info1, .list-video-perfilStudet {
         width: 50%;
-        overflow-y: scroll;
     }
 
     .list-video-perfilStudet{
         max-height: 474px;
         padding: 20px;
+        overflow-y: scroll;
     }
 
     .purchase-history{

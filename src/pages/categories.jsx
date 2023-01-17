@@ -14,8 +14,11 @@ import bgcard from "../assets/bgHomeCard2.svg";
 import apple from "../assets/apple.svg";
 
 import google from "../assets/google-play.svg";
+import { useNavigate } from "react-router";
 
 const Categories = () => {
+  const navigate = useNavigate()
+
   let cardsInstructors = [];
   for (let i = 0; i < 4; i++) {
     cardsInstructors.push({
@@ -199,7 +202,7 @@ const Categories = () => {
                     <p style={{fontSize: '14px', color: '#909090'}}>Engineer</p>
                   </span>
                 </span>
-                <button type="button" className="btn btn-primary">
+                <button type="button" className="btn btn-primary" onClick={()=> navigate('/confirm')}>
                   Buy Now
                 </button>
               </div>

@@ -18,7 +18,6 @@ import stripe from "../assets/stripe.svg";
 import { Link } from "react-router-dom";
 
 const PerfilStudent = () => {
-
   useEffect(() => {
     checkedpaymethod();
   });
@@ -75,6 +74,7 @@ const PerfilStudent = () => {
                     type="switch"
                     id="custom-switch"
                     label="Direct messaging"
+                    defaultChecked
                   />
                   <Form.Check
                     reverse
@@ -140,6 +140,7 @@ const PerfilStudent = () => {
                   type="radio"
                   id="Payment-methods"
                   onChange= {(el) => checkedpaymethod(el)}
+                  defaultChecked
                 />
                 <Form.Check
                   label="Purchase history"
@@ -170,6 +171,7 @@ const PerfilStudent = () => {
                         name="group2"
                         type="radio"
                         id="paypal"
+                        defaultChecked
                       />
                       
                     </div>

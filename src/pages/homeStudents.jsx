@@ -13,8 +13,11 @@ import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
 
 import carouselImage from "../assets/CarouselImagegomeS.svg";
+import { useNavigate } from "react-router";
 
 const HomeStudents = () => {
+  const navigate = useNavigate()
+
   let videos = [];
   for (let i = 0; i < 4; i++) {
     videos.push({
@@ -101,11 +104,11 @@ const HomeStudents = () => {
                     <i className="bi bi-person"></i> {el.folowers}
                   </p>
                   <p>
-                    <i className="bi bi-star"></i> 5.0
+                    <i className="bi bi-star-fill"></i> 5.0
                   </p>
                 </div>
                 <div className="footer-card-home">
-                  <button type="button" className="btn btn-ptimary">
+                  <button type="button" className="btn btn-ptimary" onClick={()=> navigate('/confirm')}>
                     Buy Now
                   </button>
                   <span key={el.price}>${el.price}USD</span>

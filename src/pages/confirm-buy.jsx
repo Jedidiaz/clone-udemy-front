@@ -9,8 +9,11 @@ import profile from "../assets/HometestProfile.svg";
 
 import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
+import { useNavigate } from "react-router";
 
 const ConfirmBuy = () => {
+
+    const navigate = useNavigate()
 
     let cards = [];
     for (let i = 0; i < 6; i++) {
@@ -158,7 +161,7 @@ const ConfirmBuy = () => {
                   </p>
                 </div>
                 <div className="footer-card-home">
-                  <button type="button" className="btn btn-ptimary">
+                  <button type="button" className="btn btn-ptimary" onClick={()=> navigate('/confirm')}>
                     Buy Now
                   </button>
                   <span key={el.price}>${el.price}USD</span>

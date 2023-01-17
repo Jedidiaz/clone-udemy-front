@@ -13,9 +13,11 @@ import visa from "../assets/visa.svg";
 import masterCard from "../assets/mastercard.svg";
 import americaE from "../assets/americanExpress.svg";
 import paypal from "../assets/paypallow.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate()
+
   let card = [];
   for (let i = 0; i < 4; i++) {
     card.push({
@@ -65,7 +67,7 @@ const Cart = () => {
           <h2>
             Carrito (<span>5</span> cursos)
           </h2>
-          <button type="button" className="btn btn-secondary">
+          <button type="button" className="btn btn-secondary" onClick={()=> navigate('/categories')}>
             Continuar comprando <i className="bi bi-chevron-right"></i>
           </button>
         </div>

@@ -15,8 +15,21 @@ import apple from "../assets/apple.svg";
 
 import google from "../assets/google-play.svg";
 import { padding } from "@mui/system";
+import { useNavigate } from "react-router";
 
 const Conference = () => {
+  const navigate = useNavigate()
+  const redirect = (page)=> {
+    switch (page) {
+      case 1:
+          navigate('/confirm')
+        break;
+    
+      default:
+        break;
+    }
+  }
+
   let cardsInstructors = [];
   for (let i = 0; i < 4; i++) {
     cardsInstructors.push({
@@ -110,7 +123,7 @@ const Conference = () => {
                       </p>
                     </span>
                   </span>
-                  <button type="button" className="btn btn-primary">
+                  <button type="button" className="btn btn-primary" onClick={()=> redirect(1)}>
                     Buy Now
                   </button>
                 </div>

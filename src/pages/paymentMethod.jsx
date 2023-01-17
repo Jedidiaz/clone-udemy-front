@@ -13,9 +13,11 @@ import masterCard from "../assets/mastercard.svg";
 import americaE from "../assets/americanExpress.svg";
 import paypal from "../assets/paypallow.svg";
 import paypalH from "../assets/paypal.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const PaymentMethod = () => {
+  const navigate = useNavigate()
+
   const styleContainer = {
     display: "flex",
     justifyContent: "center",
@@ -179,7 +181,7 @@ const PaymentMethod = () => {
                   </p>
                 </div>
                 <div className="footer-card-home">
-                  <button type="button" className="btn btn-ptimary">
+                  <button type="button" className="btn btn-ptimary" onClick={()=> navigate('/confirm')}>
                     Buy Now
                   </button>
                   <span key={el.price}>${el.price}USD</span>

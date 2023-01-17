@@ -66,7 +66,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    border: 1px solid rgb(43, 43, 43);
+    border: 1px solid #6c757d;
     border-radius: 20px;
     width: 200px;
     height: 300px;
@@ -74,7 +74,6 @@
     font-size: 20px;
     color: rgb(182, 182, 182);
     background-color: transparent;
-    box-shadow: rgb(0 0 0 / 15%) 0px 4px 11.83px;
 }
 
 /*  hover */
@@ -84,8 +83,8 @@
 }
 
 .buttonsSection5HomeBusiness .btn:hover {
-    color: #F3B601;
-    border-color: #F3B601;
+    border: 0;
+    box-shadow: rgb(0 0 0 / 15%) 0px 4px 11.83px;
 }
 
 @media screen and (min-width: 1024px) {
