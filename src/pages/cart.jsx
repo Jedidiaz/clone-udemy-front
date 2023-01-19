@@ -9,10 +9,10 @@ import Footer from "./shared/footerBusiness";
 import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
 //import images cards
-import visa from "../assets/visa.svg";
+import visa from "../assets/visa.png";
 import masterCard from "../assets/mastercard.svg";
-import americaE from "../assets/americanExpress.svg";
-import paypal from "../assets/paypallow.svg";
+import americaE from "../assets/american-express.png";
+import paypal from "../assets/paypal.png";
 import { Link, useNavigate } from "react-router-dom";
 
 const Cart = () => {
@@ -57,6 +57,10 @@ const Cart = () => {
       fontSize: '14px', 
       margin: '0',
       fontWeight: '600'
+    },
+    styleCards:{
+      display: 'flex',
+      gap: '10px'
     }
   }
   return (
@@ -80,7 +84,7 @@ const Cart = () => {
               <div className="description-card-cart">
                 <div style={titleStyle} className="title-description-cart">
                   <h2 style={{fontSize: '18px'}}>Machine Learning and Data Science with Python</h2>
-                  <p style={{fontSize: '24px'}}><i className="bi bi-trash3"></i></p>
+                  <p style={{fontSize: '24px', cursor: 'pointer'}}><i className="bi bi-trash3"></i></p>
                 </div>
                 <div className="prifile-teacher-cart" style={{width: '100%'}}>
                   <img key={item.imageP} src={item.imageP} style={{width: '50px'}} id="image1" />
@@ -112,19 +116,19 @@ const Cart = () => {
           <h3 style={{fontWeigth: '400'}}>$210.00 USD</h3>
         </div>
         <div className="buttons-credit-cards">
-            <div>
+            <div style={styles.styleCards}>
                 <input type="radio" id="visa" name="credit-card"/>
                 <label htmlFor="visa"><img src={visa} /></label>
             </div>
-            <div>
+            <div style={styles.styleCards}>
                 <input type="radio" id="mastercard" name="credit-card"/>
                 <label htmlFor="mastercard"><img src={masterCard} /></label>
             </div>
-            <div>
+            <div style={styles.styleCards}>
                 <input type="radio" id="american" name="credit-card"/>
                 <label htmlFor="american"><img src={americaE} /></label>
             </div>
-            <div>
+            <div style={styles.styleCards}>
                 <input type="radio" id="paypal" name="credit-card"/>
                 <label htmlFor="paypal"><img src={paypal} /></label>
             </div>

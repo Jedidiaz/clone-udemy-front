@@ -39,7 +39,7 @@ const Home = () => {
         navigate("/categories");
         break;
       case 2:
-        navigate("/register");
+        navigate("/homeTeacher");
         break;
       case 3:
         navigate("/conference");
@@ -220,9 +220,13 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="footer-card-home">
-                    <button type="button" className="btn btn-ptimary" onClick={()=>redirect(4)}>
-                      Buy Now
-                    </button>
+                  <button
+                    type="button"
+                    className="btn btn-ptimary"
+                    onClick={() => redirect(4)}
+                  >
+                    Buy Now
+                  </button>
                   <span key="{el.price}">${el.price}USD</span>
                 </div>
               </article>
@@ -284,13 +288,13 @@ const Home = () => {
                   architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                   .
                 </p>
-                <button
+                {/* <button
                   type="button"
                   className="btn btn-primary"
                   onClick={() => redirect(1)}
                 >
                   Know More
-                </button>
+                </button> */}
               </div>
               <img src={home42} alt="" />
             </div>
@@ -341,7 +345,8 @@ const Home = () => {
         </section>
         <section className="container content-section-six">
           <h1>From Our Comunity</h1>
-          <div className="subcontent-section-six">
+          <div className="subcontent-section-six" style={{zIndex: '3', position: 'relative'}}>
+            <img src={comillas} className="iconComillasHome" style={{zIndex: '3'}} />
             <img src={HomeSse} alt="" />
             <img src={puntos} className="iconPuntosHome" />
             <div>
@@ -355,7 +360,6 @@ const Home = () => {
               <img src={back} alt="" style={{ width: "52%" }} />
             </div>
             <img src={HomeSse2} alt="" />
-            <img src={comillas} className="iconComillasHome" />
           </div>
         </section>
         <section className="container content-section-seven">
@@ -366,7 +370,11 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <button type="button" className="btn btn-primary">
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={() => navigate("/register")}
+            >
               Sign Up
             </button>
             <h1>Let’s Get Started</h1>

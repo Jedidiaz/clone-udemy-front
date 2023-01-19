@@ -144,7 +144,7 @@ const HeaderStudent = () => {
             <span onClick={() => viewNotifications()}>
               <img src={notification} />
             </span>
-            <span>
+            <span onClick={()=> history('/profile')} style={{cursor: 'pointer'}}>
               <img src={imageProfile} />
             </span>
           </div>

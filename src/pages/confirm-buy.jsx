@@ -125,7 +125,7 @@ const ConfirmBuy = () => {
             <p style={stylePrice}>$95.00</p>
             <span>75% de descuento</span>
             <br />
-            <button type="button" className="btn btn-secondary"><i className="bi bi-cart3"></i> PAGAR PEDIDO</button>
+            <button type="button" className="btn btn-secondary" onClick={()=> navigate('/cart')}><i className="bi bi-cart3"></i> PAGAR PEDIDO</button>
             <h5>Aplica un código de promoción para obtener un descuento</h5>
             <div>
                 <label htmlFor="cupon" style={chevron}><i className="bi bi-chevron-right"></i></label>

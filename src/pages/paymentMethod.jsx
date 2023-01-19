@@ -8,10 +8,10 @@ import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
 
 //import images cards
-import visa from "../assets/visa.svg";
+import visa from "../assets/visa.png";
 import masterCard from "../assets/mastercard.svg";
-import americaE from "../assets/americanExpress.svg";
-import paypal from "../assets/paypallow.svg";
+import americaE from "../assets/american-express.png";
+import paypal from "../assets/paypal.png";
 import paypalH from "../assets/paypal.svg";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -29,6 +29,13 @@ const PaymentMethod = () => {
     gap: "20px",
     alignItems: "center",
   };
+
+  const styles = {
+    styleCards: {
+      display: 'flex',
+      gap: '10px'
+    }
+  }
 
   let cards = [];
     for (let i = 0; i < 6; i++) {
@@ -56,7 +63,7 @@ const PaymentMethod = () => {
                 <input type="radio" id="cardP" name="PayM" />
                 <label htmlFor="cardP" style={{marginLeft: '10px'}}>Pagar con tarjeta</label>
               </div>
-              <div>
+              <div style={styles.styleCards}>
                 <img src={visa} style={{ width: "50px" }} />
                 <img src={masterCard} style={{ width: "50px" }} />
               </div>
@@ -113,25 +120,25 @@ const PaymentMethod = () => {
             </p>
           </div>
           <div className="buttons-credit-cards">
-            <div>
+            <div style={styles.styleCards}>
               <input type="radio" id="visa" name="credit-card" />
               <label htmlFor="visa">
                 <img src={visa} />
               </label>
             </div>
-            <div>
+            <div style={styles.styleCards}>
               <input type="radio" id="mastercard" name="credit-card" />
               <label htmlFor="mastercard">
                 <img src={masterCard} />
               </label>
             </div>
-            <div>
+            <div style={styles.styleCards}>
               <input type="radio" id="american" name="credit-card" />
               <label htmlFor="american">
                 <img src={americaE} />
               </label>
             </div>
-            <div>
+            <div style={styles.styleCards}>
               <input type="radio" id="paypal" name="credit-card" />
               <label htmlFor="paypal">
                 <img src={paypal} />
