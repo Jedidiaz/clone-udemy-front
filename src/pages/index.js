@@ -10,6 +10,7 @@ export {default as Confirm} from './confirm-buy'
 export {default as Cart} from './cart'
 export {default as PayM} from './paymentMethod'
 export {default as HomeBussiness} from './HomeBusiness'
+export {default as HomeTeacher} from './HomeTeacher'
 //dashTeachers
 export { default as TeacherPortal} from './teacherPortal'
 

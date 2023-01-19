@@ -16,7 +16,7 @@ const FooterBusiness = () => {
             <Link to={'/'} >Home</Link>
             <Link to={''} >Our App</Link>
             <Link to={'/categories'} >Courses</Link>
-            <Link to={'/teacher'} >Teach</Link>
+            <Link to={'/homeTeacher'} >Teach</Link>
             </li>
           </ul>
         </div>
@@ -25,7 +25,7 @@ const FooterBusiness = () => {
           <ul>
             <li>
               <Link to={""}>Blogs</Link>
-              <Link to={""}>Support</Link>
+              <a href='/help'>Support</a>
             </li>
           </ul>
         </div>

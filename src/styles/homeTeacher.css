@@ -1,0 +1,75 @@
+.content-HomeBusiness{
+    margin-top: 50px;
+}
+
+.content-HomeBusiness p{
+    margin: 0;
+}
+
+.section1HomeTeacher{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.descriptionSection1HomeTeacher{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descriptionSection1HomeTeacher h1, .divS3ht h1{
+    font-size: calc(2.075rem + 1.5vw);
+}
+
+.imageHomeTeacher1, .image2Hometeacher{
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .descriptionSection1HomeTeacher{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .descriptionSection1HomeTeacher h1{
+        font-size: calc(2.575rem + 1.5vw);
+    }
+
+    .s1ht{
+        max-width: 400px;
+    }
+
+    .imageHomeTeacher1{
+        width: 50%;
+    }
+
+    .barSection1{
+        gap: 0 !important;
+        justify-content: space-between !important;
+        padding: 20px 50px !important;
+    }
+
+    .barSection1 h3 {
+        margin: 0;
+    }
+
+    .section4HomeBusiness{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .s1ht{
+        max-width: 400px;
+    }
+
+    .section4HomeBusiness h2{
+        font-size: 4rem;
+    }
+}
+

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.svg'
 import '../../styles/footer.css'
 
 const FooterStudent = () => {
@@ -17,7 +17,7 @@ const FooterStudent = () => {
               <Link to={'/'} style={{color: '#fff'}} >Home</Link>
               <Link to={''} style={{color: '#fff'}}>Our App</Link>
               <Link to={'/categories'} style={{color: '#fff'}}>Courses</Link>
-              <Link to={'/teacher'} style={{color: '#fff'}}>Teach</Link>
+              <Link to={'/homeTeacher'} style={{color: '#fff'}}>Teach</Link>
               </li>
             </ul>
           </div>
@@ -26,7 +26,7 @@ const FooterStudent = () => {
             <ul>
               <li>
                 <Link to={""} style={{color: '#fff'}}>Blogs</Link>
-                <Link to={""} style={{color: '#fff'}}>Support</Link>
+                <a href="/help" style={{color: '#fff'}}>Support</a>
               </li>
             </ul>
           </div>

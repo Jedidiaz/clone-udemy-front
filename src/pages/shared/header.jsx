@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 //componets
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import "../../styles/header.css";
 //bootstrap modules
 import Offcanvas from "react-bootstrap/Offcanvas";
@@ -37,9 +37,7 @@ const Header = () => {
     <header>
       <nav className="container">
         <div className="logo-img">
-          <Link to={"/"}>
-            <img src={logo} alt="img" />
-          </Link>
+            <img src={logo} alt="img" onClick={()=> history('/')}/>
         </div>
         <div className="navigator">
           <ul>
@@ -53,7 +51,7 @@ const Header = () => {
               <Link to={"/homeBusiness"} style={styles.style}>
                 Business
               </Link>
-              <Link to={"/teacher"} style={styles.style}>
+              <Link to={"/homeTeacher"} style={styles.style}>
                 Teach
               </Link>
             </li>
@@ -92,7 +90,7 @@ const Header = () => {
                     <Link to={"/conference"}> Conference </Link>
                     <Link to={"/categories"}> Courses </Link>
                     <Link to={"/homeBusiness"}> Business </Link>
-                    <Link to={"/teacher"}> Teach </Link>
+                    <Link to={"/homeTeacher"}> Teach </Link>
                   </li>
                 </ul>
               </div>

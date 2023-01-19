@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 //componets
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import "../../styles/header.css";
 //bootstrap modules
 import Offcanvas from "react-bootstrap/Offcanvas";

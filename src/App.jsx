@@ -18,7 +18,8 @@ import {
   PayM,
   ProfileTeacher,
   HelpCenter,
-  HomeBussiness
+  HomeBussiness,
+  HomeTeacher
 } from "./pages";
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/profile-teacher" element={<ProfileTeacher />} />
         <Route path="/help" element={<HelpCenter />} />
         <Route path="/homeBusiness" element={<HomeBussiness />} />
+        <Route path="/homeTeacher" element={<HomeTeacher />} />
       </Routes>
     </>
   );

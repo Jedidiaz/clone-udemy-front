@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 //componets
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import "../../styles/header.css";
 import imageProfile from "../../assets/imageProfile.svg";
 import headerImage from "../../assets/headerStudent.svg";
@@ -128,7 +128,7 @@ const HeaderStudent = () => {
               <li>
                 <Link to={"/conference"}> Conference </Link>
                 <Link to={"/homeBusiness"}> Business </Link>
-                <Link to={"/teacher"}> Teach </Link>
+                <Link to={"/homeTeacher"}> Teach </Link>
               </li>
             </ul>
           </div>
@@ -162,10 +162,10 @@ const HeaderStudent = () => {
                 <div className="navigator-menu">
                   <ul>
                     <li>
-                      <Link to={""}> Conference </Link>
-                      <Link to={""}> Courses </Link>
-                      <Link to={""}> Business </Link>
-                      <Link to={""}> Teach </Link>
+                      <Link to={"/conferences"}> Conference </Link>
+                      <Link to={"/categories"}> Courses </Link>
+                      <Link to={"/homeBusiness"}> Business </Link>
+                      <Link to={"/homeTeacher"}> Teach </Link>
                     </li>
                   </ul>
                 </div>

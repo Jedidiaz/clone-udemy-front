@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import "../../styles/footer.css";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
               <Link to={"/"}>Home</Link>
               <Link to={""}>Our App</Link>
               <Link to={"/categories"}>Courses</Link>
-              <Link to={"/teacher"}>Teach</Link>
+              <Link to={"/homeTeacher"}>Teach</Link>
             </li>
           </ul>
         </div>
@@ -26,7 +26,7 @@ const Footer = () => {
           <ul>
             <li>
               <Link to={""}>Blogs</Link>
-              <Link to={""}>Support</Link>
+              <a href="/help">Support</a>
             </li>
           </ul>
         </div>
