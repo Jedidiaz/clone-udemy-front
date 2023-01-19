@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dca02594.css",
-    "main.js": "/static/js/main.a2062a9e.js",
+    "main.js": "/static/js/main.d456daa5.js",
     "static/media/imageHomeBusiness2.svg": "/static/media/imageHomeBusiness2.eb6e9582dba264e33c3a55db17f95579.svg",
     "static/media/login1.png": "/static/media/login1.a12c26e7ba0e2f13e9e9.png",
     "static/media/loginB.png": "/static/media/loginB.0656aec27e301e6da12e.png",
@@ -34,8 +34,11 @@
     "static/media/stripe.svg": "/static/media/stripe.379d3267625bdbcbc8f10b040234776f.svg",
     "static/media/imagePortada.svg": "/static/media/imagePortada.9dcd6074996a990a4be943fa60bdbeb1.svg",
     "static/media/Homes1.svg": "/static/media/Homes1.0f2a3ec7d451619365fcc5ac5f0e3746.svg",
+    "static/media/visa.png": "/static/media/visa.53412106e5dd0cc322c5.png",
+    "static/media/paypal.png": "/static/media/paypal.22b740f777bdc0efc652.png",
     "static/media/bgHomeCard2.svg": "/static/media/bgHomeCard2.c2866360d7d2a1ff5bfd91e2e2a8e156.svg",
     "static/media/HometestProfile.svg": "/static/media/HometestProfile.9013900b3dff688dd138436cfe9d197e.svg",
+    "static/media/american-express.png": "/static/media/american-express.c0d9cac5039e03d254b8.png",
     "static/media/google-play.svg": "/static/media/google-play.87b52dac51b932e570aa0abde4b0febd.svg",
     "static/media/business-faq.svg": "/static/media/business-faq.ef975c6bdf513a91ae8baf1016c35469.svg",
     "static/media/comillasHome.svg": "/static/media/comillasHome.0fc6fcdfc2151da58c4b566206974816.svg",
@@ -47,13 +50,9 @@
     "static/media/4a.svg": "/static/media/4a.8dbc29efdd54be5badec76aef52a3505.svg",
     "static/media/adminHomeBusiness.svg": "/static/media/adminHomeBusiness.068c7e55c4a4bed5f7687045aadfe492.svg",
     "static/media/screenHomeBusiness.svg": "/static/media/screenHomeBusiness.068c7e55c4a4bed5f7687045aadfe492.svg",
-    "static/media/americanExpress.svg": "/static/media/americanExpress.4369cd5662666f6c81cb1029b8a7395e.svg",
-    "static/media/visa.svg": "/static/media/visa.63b29171d7b88ce9b5f6259da32c3b94.svg",
-    "static/media/mastercard.svg": "/static/media/mastercard.56caa0da6c9d915b2868cc56b0574673.svg",
     "static/media/record2.svg": "/static/media/record2.3721eb8c8a6237a2dd9aa34a6887e93f.svg",
     "static/media/instructor5.svg": "/static/media/instructor5.fd54ae5fb39df0afe4797dce28fb33b4.svg",
     "static/media/GlobalHomeBusiness.svg": "/static/media/GlobalHomeBusiness.8b1733cfaf4337b5c10e315ace252a7c.svg",
-    "static/media/paypallow.svg": "/static/media/paypallow.a7ceb185cf4de0614849a626748301f7.svg",
     "static/media/instructor4.svg": "/static/media/instructor4.5a5b9fd4c561eb14c65a5ba9e4186b0d.svg",
     "static/media/instructor2.svg": "/static/media/instructor2.f0d17c62e9f25b6f88765ecbbfa8eb1d.svg",
     "static/media/3a.svg": "/static/media/3a.63e0fa9a86525ba9aff717c6e4d1d9c6.svg",
@@ -76,14 +75,15 @@
     "static/media/BackCardHome.svg": "/static/media/BackCardHome.38d1e7a36846ffb86ae4ad90c41671e5.svg",
     "static/media/send.svg": "/static/media/send.b40c3edee8315a80599a0b39409cd3b8.svg",
     "static/media/headerStudent.svg": "/static/media/headerStudent.3dbf97ded2d4e6421dc34ca7352304d7.svg",
+    "static/media/mastercard.svg": "/static/media/mastercard.4e68ad4432de218f88bc81cb742a193b.svg",
     "static/media/circle.svg": "/static/media/circle.0ec4e393938ba99fe61508436591aeeb.svg",
     "static/media/businessLogo.svg": "/static/media/businessLogo.5164adcca01b7849924931b65301dcc6.svg",
     "static/media/TeacherLogo.svg": "/static/media/TeacherLogo.b2f41a6cd5540b353facac0a2fbe4ee5.svg",
     "main.dca02594.css.map": "/static/css/main.dca02594.css.map",
-    "main.a2062a9e.js.map": "/static/js/main.a2062a9e.js.map"
+    "main.d456daa5.js.map": "/static/js/main.d456daa5.js.map"
   },
   "entrypoints": [
     "static/css/main.dca02594.css",
-    "static/js/main.a2062a9e.js"
+    "static/js/main.d456daa5.js"
   ]
 }
