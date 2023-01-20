@@ -243,8 +243,8 @@ const Home = () => {
             ></path>
           </svg>
           <div className="content-section-four">
-            <div className="content-wave-home">
-              <img src={home41} alt="" />
+            <div className="content-wave-home container">
+              <img src={home41} />
               <div>
                 <h3>Teach today</h3>
                 <p>
@@ -269,7 +269,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className="content-wave-home">
+            <div className="content-wave-home container">
               <div>
                 <h3>Explore new learning</h3>
                 <p>

@@ -425,6 +425,22 @@
   height: 75px;
 }
 
+/* fade in */
+.cardSection1Home,
+.image-home,
+.content-wave-home,
+.content-wave-home,
+.bannerBusiness1,
+.imageSection3HomeBusiness,
+.descriptionSection1HomeTeacher,
+.image2Hometeacher {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
 @media screen and (min-width: 375px) {
   .circleHome,
   .iconPuntosHome {
@@ -549,7 +565,7 @@
 
   .card-section-sev-home {
     max-width: 1000px;
-    padding: 15px 15%;
+    padding: 50px 15%;
     background-size: 100% 100%;
     background-color: transparent;
   }

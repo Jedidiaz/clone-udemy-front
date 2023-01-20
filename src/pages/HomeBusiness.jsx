@@ -115,19 +115,18 @@ const HomeBusiness = () => {
               Get demo
             </button>
           </div>
-          <img src={mainImg} style={{ width: "100%" }} />
+          <img src={mainImg} style={{ width: "100%" }} className="bannerBusiness1" />
         </section>
         {/* section 2 */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
-          style={{ transform: "rotate(180deg)"}}
+          style={{ transform: "rotate(180deg)", zIndex: '-1', position: 'relative'}}
         >
           <path
             fill="#F1F1F1"
             fill-opacity="1"
             d="M0,192L120,160C240,128,480,64,720,58.7C960,53,1200,107,1320,133.3L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
-            className="pathHB"
           ></path>
         </svg>
         <section style={{ backgroundColor: "#F1F1F1", margin: "0" }}>
