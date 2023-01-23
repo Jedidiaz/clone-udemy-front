@@ -1,3 +1,2 @@
-pm2 stop "udemy-front"
-git add . && git stash && git pull && git stash pop 0
-pm2 start "udemy-front"
+git pull
+pm2 restart "udemy-front"
