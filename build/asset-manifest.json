@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0c2d950.css",
-    "main.js": "/static/js/main.239be55d.js",
+    "main.css": "/static/css/main.38c5bbef.css",
+    "main.js": "/static/js/main.45d0a077.js",
     "static/media/homeTeacher1.svg": "/static/media/homeTeacher1.6a32c0bee7d6c82933a74f29ef401b36.svg",
     "static/media/hometeacher3.svg": "/static/media/hometeacher3.06e5deb6c2f7abb0d0c29e069ea61352.svg",
+    "static/media/helpCenter.png": "/static/media/helpCenter.e574dbe645e6dbca9b15.png",
     "static/media/imageHomeBusiness2.svg": "/static/media/imageHomeBusiness2.eb6e9582dba264e33c3a55db17f95579.svg",
     "static/media/login1.png": "/static/media/login1.a12c26e7ba0e2f13e9e9.png",
     "static/media/loginB.png": "/static/media/loginB.0656aec27e301e6da12e.png",
@@ -33,6 +34,7 @@
     "static/media/HomeBusiness1.png": "/static/media/HomeBusiness1.a60171e1509f99088b85.png",
     "static/media/stripe.svg": "/static/media/stripe.379d3267625bdbcbc8f10b040234776f.svg",
     "static/media/imagePortada.svg": "/static/media/imagePortada.9dcd6074996a990a4be943fa60bdbeb1.svg",
+    "static/media/graphBusiness.svg": "/static/media/graphBusiness.110268df1365918a38414734ad1e47ee.svg",
     "static/media/Homes1.svg": "/static/media/Homes1.0f2a3ec7d451619365fcc5ac5f0e3746.svg",
     "static/media/visa.png": "/static/media/visa.53412106e5dd0cc322c5.png",
     "static/media/paypal.png": "/static/media/paypal.22b740f777bdc0efc652.png",
@@ -41,8 +43,10 @@
     "static/media/american-express.png": "/static/media/american-express.c0d9cac5039e03d254b8.png",
     "static/media/google-play.svg": "/static/media/google-play.87b52dac51b932e570aa0abde4b0febd.svg",
     "static/media/business-faq.svg": "/static/media/business-faq.ef975c6bdf513a91ae8baf1016c35469.svg",
+    "static/media/portalBusinessCardimage1.svg": "/static/media/portalBusinessCardimage1.860175e0c9ace0a0c2aa6db78023b07b.svg",
     "static/media/comillasHome.svg": "/static/media/comillasHome.0fc6fcdfc2151da58c4b566206974816.svg",
     "static/media/apple.svg": "/static/media/apple.3aa1221a1ab44acd1af91441d70c7ac2.svg",
+    "static/media/cardBusinessimage1.svg": "/static/media/cardBusinessimage1.002d08773c15fa749a8e6fe0a2f3dbeb.svg",
     "static/media/puntos.svg": "/static/media/puntos.32e2199d26c8537d21b6d6daf3dbb1c2.svg",
     "static/media/playerHeader.svg": "/static/media/playerHeader.4492b36be37e13df787878ebbb1af208.svg",
     "static/media/logo.svg": "/static/media/logo.a49c17c974724e37bd1d37c0c843d3e8.svg",
@@ -73,17 +77,19 @@
     "static/media/leave.svg": "/static/media/leave.e00c495cd97c4f686b287b3df04f9eed.svg",
     "static/media/record3.svg": "/static/media/record3.0d881cec89747722f32a8bd1addf2568.svg",
     "static/media/BackCardHome.svg": "/static/media/BackCardHome.38d1e7a36846ffb86ae4ad90c41671e5.svg",
+    "static/media/cardBusinessimage2.svg": "/static/media/cardBusinessimage2.0fdc7777e60307221b440723c9744adf.svg",
+    "static/media/portalBusinessCardimage2.svg": "/static/media/portalBusinessCardimage2.0fdc7777e60307221b440723c9744adf.svg",
     "static/media/send.svg": "/static/media/send.b40c3edee8315a80599a0b39409cd3b8.svg",
     "static/media/headerStudent.svg": "/static/media/headerStudent.3dbf97ded2d4e6421dc34ca7352304d7.svg",
     "static/media/mastercard.svg": "/static/media/mastercard.4e68ad4432de218f88bc81cb742a193b.svg",
     "static/media/circle.svg": "/static/media/circle.0ec4e393938ba99fe61508436591aeeb.svg",
     "static/media/businessLogo.svg": "/static/media/businessLogo.5164adcca01b7849924931b65301dcc6.svg",
     "static/media/TeacherLogo.svg": "/static/media/TeacherLogo.b2f41a6cd5540b353facac0a2fbe4ee5.svg",
-    "main.e0c2d950.css.map": "/static/css/main.e0c2d950.css.map",
-    "main.239be55d.js.map": "/static/js/main.239be55d.js.map"
+    "main.38c5bbef.css.map": "/static/css/main.38c5bbef.css.map",
+    "main.45d0a077.js.map": "/static/js/main.45d0a077.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0c2d950.css",
-    "static/js/main.239be55d.js"
+    "static/css/main.38c5bbef.css",
+    "static/js/main.45d0a077.js"
   ]
 }
