@@ -20,6 +20,10 @@ import instructor3 from "../assets/instructor3.svg";
 import instructor4 from "../assets/instructor4.svg";
 import instructor5 from "../assets/instructor5.svg";
 
+//card 1
+import cardimage1 from "../assets/portalBusinessCardimage1.svg";
+import cardimage2 from "../assets/portalBusinessCardimage2.svg";
+
 const TeacherPortal = () => {
   
   useEffect(() => {
@@ -258,18 +262,30 @@ const TeacherPortal = () => {
             <div className="announcements" id="announcements"></div>
           </div>
           {/* Home */}
-          <div className="home-instructor" id="home-instructor">
+          <div className="home-instructor container" id="home-instructor">
             <div>
               <h1>
                 Hola,<span style={{fontWeight: '700'}}> Usuario.</span>¡Qué bueno verte!
               </h1>
             </div>
             <div className="card-main-home-instructor">
-              <h1>Jump Into Course Creation</h1>
-              <p>start now and enjoy the moment</p>
-              <button type="button" className="btn btn-primary">
-                Create your course
-              </button>
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'end'}}>
+                <div className="descriptionCardTeacherPortal">
+                  <h1>Jump Into Course Creation</h1>
+                  <p style={{fontWeight: 'bold'}}>start now and enjoy the moment</p>
+                </div>
+                <div style={{display: 'flex', alignItems: 'center', width: '100%'}} className="btnCardteachers1">
+                  <img src={cardimage1} className="ImageCardTeachers1Card" style={{width: '100%', maxWidth:'400px'}} />
+                  <div className="btnCardTeachers1">
+                    <button type="button" className="btn btn-primary">
+                      Create your course
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div style={{height: '100%', marginTop: '-60px'}} className="ImageCardTeachers1Card">
+                <img src={cardimage2} style={{with: '100%'}}/>
+              </div>
             </div>
             <section className="resources-instructor">
               <div>

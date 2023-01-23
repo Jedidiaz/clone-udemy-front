@@ -58,7 +58,7 @@
 
 /* nav header */
 .views-business{
-    width: 100%;
+    width: calc(100vw - 50px);
 }
 
 .header-business {
@@ -209,6 +209,8 @@
 .body-shop{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 50px;
 }
 
@@ -226,8 +228,12 @@
 
 .faq-business .card-faq{
     background-color: #F3B601;
-    border-radius: 20px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 30px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -244,8 +250,21 @@
 
 .faq-business .card-faq .btn{
     background-color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 400px;
     border: 0;
     border-radius: 50px;
+}
+
+.accordion-button, .accordion-body, .accordion-item:first-of-type .accordion-button, .accordion-header, .accordion-item:last-of-type .accordion-button.collapsed{
+    border-radius: 30px;
+}
+
+.accordion-item:first-of-type, .accordion-item:not(:first-of-type){
+    border-radius: 30px;
+    background-color: #F3B601;
 }
 
 .accordion-button:not(.collapsed){
@@ -302,6 +321,12 @@
     max-width: 1200px; 
 }
 
+@media screen and (max-width: 575px) {
+    .bsrfy{
+        max-width: 355px;
+    }
+}
+
 @media screen and (min-width: 475px) {
     .history-business .filter{
         width: 355px;
@@ -313,6 +338,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .table-info-business{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    
     .history-business{
         flex-direction: row;
     }

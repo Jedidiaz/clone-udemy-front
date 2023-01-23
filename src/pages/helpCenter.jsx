@@ -5,7 +5,7 @@ import Header from "./shared/headerStudent";
 import Footer from "./shared/footerTeach";
 
 //images
-import help from "../assets/helpCenter.svg";
+import help from "../assets/helpCenter.png";
 
 import Imagetest1 from "../assets/Imagetest1.svg";
 import profile from "../assets/profileTeacher.svg";

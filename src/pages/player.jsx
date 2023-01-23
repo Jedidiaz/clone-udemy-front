@@ -39,20 +39,32 @@ const Player = () => {
               <Form>
                 <div className="mb-3">
                   <Form.Check
-                    label="Description"
+                    label={
+                      <div style={{displa: 'flex', flexDirection: 'column'}}>
+                        Description
+                      <div className="underLinkHome"></div>
+                    </div>}
                     name="group3"
                     type="radio"
                     id="Description"
                     defaultChecked
                   />
                   <Form.Check
-                    label="Reviews"
+                    label={
+                      <div style={{displa: 'flex', flexDirection: 'column'}}>
+                        Reviews
+                      <div className="underLinkHome"></div>
+                    </div>}
                     name="group3"
                     type="radio"
                     id="Reviews"
                   />
                   <Form.Check
-                    label="learning tools"
+                    label={
+                      <div style={{displa: 'flex', flexDirection: 'column'}}>
+                        learning tools
+                      <div className="underLinkHome"></div>
+                    </div>}
                     name="group3"
                     type="radio"
                     id="learning-tools"

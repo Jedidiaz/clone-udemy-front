@@ -390,7 +390,7 @@
 }
 
 /* hover incons */
-.buttons-section-five .btn:hover img {
+.buttons-section-five .btn:hover  img, .buttons-section-fiveH .btn:hover  img {
   filter: brightness(0) saturate(100%) invert(84%) sepia(24%) saturate(1029%)
     hue-rotate(355deg) brightness(98%) contrast(91%);
   transform: scale(1.05);

@@ -19,14 +19,15 @@
 }
 
 .content-topics-help::-webkit-scrollbar{
-    width: 8px;
+    width: 10px;
     background-color: #D9D9D9;
     border-radius: 20px;
 }
 
 
-.content-topics-helpbody::-webkit-scrollbar-thumb{
+.content-topics-help::-webkit-scrollbar-thumb{
     background-color: #F3B601;
+    border-radius: 20px;
 }
 
 .topic{

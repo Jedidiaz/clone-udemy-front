@@ -135,9 +135,13 @@ const PerfilStudent = () => {
         <div className="multiMenu-perfilStudent">
           <div className="selectors">
             <Form>
-              <div className="mb-3">
+              <div className="mb-3 selectorPerfilStudent">
                 <Form.Check
-                  label="Payment methods"
+                  label={
+                    <div style={{displa: 'flex', flexDirection: 'column', textAlign: 'center'}}>
+                      Payment methods
+                    <div className="underLinkHome"></div>
+                  </div>}
                   name="group1"
                   type="radio"
                   id="Payment-methods"
@@ -145,14 +149,22 @@ const PerfilStudent = () => {
                   defaultChecked
                 />
                 <Form.Check
-                  label="Purchase history"
+                  label={
+                    <div style={{displa: 'flex', flexDirection: 'column', textAlign: 'center'}}>
+                      Purchase history
+                    <div className="underLinkHome"></div>
+                  </div>}
                   name="group1"
                   type="radio"
                   id="Purchase-history"
                   onChange={() => checkedHistory()}
                 />
                 <Form.Check
-                  label="U credits"
+                  label={
+                    <div style={{displa: 'flex', flexDirection: 'column', textAlign: 'center'}}>
+                      U credits
+                    <div className="underLinkHome"></div>
+                  </div>}
                   name="group1"
                   type="radio"
                   id="U-credits"

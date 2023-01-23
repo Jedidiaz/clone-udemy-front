@@ -85,6 +85,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    gap: 10px;
 }
 
 .info-classes-perfilStudent .info1{
@@ -103,7 +104,7 @@
     border-radius: 20px;
     background-color: #F1F1F1;
     width: 100%;
-    gap: 20px;
+    gap: 15px;
     padding: 20px;
 }
 
@@ -146,6 +147,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    cursor: pointer;
 }
 
 .selectors{
@@ -156,8 +158,12 @@
     display: none;
 }
 
+.selectors form div input:checked + label .underLinkHome{
+    border-top-color: #E5C148;
+}
+
 .selectors form div input:checked + label{
-    color: #E5C148;
+    font-weight: 700;
 }
 
 .selectors form div .form-check{
@@ -297,8 +303,21 @@
 .history-info {
     max-height: 240px;
     width: 355px;
-    overflow: scroll;
+    overflow-y: scroll;
+    padding-right: 15px;
 }
+
+.history-info::-webkit-scrollbar{
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    width: 10px;
+}
+
+.history-info::-webkit-scrollbar-thumb{
+    background-color: #b3b3b3;
+    border-radius: 50px;
+}
+
 
 /* Credits */
 
@@ -353,10 +372,22 @@
     }
 
     .list-video-perfilStudet{
-        max-height: 474px;
-        padding: 20px;
+        max-height: 354px;
         overflow-y: scroll;
+        padding-right: 30px;
     }
+
+    .list-video-perfilStudet::-webkit-scrollbar{
+        background-color: #f1f1f1;
+        border-radius: 20px;
+        width: 10px;
+    }
+
+    .list-video-perfilStudet::-webkit-scrollbar-thumb{
+        background-color: #b3b3b3;
+        border-radius: 50px;
+    }
+
 
     .purchase-history{
         flex-direction: row;
@@ -364,6 +395,10 @@
 
     .purchase-history .filter,  .purchase-history .history-info{
         width: 50%;
+    }
+
+    .selectors form .selectorPerfilStudent{
+        width: 500px;
     }
 
 }

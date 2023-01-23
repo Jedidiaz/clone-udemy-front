@@ -32,7 +32,7 @@ const ProfileTeacher = () => {
     <>
       <Header />
       <div className="container">
-        <section className="description-helpCenter">
+        <section className="description-helpCenter" style={{alignItems: 'start'}}>
           <div className="contentet-heelp">
             <h1 style={{ fontWeight: "700" }}>Jose Lopez</h1>
             <br />

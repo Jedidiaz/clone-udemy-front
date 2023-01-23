@@ -66,7 +66,8 @@
 }
 
 .info-video-homeStudends h4{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .info-video-homeStudends p{
@@ -119,6 +120,14 @@
 
 /* Section 3 */
 
+.Recomended-for-you-homeStudends{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: auto;
+}
+
 .Recomended-for-you-homeStudends h1{
     font-weight: 500;
 }
@@ -155,11 +164,10 @@
 
 .need-help-homeStudends .help-homeStudends{
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 20px; 
     padding: 20px;
     border-radius: 30px;
     background-color: #F3B601;
@@ -190,7 +198,7 @@
 }
 
 .content-images-homeStudent{
-    width: 100%;
+    max-width: 1000px;
     height: auto;
     display: flex;
     align-items: center;
@@ -213,11 +221,24 @@
     background-color: transparent;
 }
 
+.imagescardBusinesss3{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
+
+    .info-video-homeStudends h4{
+        max-width: 300px;
+    }
+
     .contenedor-homeStudends section{
         padding: 10px 100px;
     }
-    
+
+    .imagescardBusinesss3{
+       display: block;
+    }
+
     .videos-homeStudends{
         flex-direction: row;
     }
@@ -230,6 +251,19 @@
     .list-video-homeStudends{
         overflow-y: scroll;
         height: 230px;
+        justify-content: start;
+        padding-right: 30px;
+    }
+
+    .list-video-homeStudends::-webkit-scrollbar{
+        background-color: #f1f1f1;
+        border-radius: 20px;
+        width: 10px;
+    }
+
+    .list-video-homeStudends::-webkit-scrollbar-thumb{
+        background-color: #b3b3b3;
+        border-radius: 50px;
     }
 
     .Recomended-for-you-homeStudends{
@@ -237,6 +271,7 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        max-width: 1070px
     }
 
     .Recomended-for-you-homeStudends .carousel{
@@ -255,7 +290,8 @@
     }
 
     .need-help-homeStudends .help-homeStudends{
-        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
     }
 
 

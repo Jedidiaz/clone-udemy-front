@@ -13,10 +13,15 @@ import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
 
 import carouselImage from "../assets/CarouselImagegomeS.svg";
+
+//card
+import cardimage1 from "../assets/cardBusinessimage1.svg";
+import cardimage2 from "../assets/cardBusinessimage2.svg";
+
 import { useNavigate } from "react-router";
 
 const HomeStudents = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   let videos = [];
   for (let i = 0; i < 4; i++) {
@@ -41,7 +46,6 @@ const HomeStudents = () => {
     });
   }
 
-
   let carousel = [];
 
   for (let i = 0; i < 5; i++) {
@@ -52,7 +56,7 @@ const HomeStudents = () => {
     <>
       <Header />
       <div className="contenedor-homeStudends">
-        <section className="continue-watching">
+        <section className="continue-watching container">
           <h1>
             Hola,<span> Usuario.</span>¡Qué bueno verte!
           </h1>
@@ -62,7 +66,10 @@ const HomeStudents = () => {
             </div>
             <div className="list-video-homeStudends">
               {videos.map((el) => (
-                <article className="card-video-homeStudends" onClick={()=> navigate('/player')}>
+                <article
+                  className="card-video-homeStudends"
+                  onClick={() => navigate("/player")}
+                >
                   <div>
                     <img src={el.image} />
                     <div className="info-video-homeStudends">
@@ -80,7 +87,7 @@ const HomeStudents = () => {
             </div>
           </div>
         </section>
-        <section className="Most-popular-homeStudends">
+        <section className="Most-popular-homeStudends container">
           <h1>
             Most <span>Popular</span>
           </h1>
@@ -109,7 +116,11 @@ const HomeStudents = () => {
                   </p>
                 </div>
                 <div className="footer-card-home">
-                  <button type="button" className="btn btn-ptimary" onClick={()=> navigate('/confirm')}>
+                  <button
+                    type="button"
+                    className="btn btn-ptimary"
+                    onClick={() => navigate("/confirm")}
+                  >
                     Buy Now
                   </button>
                   <span key={el.price}>${el.price}USD</span>
@@ -118,21 +129,22 @@ const HomeStudents = () => {
             ))}
           </div>
         </section>
-        <section className="Recomended-for-you-homeStudends">
+        <section
+          className="Recomended-for-you-homeStudends bsrfy container"
+          style={{ padding: "0" }}
+        >
           <h1>
             Conferences <span> recommended</span> for <span>you</span>
           </h1>
-          {/* <Carousel variant="dark">
-            {carousel.map((el) => (
-              <Carousel.Item>
-                <img className="d-block w-100" src={el} alt="First slide" />
-              </Carousel.Item>
-            ))}
-          </Carousel> */}
-          <div className="scroll-images-homeStudents">
-              <button className="btn btn-secondary left" type="button" onClick={()=> leftScroll()}>
-                <i className="bi bi-chevron-left"></i>
-              </button>
+
+          <div className="scroll-images-homeStudents bic">
+            <button
+              className="btn btn-secondary left"
+              type="button"
+              onClick={() => leftScroll()}
+            >
+              <i className="bi bi-chevron-left"></i>
+            </button>
             <div className="content-images-homeStudent">
               {carousel.map((el) => (
                 <div className="image-carousel-homeStudet">
@@ -140,24 +152,54 @@ const HomeStudents = () => {
                 </div>
               ))}
             </div>
-              <button className="btn btn-secondary right" type="button" onClick={()=> rightScroll()}>
-                <i className="bi bi-chevron-right"></i>
-              </button>
+            <button
+              className="btn btn-secondary right"
+              type="button"
+              onClick={() => rightScroll()}
+            >
+              <i className="bi bi-chevron-right"></i>
+            </button>
           </div>
         </section>
-        <section className="need-help-homeStudends">
+        <section className="need-help-homeStudends container">
           <div className="help-homeStudends">
-            <h1>Need help?</h1>
-            <p>
-              We are here to help you! Choose the type of support according to
-              what you need to solve.
-            </p>
-            <button type="button" className="btn btn-primary">
-              frequent questions
-            </button>
-            <p>
-              Check if your question is solved in frequently asked questions.
-            </p>
+            <img
+              src={cardimage1}
+              className="imagescardBusinesss3"
+              style={{ width: " 100%" }}
+            />
+            <div
+              style={{
+                textAlign: "center",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <h1>Need help?</h1>
+              <p style={{ maxWidth: "400px", fontWeight: "700" }}>
+                We are here to help you! Choose the type of support according to
+                what you need to solve.
+              </p>
+              <button
+                type="button"
+                className="btn btn-primary"
+                style={{
+                  width: "100%",
+                  maxWidth: "400px",
+                  fontSize: "20px",
+                }}
+              >
+                frequent questions
+              </button>
+              <p style={{ maxWidth: "600px", fontWeight: "700" }}>
+                Check if your question is solved in frequently asked questions.
+              </p>
+            </div>
+            <div className="imagescardBusinesss3" style={{ height: "100%" }}>
+              <img src={cardimage2} />
+            </div>
           </div>
         </section>
       </div>
@@ -165,12 +207,12 @@ const HomeStudents = () => {
     </>
   );
 
-  function leftScroll(){
+  function leftScroll() {
     const left = document.querySelector(".content-images-homeStudent");
     left.scrollBy(-200, 0);
   }
 
-  function rightScroll(){
+  function rightScroll() {
     const right = document.querySelector(".content-images-homeStudent");
     right.scrollBy(200, 0);
   }

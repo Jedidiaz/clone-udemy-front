@@ -120,7 +120,7 @@ const HeaderStudent = () => {
           </div>
           <div className="navigator">
             <span>
-              <label htmlFor="search-header">Categories</label>
+              <label htmlFor="search-header" style={{cursor: 'pointer'}} onClick={()=> history('/categories')} >Categories</label>
               <i className="bi bi-search"></i>
               <input type="text" className="form-control" />
             </span>
