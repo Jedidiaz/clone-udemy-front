@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.29ea0204.css",
-    "main.js": "/static/js/main.aec3aebc.js",
+    "main.css": "/static/css/main.e0c2d950.css",
+    "main.js": "/static/js/main.239be55d.js",
+    "static/media/homeTeacher1.svg": "/static/media/homeTeacher1.6a32c0bee7d6c82933a74f29ef401b36.svg",
+    "static/media/hometeacher3.svg": "/static/media/hometeacher3.06e5deb6c2f7abb0d0c29e069ea61352.svg",
     "static/media/imageHomeBusiness2.svg": "/static/media/imageHomeBusiness2.eb6e9582dba264e33c3a55db17f95579.svg",
     "static/media/login1.png": "/static/media/login1.a12c26e7ba0e2f13e9e9.png",
     "static/media/loginB.png": "/static/media/loginB.0656aec27e301e6da12e.png",
@@ -14,11 +16,9 @@
     "static/media/HomeBusiness3.svg": "/static/media/HomeBusiness3.e4e840cac25435bfa7a95bb4c40fbbd8.svg",
     "static/media/Group 1HomeS2.png": "/static/media/Group 1HomeS2.a2fe39bfed69ce008fa3.png",
     "static/media/Home4-2.svg": "/static/media/Home4-2.1e1648401e95e5cf0713a486dc03ebf5.svg",
-    "static/media/hometeacher3.svg": "/static/media/hometeacher3.020150ac54b852b5fab5dab77c984008.svg",
     "static/media/conference.svg": "/static/media/conference.df4529a2c8f145accf0e4cc457b93b80.svg",
     "static/media/CarouselImagegomeS.svg": "/static/media/CarouselImagegomeS.4cace3d46d76ab096cf89eb7518a1453.svg",
     "static/media/homeTeacher2.svg": "/static/media/homeTeacher2.db601e054fe564b961988eac88410b7e.svg",
-    "static/media/homeTeacher1.svg": "/static/media/homeTeacher1.7ff77605e256ed013f151193a33f1055.svg",
     "static/media/helpCenter.svg": "/static/media/helpCenter.2ff14094221a555b3a89fbba8dfb9875.svg",
     "static/media/Imagetest1.svg": "/static/media/Imagetest1.0f1c0fe4271fe241b535dd73448ffe24.svg",
     "static/media/profileTeacher.svg": "/static/media/profileTeacher.24a2edd51e0f7318a631a8c39cec75f7.svg",
@@ -79,11 +79,11 @@
     "static/media/circle.svg": "/static/media/circle.0ec4e393938ba99fe61508436591aeeb.svg",
     "static/media/businessLogo.svg": "/static/media/businessLogo.5164adcca01b7849924931b65301dcc6.svg",
     "static/media/TeacherLogo.svg": "/static/media/TeacherLogo.b2f41a6cd5540b353facac0a2fbe4ee5.svg",
-    "main.29ea0204.css.map": "/static/css/main.29ea0204.css.map",
-    "main.aec3aebc.js.map": "/static/js/main.aec3aebc.js.map"
+    "main.e0c2d950.css.map": "/static/css/main.e0c2d950.css.map",
+    "main.239be55d.js.map": "/static/js/main.239be55d.js.map"
   },
   "entrypoints": [
-    "static/css/main.29ea0204.css",
-    "static/js/main.aec3aebc.js"
+    "static/css/main.e0c2d950.css",
+    "static/js/main.239be55d.js"
   ]
 }
