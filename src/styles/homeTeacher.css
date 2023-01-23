@@ -26,6 +26,31 @@
     width: 100%;
 }
 
+/*  degra image */
+.imageHomeTeacher1::before{
+    background-image: linear-gradient(-90deg, transparent, pink)
+}
+
+.desSection4HomeT{
+    overflow-y: scroll;
+    direction: rtl;
+}
+
+.desSection4HomeT::-webkit-scrollbar{
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+.desSection4HomeT::-webkit-scrollbar-thumb{
+    color: #F3B601;
+    display: block;
+}
+
+.divS3ht{
+    position: relative;
+    z-index: 100;
+}
+
 @media screen and (min-width: 1024px) {
     .descriptionSection1HomeTeacher{
         flex-direction: row;
@@ -43,7 +68,7 @@
     }
 
     .imageHomeTeacher1{
-        width: 50%;
+        width: 60%;
     }
 
     .barSection1{

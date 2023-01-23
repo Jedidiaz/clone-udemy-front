@@ -41,6 +41,7 @@ const HomeStudents = () => {
     });
   }
 
+
   let carousel = [];
 
   for (let i = 0; i < 5; i++) {
@@ -61,7 +62,7 @@ const HomeStudents = () => {
             </div>
             <div className="list-video-homeStudends">
               {videos.map((el) => (
-                <article className="card-video-homeStudends">
+                <article className="card-video-homeStudends" onClick={()=> navigate('/player')}>
                   <div>
                     <img src={el.image} />
                     <div className="info-video-homeStudends">

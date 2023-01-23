@@ -15,9 +15,11 @@ import video from "../assets/videoHomeStudend.svg";
 
 import paypal from "../assets/paypal.svg";
 import stripe from "../assets/stripe.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const PerfilStudent = () => {
+  const navigate = useNavigate()
+
   useEffect(() => {
     checkedpaymethod();
   });
@@ -115,7 +117,7 @@ const PerfilStudent = () => {
           </div>
           <div className="list-video-perfilStudet">
             {videos.map((el) => (
-              <article className="card-video-homeStudends">
+              <article className="card-video-homeStudends" onClick={()=> navigate('/player')}>
                 <div>
                   <img src={el.image} />
                   <div className="info-video-homeStudends">

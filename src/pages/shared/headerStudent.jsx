@@ -134,7 +134,7 @@ const HeaderStudent = () => {
           </div>
           <div className="buttons-student">
             <span>
-              <img src={headerImage} />
+              <img src={headerImage} onClick={() => viewNotifications()}/>
             </span>
             <span>
               <Link to={"/cart"}>

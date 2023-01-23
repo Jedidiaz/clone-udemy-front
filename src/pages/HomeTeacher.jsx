@@ -17,7 +17,8 @@ const HomeTeacher = () => {
       paddingLeft: "30px",
       marginTop: "30px",
       width: "100%",
-      maxWidth: '500px'
+      maxWidth: '500px',
+      textAlign: 'end'
     },
     styleDivFooter: {
       display: "flex",
@@ -70,10 +71,11 @@ const HomeTeacher = () => {
               </button>
             </div>
             <div className="imageHomeTeacher1">
-              <img src={home1} style={{width: '100%'}}/>
+              <img src={home1} className="imageSectionUnoTeacher" style={{width: '100%'}}/>
             </div>
           </div>
-          <div style={styles.styleDivFooter} className="barSection1">
+          <div style={{backgroundColor: '#2F2F2F'}}>
+          <div style={styles.styleDivFooter} className="barSection1 container">
             <span style={styles.styleSpan}>
               <h3>50</h3>
               <p>available countries</p>
@@ -91,6 +93,7 @@ const HomeTeacher = () => {
               <p>payment methods</p>
             </span>
           </div>
+          </div>
         </section>
         {/* section 2 */}
         <section style={{ margin: "50px 0" }} id="ww">
@@ -99,16 +102,18 @@ const HomeTeacher = () => {
           </h1>
           {/* content */}
           <div className="container section4HomeBusiness">
-            <div style={styles.styleDivwhawedo}>
+            <div style={styles.styleDivwhawedo} className="desSection4HomeT">
               <h2 style={{ color: "#F3B601", fontWeight: "bold" }}>
                 Design a program
               </h2>
               <br />
+              <div style={{width: '100%', display: 'flex', justifyContent: 'end'}}>
               <p style={{ color: "#959595", width: "180px" }}>
                 Enterprise-Wide Training Small Team Training Tech Team Training
                 Leadership Development Dedicated Customer Success Team Remote &
                 Hybrid Team Training
               </p>
+              </div>
             </div>
             <div className="imageSection4HomeBusiness" style={{width: '300px'}}>
               <img src={home2} style={{ width: "100%" }} />
@@ -142,7 +147,7 @@ const HomeTeacher = () => {
             </button>
           </div>
           <br />
-          <img src={home3} className="image2Hometeacher"/>
+          <img src={home3} className="image2Hometeacher" style={{marginTop: '-20%'}}/>
         </section>
       </div>
       <Footer />

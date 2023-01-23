@@ -320,7 +320,7 @@ const Home = () => {
         </section>
         <section className="content-section-five">
           <h1>Our services</h1>
-          <div className="buttons-section-five">
+          <div className="buttons-section-fiveH">
             <button type="button" className="btn btn-primary">
               <img src={icon1} className="iconsHome" /> Special Planes
             </button>
@@ -347,7 +347,7 @@ const Home = () => {
           <h1>From Our Comunity</h1>
           <div className="subcontent-section-six" style={{zIndex: '3', position: 'relative'}}>
             <img src={comillas} className="iconComillasHome" style={{zIndex: '3'}} />
-            <img src={HomeSse} alt="" />
+            <img src={HomeSse} style={{zIndex: '100', position: 'relative'}} />
             <img src={puntos} className="iconPuntosHome" />
             <div>
               <p>

@@ -43,6 +43,7 @@ const Player = () => {
                     name="group3"
                     type="radio"
                     id="Description"
+                    defaultChecked
                   />
                   <Form.Check
                     label="Reviews"
