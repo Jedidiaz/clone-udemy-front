@@ -19,6 +19,8 @@ import cardimage1 from "../../assets/cardBusinessimage1.svg";
 import cardimage2 from "../../assets/cardBusinessimage2.svg";
 
 
+
+
 import graph from "../../assets/graphBusiness.svg";
 
 
@@ -135,6 +137,44 @@ const BusinessPortal = () => {
   const styleLabel = {
     display: "flex",
     flexDirection: "column",
+  };
+
+  const styles = {
+    styleDivIcon: {
+      width: "100%",
+      height: "50px",
+      display: "flex",
+    },
+    styleInput: {
+      border: "none",
+      borderRadius: "50px",
+      padding: "10px 15px",
+      width: "100%",
+      boxShadow: '0px 4px 11.83px rgba(0, 0, 0, 0.25)',
+    },
+    styleTextArea: {
+      border: "none",
+      borderRadius: "20px",
+      padding: "10px 15px",
+      width: "100%",
+      boxShadow: '0px 4px 11.83px rgba(0, 0, 0, 0.25)',
+    },
+    styleButtonS5: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: "20px",
+      border: "1px solid #545353",
+      borderRadius: "20px",
+      width: "200px",
+      height: "300px",
+      padding: "40px 50px",
+      fontSize: "20px",
+      color: "#B6B6B6",
+      backgroundColor: "transparent",
+      boxShadow: "0px 4px 11.83px rgba(0, 0, 0, 0.15)",
+    },
   };
 
   const navigate = useNavigate();
@@ -493,103 +533,170 @@ const BusinessPortal = () => {
           </div>
           {/* faq */}
           <div className="faq-business" id="faq-business">
-            <div className="contenedor-faq">
-              <div className="questions-business">
-                <h2>Frequently Asked Questions</h2>
-                <Accordion defaultActiveKey="0">
-                  <Accordion.Item eventKey="0">
-                    <Accordion.Header>
-                      Titulo de duda frecuente
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                      quis nostrud exerci tation ullamcorper suscipit lobortis
-                      nisl ut aliquip ex ea commodo consequat. Duis autem vel
-                      eum iriure dolor
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey="1">
-                    <Accordion.Header>
-                      Titulo de duda frecuente
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                      quis nostrud exerci tation ullamcorper suscipit lobortis
-                      nisl ut aliquip ex ea commodo consequat. Duis autem vel
-                      eum iriure dolor
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey="2">
-                    <Accordion.Header>
-                      Titulo de duda frecuente
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                      quis nostrud exerci tation ullamcorper suscipit lobortis
-                      nisl ut aliquip ex ea commodo consequat. Duis autem vel
-                      eum iriure dolor
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey="3">
-                    <Accordion.Header>
-                      Titulo de duda frecuente
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                      quis nostrud exerci tation ullamcorper suscipit lobortis
-                      nisl ut aliquip ex ea commodo consequat. Duis autem vel
-                      eum iriure dolor
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey="4">
-                    <Accordion.Header>
-                      Titulo de duda frecuente
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                      quis nostrud exerci tation ullamcorper suscipit lobortis
-                      nisl ut aliquip ex ea commodo consequat. Duis autem vel
-                      eum iriure dolor
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey="5">
-                    <Accordion.Header>
-                      Titulo de duda frecuente
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                      quis nostrud exerci tation ullamcorper suscipit lobortis
-                      nisl ut aliquip ex ea commodo consequat. Duis autem vel
-                      eum iriure dolor
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
+            <div className="contenedor-faq" id="faq-business-low" style={{display: 'flex'}}>
+              <div className="contenedor-faq1">
+                <div className="questions-business">
+                  <h2>Frequently Asked Questions</h2>
+                  <Accordion defaultActiveKey="0">
+                    <Accordion.Item eventKey="0">
+                      <Accordion.Header>
+                        Titulo de duda frecuente
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                        quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                        eum iriure dolor
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="1">
+                      <Accordion.Header>
+                        Titulo de duda frecuente
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                        quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                        eum iriure dolor
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="2">
+                      <Accordion.Header>
+                        Titulo de duda frecuente
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                        quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                        eum iriure dolor
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="3">
+                      <Accordion.Header>
+                        Titulo de duda frecuente
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                        quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                        eum iriure dolor
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="4">
+                      <Accordion.Header>
+                        Titulo de duda frecuente
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                        quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                        eum iriure dolor
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="5">
+                      <Accordion.Header>
+                        Titulo de duda frecuente
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                        quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                        eum iriure dolor
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
+                </div>
+                <div className="image-faq-business">
+                  <img src={faq} />
+                </div>
               </div>
-              <div className="image-faq-business">
-                <img src={faq} />
+              <div className="card-faq">
+                <h2>Can't find answers to your questions?</h2>
+                <p style={{maxWidth: '400px'}}>
+                  We are here to help you! Choose the type of support according to
+                  what you need to solve.
+                </p>
+                <button type="button" className="btn btn-primary" onClick={()=> contactNext()}>
+                  contact us
+                </button>
               </div>
             </div>
-            <div className="card-faq">
-              <h2>Can't find answers to your questions?</h2>
-              <p style={{maxWidth: '400px'}}>
-                We are here to help you! Choose the type of support according to
-                what you need to solve.
-              </p>
-              <button type="button" className="btn btn-primary">
-                contact us
-              </button>
+            <div className="contenedor-faq" id="contactUs" style={{display: 'none'}}>
+              <div className="contenedor-faq1" >
+              <div
+                className="InputsSection3HomeBusiness"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  gap: "20px",
+                }}
+              >
+                <h1 style={{ color: "#F3B601", fontWeight: "bold" }}>
+                Tell us about your question
+                </h1>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    gap: "20px",
+                    width: "100%",
+                    maxWidth: "500px",
+                  }}
+                >
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Work Email"
+                    style={styles.styleInput}
+                  />
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Full name"
+                    style={styles.styleInput}
+                  />
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Phone Number"
+                    style={styles.styleInput}
+                  />
+                  <textarea
+                    className="form-control"
+                    placeholder="Tell us about your question"
+                    style={styles.styleTextArea}
+                    rows="3"
+                  />
+                  <button
+                    type="button"
+                    className="btn btn-warning"
+                    style={{ width: "100%" }}
+                  >
+                    Get in touch
+                  </button>
+                </div>
+              </div>
+              {/* iamge */}
+              <div className="imageSection3HomeBusiness">
+                <img src={faq} style={{ width: "100%" }} />
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -653,6 +760,11 @@ const BusinessPortal = () => {
   function rightScroll() {
     const right = document.querySelector(".content-images-homeStudent");
     right.scrollBy(200, 0);
+  }
+
+  function contactNext(){
+    document.getElementById('faq-business-low').style.display = 'none'
+    document.getElementById('contactUs').style.display = 'flex'
   }
 };
 

@@ -321,6 +321,15 @@
     max-width: 1200px; 
 }
 
+.contenedor-faq1{
+    flex-direction: column;
+}
+
+#faq-business-low{
+    flex-direction: column !important;
+    gap: 50px;
+}
+
 @media screen and (max-width: 575px) {
     .bsrfy{
         max-width: 355px;
@@ -364,10 +373,19 @@
 
     .contenedor-faq{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px 50px;
+        gap: 20px;
+    }
+
+    .contenedor-faq1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 13%;
         gap: 20px;
     }
 
