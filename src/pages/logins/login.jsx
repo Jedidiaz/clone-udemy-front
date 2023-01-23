@@ -73,7 +73,7 @@ const Login = () => {
             <img className="d-block w-100" src={login} alt="Third slide" />
           </Carousel.Item>
         </Carousel>
-        <img src={backGround}/>
+        <img src={backGround} className="ImageBackRegistros"/>
       </div>
     <Footer />  
     </>

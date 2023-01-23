@@ -159,7 +159,7 @@
         justify-content: center;
         margin: 0;
     }
-    .contenedor img:nth-child(3), .carousel{
+    .ImageBackRegistros, .carousel{
         display: none;
     }
 
@@ -170,9 +170,6 @@
         margin-bottom: 100px;
     }
 
-    .contenedor img {
-        display: none;
-    }
     
     .contenedor .card-login{
         padding: 50px 20px;
