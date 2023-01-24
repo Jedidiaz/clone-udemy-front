@@ -85,6 +85,11 @@ footer ul li a{
     color: #A7A7A7;
 }
 
+.butonsDownloadFooter{
+    flex-direction: column;
+    margin-top: 30px;
+}
+
 /* correcion movil */
 @media screen and (min-width: 375px) and (max-width: 425px) {
     .regist{
@@ -123,5 +128,9 @@ footer ul li a{
 
     .contenedor-footer{
         margin-bottom: 150px;
+    }
+
+    .butonsDownloadFooter{
+        flex-direction: row;
     }
 }

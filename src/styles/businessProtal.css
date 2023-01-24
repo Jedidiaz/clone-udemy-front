@@ -62,7 +62,7 @@
 }
 
 .header-business {
-    width: 100%;
+    width: calc(100vw - 80px);
     height: 70px;
     display: flex;
     justify-content: end;

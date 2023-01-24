@@ -25,7 +25,7 @@ import back from "../assets/BackCardHome.svg";
 import Imagetest1 from "../assets/Imagetest1.svg";
 import HomestProfile from "../assets/HometestProfile.svg";
 
-import bgHome from "../assets/bghome.png";
+import Carousel from "react-bootstrap/Carousel";
 
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/home.css";
@@ -345,7 +345,10 @@ const Home = () => {
         </section>
         <section className="container content-section-six">
           <h1>From Our Comunity</h1>
-          <div className="subcontent-section-six" style={{zIndex: '3', position: 'relative'}}>
+          <Carousel variant="dark">
+            {[1,2,3].map(()=> (
+              <Carousel.Item>
+                <div className="subcontent-section-six" style={{zIndex: '3', position: 'relative'}}>
             <img src={comillas} className="iconComillasHome" style={{zIndex: '3'}} />
             <img src={HomeSse} style={{zIndex: '100', position: 'relative'}} />
             <img src={puntos} className="iconPuntosHome" />
@@ -361,6 +364,25 @@ const Home = () => {
             </div>
             <img src={HomeSse2} alt="" />
           </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+          {/* <div className="subcontent-section-six" style={{zIndex: '3', position: 'relative'}}>
+            <img src={comillas} className="iconComillasHome" style={{zIndex: '3'}} />
+            <img src={HomeSse} style={{zIndex: '100', position: 'relative'}} />
+            <img src={puntos} className="iconPuntosHome" />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor in cididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse ultrices gravida.
+              </p>
+            </div>
+            <div className="container bgCardS6">
+              <img src={back} alt="" style={{ width: "52%" }} />
+            </div>
+            <img src={HomeSse2} alt="" />
+          </div> */}
         </section>
         <section className="container content-section-seven">
           <div

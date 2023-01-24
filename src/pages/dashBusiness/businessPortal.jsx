@@ -516,6 +516,7 @@ const BusinessPortal = () => {
                         maxWidth: "400px",
                         fontSize: "20px",
                       }}
+                      onClick={()=> viewFaq()}
                     >
                       frequent questions
                     </button>
